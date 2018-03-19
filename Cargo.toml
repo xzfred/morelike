@@ -1,0 +1,6 @@
+[package]
+name = "morelike"
+version = "0.1.0"
+authors = ["xzfred <xzfred@gmail.com>"]
+
+[dependencies]
