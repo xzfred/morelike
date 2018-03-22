@@ -11,6 +11,7 @@ crc = "1.7.0"
 log = "0.4.1"
 env_logger = "0.5.6"
 pretty_env_logger = "0.2.2"
+sha-1 = "0.7.0"
 
 [dependencies.adler32]
 version = "1.0"
