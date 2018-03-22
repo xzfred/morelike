@@ -15,19 +15,72 @@
 //         println!("{}", f.unwrap().path().to_str().unwrap());
 //     }
 // }
-#![feature(rustc_private)]
-extern crate rand;
-extern crate rustsync;
-use rustsync::*;
-use rand::Rng;
+// #[warn(unused_imports)] #![feature(rustc_private)] extern crate rand;
+// extern crate rustsync;
+// use rustsync::*;
+// use rand::Rng;
+
+#![feature(test)]
+
 use std::error::Error;
 use std::fs::File;
 use std::io::prelude::*;
 use std::path::Path;
+extern crate pretty_env_logger;
+#[macro_use] extern crate log;
+extern crate adler32;
+
+extern crate test;
+use test::Bencher;
+
+extern crate crc32c_hw;
+
+use std::convert::AsRef;
 
 fn main() {
-    
+    pretty_env_logger::init();
+
+    // println!("{:?}", buf[..].to_vec());
 }
+
+fn read_to_buf(buf: &mut [u8]) {
+    let path = Path::new("/Users/xuzhi/Music/虾米音乐/Beyond-不再犹豫.mp3");
+    let display = path.display();
+    info!("{}", display);
+    let mut file: File = match File::open(&path) {
+        Err(why) => panic!("couldn't open {}: {}",
+                           display,
+                           why.description() ),
+        Ok(file) => file,
+    };
+    file.read_exact(buf).unwrap();
+}
+
+#[bench]
+fn bench_crc32_hw(b: &mut Bencher) {
+    let mut buf: [u8; 1024] = [0; 1024];
+    read_to_buf(&mut buf);
+    b.iter(|| {
+        for _i in 1..100 {
+            crc32c_hw::compute(buf.as_ref());
+        }
+    })
+}
+
+#[bench]
+fn bench_adler32(b: &mut Bencher) {
+    let mut buf: [u8; 1024] = [0; 1024];
+    read_to_buf(&mut buf);
+
+    // println!("{}", hash.hash());
+    b.iter(|| {
+        for _i in 1..100 {
+            let hash = adler32::RollingAdler32::from_buffer(&buf);
+            hash.hash();
+        }
+    })
+}
+
 // fn main() {
 //   // Create 4 different random strings first.
 //   let chunk_size = 1000;
