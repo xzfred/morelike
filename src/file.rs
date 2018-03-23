@@ -26,7 +26,7 @@ impl FileInfo {
             path: String::from(path.to_str().unwrap()),
             size: meta.len(),
             sum: Sha1::default(),
-            meta: meta,
+            meta,
         }
     }
 }
@@ -35,6 +35,7 @@ const BUFSIZE: usize = 1024;
 
 pub type LikeList = HashMap<String, FileInfo>;
 
+#[derive(Debug)]
 pub struct FileTable {
     // buf: [u8; 1024],
     table: HashMap<u32, LikeList>,
@@ -50,8 +51,7 @@ impl FileTable {
 
     pub fn scan(&mut self, path: &str) {
         let path = Path::new(path);
-        self.load(&path, 0);
-        println!("{:?}", self.table);
+        self.load(path, 0);
     }
 
     fn load(&mut self, parent: &Path, level: i32) {
@@ -68,7 +68,7 @@ impl FileTable {
                 let file_info = FileInfo::new(ff);
                 let sum = self.checksum(ff, &file_info);
                 self.table.entry(sum)
-                    .or_insert(HashMap::new())
+                    .or_insert_with(HashMap::new)
                     .insert(file_info.path.clone(), file_info);
             }
         }
@@ -76,20 +76,25 @@ impl FileTable {
 
     fn checksum(&self, file: &Path, file_info: &FileInfo) -> u32 {
         let display = file.display();
-        let mut file: File = match File::open(&file) {
+        let file: File = match File::open(&file) {
             Err(why) => panic!("couldn't open {}: {}",
                                display,
                                why.description() ),
             Ok(file) => file,
         };
         let mut buf: [u8; BUFSIZE] = [0; BUFSIZE];
-        if file_info.size > BUFSIZE as u64 {
-            file.read_exact(&mut buf).unwrap();
-            crc32c_hw::compute(buf.as_ref())
-        } else {
-            let mut buffer = Vec::new();
-            file.read_to_end(&mut buffer).unwrap();
-            crc32c_hw::compute(buffer.as_slice())
-        }
+
+        let mut handle = file.take(BUFSIZE as u64);
+        handle.read(&mut buf).unwrap();
+        crc32c_hw::compute(buf.as_ref())
+
+        // if file_info.size > BUFSIZE as u64 {
+        //     file.read_exact(&mut buf).unwrap();
+        //     crc32c_hw::compute(buf.as_ref())
+        // } else {
+        //     let mut buffer = Vec::new();
+        //     file.read_to_end(&mut buffer).unwrap();
+        //     crc32c_hw::compute(buffer.as_slice())
+        // }
     }
 }

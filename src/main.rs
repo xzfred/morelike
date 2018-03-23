@@ -1,5 +1,7 @@
-#[allow(unused_imports)]
-
+#![cfg_attr(feature="clippy", feature(plugin))]
+#![cfg_attr(feature="clippy", plugin(clippy))]
+#![allow(unused_imports)]
+#![allow(unused_io_amount)]
 extern crate sha1;
 extern crate pretty_env_logger;
 #[macro_use] extern crate log;
@@ -17,5 +19,7 @@ fn main() {
     pretty_env_logger::init();
     info!("start");
     let mut table = FileTable::new();
-    table.scan(".");
+    table.scan("test");
+    println!("{:?}", table);
+
 }
