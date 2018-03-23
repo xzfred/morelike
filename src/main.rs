@@ -19,7 +19,10 @@ fn main() {
     pretty_env_logger::init();
     info!("start");
     let mut table = FileTable::new();
-    table.scan("test");
-    println!("{:?}", table);
+    let p = "/Users/xuzhi/Music";
+    table.scan(p);
 
+    // println!("{:?}", table);
+
+    table.exact();
 }

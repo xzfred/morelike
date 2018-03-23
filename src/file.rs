@@ -54,6 +54,17 @@ impl FileTable {
         self.load(path, 0);
     }
 
+    pub fn exact(&self) {
+        for (key, val) in &self.table {
+            if val.len() > 1 {
+                for (path, file) in val {
+                    println!("{}:, {:?}", key, path);
+                }
+            }
+
+        }
+    }
+
     fn load(&mut self, parent: &Path, level: i32) {
         // let dirs = fs::read_dir(parent).unwrap();
 
