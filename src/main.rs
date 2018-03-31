@@ -1,13 +1,15 @@
 #![cfg_attr(feature="clippy", feature(plugin))]
 #![cfg_attr(feature="clippy", plugin(clippy))]
 #![allow(unused_imports)]
-#![allow(unused_io_amount)]
+#![warn(unused_variables)]
 extern crate sha1;
 extern crate pretty_env_logger;
 #[macro_use] extern crate log;
 
 extern crate adler32;
 extern crate crc32c_hw;
+extern crate chrono;
+extern crate time;
 
 
 mod file;
@@ -20,6 +22,6 @@ fn main() {
     info!("start");
     let mut table = FileTable::new();
     table.scan("test");
-    println!("{:?}", table);
+    println!("{}", table);
 
 }

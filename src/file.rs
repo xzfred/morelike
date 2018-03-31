@@ -1,4 +1,4 @@
-
+use std::fmt::{self, Formatter, Display};
 use std::collections::HashMap;
 use sha1::Sha1;
 use std::path::Path;
@@ -8,6 +8,12 @@ use std::fs::File;
 use std::io::prelude::*;
 use std::error::Error;
 use crc32c_hw;
+use chrono::prelude::*;
+use time;
+use time::{strftime, Timespec};
+use std::time::{Duration, SystemTime};
+use std;
+
 
 #[derive(Debug)]
 pub struct FileInfo {
@@ -16,6 +22,56 @@ pub struct FileInfo {
     size: u64,
     sum: Sha1,
     meta: Metadata,
+}
+
+// #[cfg(unix)]
+// fn display_date(metadata: &Metadata, options: &getopts::Matches) -> String {
+//     let secs = if options.opt_present("c") {
+//         metadata.ctime()
+//     } else {
+//         metadata.mtime()
+//     };
+//     let time = time::at(Timespec::new(secs, 0));
+//     strftime("%F %R", &time).unwrap()
+// }
+
+// #[cfg(not(unix))]
+// #[allow(unused_variables)]
+// fn display_date(metadata: &Metadata, options: &getopts::Matches) -> String {
+//     if let Ok(mtime) = metadata.modified() {
+//         let time = time::at(Timespec::new(
+//             mtime
+//                 .duration_since(std::time::UNIX_EPOCH)
+//                 .unwrap()
+//                 .as_secs() as i64,
+//             0,
+//         ));
+//         strftime("%F %R", &time).unwrap()
+//     } else {
+//         "???".to_string()
+//     }
+// }
+
+fn display_date(date: &SystemTime) -> String {
+    let ttime = time::at(Timespec::new(
+        date.duration_since(std::time::UNIX_EPOCH)
+            .unwrap()
+            .as_secs() as i64,
+        0,
+    ));
+    strftime("%F %R", &ttime).unwrap()
+}
+
+
+impl Display for FileInfo {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "name:{:<20} size:{:<15} accessed:{:14} modified:{:14}",
+               self.name,
+               self.size,
+               display_date(&self.meta.accessed().unwrap()),
+               display_date(&self.meta.modified().unwrap())
+        )
+    }
 }
 
 impl FileInfo {
@@ -41,6 +97,25 @@ pub struct FileTable {
     table: HashMap<u32, LikeList>,
 }
 
+impl Display for FileTable {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        // let ft: &FileTable = *self;
+
+        // try!(write!(f, "["));
+
+        for (k, ref v) in self.table.iter() {
+            try!(write!(f, "{index:<iw$} \n",
+                        index=k, iw=12));
+            for (ref name, ref fi) in v.iter() {
+                try!(write!(f, "{nm:>width$} \n{sp:<width$} {file}\n", width=40, nm=name, file=fi, sp=""));
+            }
+        }
+
+        // 加上配对中括号，并返回一个 fmt::Result 值
+        write!(f, "]")
+    }
+}
+
 impl FileTable {
     pub fn new() -> FileTable {
         FileTable {
@@ -64,7 +139,9 @@ impl FileTable {
             let ff = &f.unwrap().path(); 
             if ff.is_dir() {
                 self.load(ff, level + 1);
-            } else {
+            } else if ff.symlink_metadata().unwrap().file_type().is_symlink() {
+                println!("is symlink: {}", ff.to_str().unwrap());
+            } else if ff.is_file() {
                 let file_info = FileInfo::new(ff);
                 let sum = self.checksum(ff, &file_info);
                 self.table.entry(sum)
@@ -77,9 +154,9 @@ impl FileTable {
     fn checksum(&self, file: &Path, file_info: &FileInfo) -> u32 {
         let display = file.display();
         let file: File = match File::open(&file) {
-            Err(why) => panic!("couldn't open {}: {}",
+            Err(why) => panic!("couldn't open {}: {} {}",
                                display,
-                               why.description() ),
+                               why.description(), file_info ),
             Ok(file) => file,
         };
         let mut buf: [u8; BUFSIZE] = [0; BUFSIZE];
