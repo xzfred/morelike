@@ -15,6 +15,8 @@ sha-1 = "0.7.0"
 clippy = { version = "*", optional = true }
 chrono = "0.4"
 time = "0.1.39"
+indicatif = "0.9.0"
+console = ">=0.6.1, <1.0.0"
 
 
 [dependencies.adler32]
