@@ -77,6 +77,8 @@ pub struct FileTable {
     // buf: [u8; 1024],
     table: HashMap<u32, LikeList>,
     pb: ProgressBar,
+    count_dir: u32,
+    count_file: u32,
 }
 
 impl Display for FileTable {
@@ -109,6 +111,8 @@ impl FileTable {
         FileTable {
             table: HashMap::new(),
             pb: ProgressBar::new(100),
+            count_dir: 0,
+            count_file: 0,
             // buf: [0; 1024],
         }
     }
@@ -135,7 +139,7 @@ impl FileTable {
     pub fn exact(&self) {
         for (key, val) in &self.table {
             if val.len() > 1 {
-                for (path, file) in val {
+                for (path, _file) in val {
                     println!("{}:, {:?}", key, path);
                 }
             }
@@ -151,21 +155,29 @@ impl FileTable {
         for f in dirs {
             let ff = &f.unwrap().path();
             if ff.is_dir() {
+                self.count_dir += 1;
                 self.load(ff, level + 1);
             } else if ff.symlink_metadata().unwrap().file_type().is_symlink() {
                 // println!("is symlink: {}", ff.to_str().unwrap());
             } else if ff.is_file() {
+                self.count_file += 1;
                 let file_info = FileInfo::new(ff);
-                for i in 0..30 {
-                    self.pb.set_message(&format!(
-                        "{} >> {}: {}",
-                        ff.parent().unwrap().to_str().unwrap(),
-                        file_info.name,
-                        i
-                    ));
-                    self.pb.inc(1);
-                    thread::sleep(Duration::from_millis(10));
-                }
+
+                let tname = file_info.name.chars().into_iter().map(|x| x.to_string()).collect::<Vec<_>>();
+                self.pb.set_message(&format!(
+                    "dirs:{},files:{}, {} >> {}",
+                    self.count_dir,
+                    self.count_file,
+                    ff.parent().unwrap().to_str().unwrap(),
+                    if tname.len() > 10 {
+                        tname[0..10].join("")
+                    } else {
+                        tname[0..].join("")
+                    }
+                ));
+                self.pb.inc(1);
+                // thread::sleep(Duration::from_millis(10));
+
                 let sum = self.checksum(ff, &file_info);
                 self.table
                     .entry(sum)
