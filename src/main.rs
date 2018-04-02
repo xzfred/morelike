@@ -1,18 +1,21 @@
-#![cfg_attr(feature="clippy", feature(plugin))]
-#![cfg_attr(feature="clippy", plugin(clippy))]
+#![cfg_attr(feature = "clippy", feature(plugin))]
+#![cfg_attr(feature = "clippy", plugin(clippy))]
 #![allow(unused_imports)]
-#![allow(unused_io_amount)]
-extern crate sha1;
 extern crate pretty_env_logger;
-#[macro_use] extern crate log;
+extern crate sha1;
+#[macro_use]
+extern crate log;
 
 extern crate adler32;
+extern crate chrono;
+extern crate console;
 extern crate crc32c_hw;
-
+extern crate indicatif;
+extern crate time;
 
 mod file;
 
-use file::{FileTable};
+use file::FileTable;
 // use std::convert::AsRef;
 
 fn main() {
@@ -21,6 +24,8 @@ fn main() {
     let mut table = FileTable::new();
     let p = "/Users/xuzhi/Music";
     table.scan(p);
+    //table.scan("test");
+    println!("{}", table);
 
     // println!("{:?}", table);
 
