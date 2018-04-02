@@ -163,7 +163,12 @@ impl FileTable {
                 self.count_file += 1;
                 let file_info = FileInfo::new(ff);
 
-                let tname = file_info.name.chars().into_iter().map(|x| x.to_string()).collect::<Vec<_>>();
+                let tname = file_info
+                    .name
+                    .chars()
+                    .into_iter()
+                    .map(|x| x.to_string())
+                    .collect::<Vec<_>>();
                 self.pb.set_message(&format!(
                     "dirs:{},files:{}, {} >> {}",
                     self.count_dir,
