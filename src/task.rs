@@ -17,11 +17,23 @@ use std;
 use indicatif::{HumanDuration, MultiProgress, ProgressBar, ProgressStyle};
 use console::{style, Emoji};
 use std::thread;
+use std::sync::mpsc::{channel,Sender};
+
+#[derive(Debug)]
+pub enum MsgPos {
+    Start,
+    ScanDir(u32, String),
+    ScanFile(u32, String),
+    End,
+}
 
 // 文件节点
 #[derive(Debug)]
 pub struct SearchFile {
     file: Box<PathBuf>,
+    size: u64,
+    crc: u32,
+    sum: Sha1,
 }
 
 #[derive(Debug)]
@@ -32,19 +44,25 @@ pub struct Task {
 
     // 文件队列
     file_list: Vec<Box<SearchFile>>,
+
+    pb_pos: Sender<MsgPos>,
 }
 
 impl SearchFile {
     pub fn new(f: &Path) -> SearchFile {
         SearchFile {
             file: Box::new(f.to_path_buf()),
+            size: 0,
+            crc: 0,
+            sum: Sha1::default(),
         }
     }
 }
 
 impl Task {
-    pub fn new() -> Task {
+    pub fn new(pb_pos: Sender<MsgPos>) -> Task {
         Task {
+            pb_pos,
             count_dir: 0,
             count_file: 0,
             // buf: [0; 1024],
@@ -55,16 +73,24 @@ impl Task {
 
     pub fn scan(&mut self, path: &str) {
         let path = Path::new(path);
+        self.pos(MsgPos::Start);
         self.load(path, 0);
+        self.pos(MsgPos::End);
+    }
+
+    fn pos(&self, pos: MsgPos) {
+        self.pb_pos.send(pos).unwrap();
     }
 
     fn add_dir(&mut self, _dir: &PathBuf) {
         self.count_dir += 1;
+        self.pos(MsgPos::ScanDir(self.count_dir, String::from("")));
     }
 
     fn add_file(&mut self, file: &PathBuf) {
         self.file_list.push(Box::new(SearchFile::new(file)));
         self.count_file += 1;
+        self.pos(MsgPos::ScanFile(self.count_file, String::from("")));
     }
 
     fn load(&mut self, parent: &Path, level: i32) {

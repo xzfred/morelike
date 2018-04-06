@@ -13,23 +13,52 @@ extern crate crc32c_hw;
 extern crate indicatif;
 extern crate time;
 
-mod file;
-use file::FileTable;
+// mod file;
+// use file::FileTable;
 // use std::convert::AsRef;
 
-mod task;
-use task::Task;
+pub mod task;
+use task::{Task,MsgPos};
+
+use std::thread;
+use std::sync::mpsc::{channel,Sender,RecvError};
+use std::sync::{Mutex, Arc};
 
 fn main() {
     pretty_env_logger::init();
     info!("start");
     // let p = "/Users/xuzhi/Music";
-    let p = "test";
-    let mut file_task = Task::new();
-    file_task.scan(p);
 
-    println!("{:?}", file_task);
+    let (sender, receiver) = channel::<MsgPos>();
 
+    let task = Task::new(sender);
+    let file_task = Arc::new(Mutex::new(task));
+
+    let flock = file_task.clone();
+    let handle = thread::spawn(move || {
+        let p = "test";
+        let mut task = flock.lock().unwrap();
+        task.scan(p);
+    });
+
+    loop {
+        match receiver.recv() {
+            Ok(msg) => match msg {
+                MsgPos::Start => println!("开始扫描: {}", ""),
+                MsgPos::ScanDir(pos, desc) => println!("目录: {}={}", pos, desc),
+                MsgPos::ScanFile(pos, desc) => println!("文件: {}={}", pos, desc),
+                MsgPos::End => {
+                    println!("{:?}", *file_task.lock().unwrap());
+                    println!("结束");
+                    break;
+                },
+            },
+            Err(RecvError) => panic!("no msg!"),
+        }
+
+    }
+
+    handle.join().unwrap();
     // let mut table = FileTable::new();
     // table.scan(p);
     // //table.scan("test");
