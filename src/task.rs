@@ -17,7 +17,7 @@ use std;
 use indicatif::{HumanDuration, MultiProgress, ProgressBar, ProgressStyle};
 use console::{style, Emoji};
 use std::thread;
-use std::sync::mpsc::{channel,Sender};
+use std::sync::mpsc::{channel, Sender, Receiver, RecvError};
 
 #[derive(Debug)]
 pub enum MsgPos {
@@ -38,15 +38,22 @@ pub struct SearchFile {
 
 #[derive(Debug)]
 pub struct Task {
-    //计数器
-    count_dir: u32,
-    count_file: u32,
 
     // 文件队列
     file_list: Vec<Box<SearchFile>>,
 
+    
     pb_pos: Sender<MsgPos>,
+    pb_pos_recevier: Receiver<MsgPos>,
 }
+
+#[derive(Debug)]
+struct Finder {
+    //计数器
+    count_dir: u32,
+    count_file: u32,
+}
+
 
 impl SearchFile {
     pub fn new(f: &Path) -> SearchFile {
@@ -60,15 +67,22 @@ impl SearchFile {
 }
 
 impl Task {
-    pub fn new(pb_pos: Sender<MsgPos>) -> Task {
+    pub fn new() -> Task {
+        let (sender, receiver) = channel::<MsgPos>();
         Task {
-            pb_pos,
+            pb_pos: sender,
+            pb_pos_recevier: receiver,
+
             count_dir: 0,
             count_file: 0,
             // buf: [0; 1024],
 
             file_list: Vec::new(),
         }
+    }
+
+    pub fn recv_pos(&self) -> Result<MsgPos, RecvError> {
+        self.pb_pos_recevier.recv()
     }
 
     pub fn scan(&mut self, path: &str) {
@@ -82,15 +96,15 @@ impl Task {
         self.pb_pos.send(pos).unwrap();
     }
 
-    fn add_dir(&mut self, _dir: &PathBuf) {
+    fn add_dir(&mut self, dir: &PathBuf) {
         self.count_dir += 1;
-        self.pos(MsgPos::ScanDir(self.count_dir, String::from("")));
+        self.pos(MsgPos::ScanDir(self.count_dir, String::from(dir.to_str().unwrap())));
     }
 
     fn add_file(&mut self, file: &PathBuf) {
         self.file_list.push(Box::new(SearchFile::new(file)));
         self.count_file += 1;
-        self.pos(MsgPos::ScanFile(self.count_file, String::from("")));
+        self.pos(MsgPos::ScanFile(self.count_file, String::from(file.to_str().unwrap())));
     }
 
     fn load(&mut self, parent: &Path, level: i32) {
