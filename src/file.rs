@@ -1,3 +1,4 @@
+#[warn(dead_code)]
 use std::fmt::{self, Display, Formatter};
 use std::collections::HashMap;
 use sha1::Sha1;

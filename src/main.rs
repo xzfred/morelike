@@ -14,20 +14,27 @@ extern crate indicatif;
 extern crate time;
 
 mod file;
-
 use file::FileTable;
 // use std::convert::AsRef;
+
+mod task;
+use task::Task;
 
 fn main() {
     pretty_env_logger::init();
     info!("start");
-    let mut table = FileTable::new();
-    let p = "/Users/xuzhi/Music";
-    table.scan(p);
-    //table.scan("test");
-    println!("{}", table);
+    // let p = "/Users/xuzhi/Music";
+    let p = "test";
+    let mut file_task = Task::new();
+    file_task.scan(p);
 
-    // println!("{:?}", table);
+    println!("{:?}", file_task);
 
-    table.exact();
+    // let mut table = FileTable::new();
+    // table.scan(p);
+    // //table.scan("test");
+    // println!("{}", table);
+
+    // // println!("{:?}", table);
+    // table.exact();
 }
