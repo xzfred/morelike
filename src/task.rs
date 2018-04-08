@@ -16,9 +16,13 @@ use std::time::{Duration, Instant, SystemTime};
 use std;
 use indicatif::{HumanDuration, MultiProgress, ProgressBar, ProgressStyle};
 use console::{style, Emoji};
-use std::thread;
+use std::thread::{self,JoinHandle};
 use std::sync::mpsc::{channel, Sender, Receiver, RecvError};
+use std::sync::{Arc, Mutex};
 
+// use pool::*;
+
+// 位置消息
 #[derive(Debug)]
 pub enum MsgPos {
     Start,
@@ -41,19 +45,86 @@ pub struct Task {
 
     // 文件队列
     file_list: Vec<Box<SearchFile>>,
+}
 
-    
-    pb_pos: Sender<MsgPos>,
-    pb_pos_recevier: Receiver<MsgPos>,
+// type FinderMsg = Box<PathBuf>;
+pub enum FinderMsg {
+    Dir(PathBuf),
+    File(PathBuf),
 }
 
 #[derive(Debug)]
-struct Finder {
+pub struct Finder {
     //计数器
     count_dir: u32,
     count_file: u32,
+
+    pb_pos: Sender<FinderMsg>,
+    pb_pos_recevier: Receiver<FinderMsg>,
+    pool: Vec<ScanDir>,
+    // handle: JoinHandle<_>,
 }
 
+struct ScanDir {
+    tx: Sender<FinderMsg>,
+    handle: thread::JoinHandle<()>,
+}
+
+impl ScanDir {
+    pub fn new(tx: Sender<FinderMsg>) -> ScanDir {
+        ScanDir {
+            tx,
+            handle: thread::spawn(),
+        }
+    }
+}
+
+impl Finder {
+    pub fn new() -> Finder {
+        let (sender, receiver) = channel::<FinderMsg>();
+        Finder {
+            count_dir: 0,
+            count_file: 0,
+
+            pb_pos: sender,
+            pb_pos_recevier: receiver,
+            pool: Vec::new(),
+        }
+    }
+
+    pub fn recv(&self) -> Result<FinderMsg, RecvError> {
+        self.pb_pos_recevier.recv()
+    }
+
+    pub fn scan(&mut self, path: &str) {
+        let path = String::from(path);
+        let local_self = Arc::new(self);
+        let copy_self = local_self.clone();
+        let handle = thread::spawn(move|| {
+            let path = Path::new(&path);
+            &copy_self.load(path, 0);
+        });
+        handle.join().unwrap();
+    }
+
+    fn load(&mut self, parent: &Path, level: i32) {
+        let dirs = fs::read_dir(parent).unwrap();
+
+        for f in dirs {
+            let ff = &f.unwrap().path();
+            if ff.is_dir() {
+                self.count_dir += 1;
+                self.pb_pos.send(FinderMsg::Dir(ff.to_path_buf())).unwrap();
+                self.load(ff, level + 1);
+            } else if ff.symlink_metadata().unwrap().file_type().is_symlink() {
+                // println!("is symlink: {}", ff.to_str().unwrap());
+            } else if ff.is_file() {
+                self.count_file += 1;
+                self.pb_pos.send(FinderMsg::File(ff.to_path_buf())).unwrap();
+            }
+        }
+    }
+}
 
 impl SearchFile {
     pub fn new(f: &Path) -> SearchFile {
@@ -68,58 +139,8 @@ impl SearchFile {
 
 impl Task {
     pub fn new() -> Task {
-        let (sender, receiver) = channel::<MsgPos>();
         Task {
-            pb_pos: sender,
-            pb_pos_recevier: receiver,
-
-            count_dir: 0,
-            count_file: 0,
-            // buf: [0; 1024],
-
             file_list: Vec::new(),
-        }
-    }
-
-    pub fn recv_pos(&self) -> Result<MsgPos, RecvError> {
-        self.pb_pos_recevier.recv()
-    }
-
-    pub fn scan(&mut self, path: &str) {
-        let path = Path::new(path);
-        self.pos(MsgPos::Start);
-        self.load(path, 0);
-        self.pos(MsgPos::End);
-    }
-
-    fn pos(&self, pos: MsgPos) {
-        self.pb_pos.send(pos).unwrap();
-    }
-
-    fn add_dir(&mut self, dir: &PathBuf) {
-        self.count_dir += 1;
-        self.pos(MsgPos::ScanDir(self.count_dir, String::from(dir.to_str().unwrap())));
-    }
-
-    fn add_file(&mut self, file: &PathBuf) {
-        self.file_list.push(Box::new(SearchFile::new(file)));
-        self.count_file += 1;
-        self.pos(MsgPos::ScanFile(self.count_file, String::from(file.to_str().unwrap())));
-    }
-
-    fn load(&mut self, parent: &Path, level: i32) {
-        let dirs = fs::read_dir(parent).unwrap();
-
-        for f in dirs {
-            let ff = &f.unwrap().path();
-            if ff.is_dir() {
-                self.add_dir(ff);
-                self.load(ff, level + 1);
-            } else if ff.symlink_metadata().unwrap().file_type().is_symlink() {
-                // println!("is symlink: {}", ff.to_str().unwrap());
-            } else if ff.is_file() {
-                self.add_file(ff);
-            }
         }
     }
 }

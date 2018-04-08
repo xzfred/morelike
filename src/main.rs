@@ -14,7 +14,8 @@ extern crate indicatif;
 extern crate time;
 
 pub mod task;
-use task::{Task,MsgPos};
+// mod pool;
+use task::{Task, FinderMsg, Finder};
 
 use std::thread;
 use std::sync::mpsc::{channel,Sender,RecvError};
@@ -25,7 +26,24 @@ fn main() {
     info!("start");
     // let p = "/Users/xuzhi/Music";
 
-    let mut task = Task::new();
+    let p = "test";
+
+    let mut finder = Finder::new();
+
+    finder.scan(p);
+
+    loop {
+        match finder.recv() {
+            Ok(msg) => match msg {
+                FinderMsg::Dir(path) => println!("{}", path.to_str().unwrap()),
+                FinderMsg::File(path) => println!("{}", path.to_str().unwrap()),
+            },
+            Err(RecvError) => panic!("{}", RecvError),
+        }
+    }
+
+
+    // let mut task = Task::new();
     // let file_task = Arc::new(Mutex::new(task));
 
     // let flock = file_task.clone();
@@ -34,25 +52,25 @@ fn main() {
     //     let mut task = flock.lock().unwrap();
     //     task.scan(p);
     // });
-    let p = "test";
-    task.scan(p);
+    // let p = "test";
+    // task.scan(p);
 
-    loop {
-        match task.recv_pos() {
-            Ok(msg) => match msg {
-                MsgPos::Start => println!("开始扫描: {}", ""),
-                MsgPos::ScanDir(pos, desc) => println!("目录: {}={}", pos, desc),
-                MsgPos::ScanFile(pos, desc) => println!("文件: {}={}", pos, desc),
-                MsgPos::End => {
-                    println!("{:?}", task);
-                    println!("结束");
-                    break;
-                },
-            },
-            Err(RecvError) => panic!("no msg!"),
-        }
+    // loop {
+    //     match task.recv_pos() {
+    //         Ok(msg) => match msg {
+    //             MsgPos::Start => println!("开始扫描: {}", ""),
+    //             MsgPos::ScanDir(pos, desc) => println!("目录: {}={}", pos, desc),
+    //             MsgPos::ScanFile(pos, desc) => println!("文件: {}={}", pos, desc),
+    //             MsgPos::End => {
+    //                 println!("{:?}", task);
+    //                 println!("结束");
+    //                 break;
+    //             },
+    //         },
+    //         Err(RecvError) => panic!("no msg!"),
+    //     }
 
-    }
+    // }
 
     // handle.join().unwrap();
 }
