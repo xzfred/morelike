@@ -26,8 +26,12 @@ use std::sync::{Arc, Mutex};
 #[derive(Debug)]
 pub enum MsgPos {
     Start,
-    ScanDir(u32, String),
-    ScanFile(u32, String),
+    WaitDir,
+    BeginScan,
+    EndScan,
+    EndScanThread(u32),
+    ScanDir(String),
+    ScanFile(String),
     End,
 }
 
@@ -40,107 +44,161 @@ pub struct SearchFile {
     sum: Sha1,
 }
 
-#[derive(Debug)]
-pub struct Task {
-
-    // 文件队列
-    file_list: Vec<Box<SearchFile>>,
-}
-
 // type FinderMsg = Box<PathBuf>;
 pub enum FinderMsg {
-    Dir(PathBuf),
+    Dir(PathBuf, u32),
     File(PathBuf),
+    Close,
 }
 
-#[derive(Debug)]
 pub struct Finder {
     //计数器
     count_dir: u32,
     count_file: u32,
+    count_wait: u32,
+    count_scan: u32,
+    scan_thread: u32,
+    active_thread: u32,
 
-    pb_pos: Sender<FinderMsg>,
-    pb_pos_recevier: Receiver<FinderMsg>,
-    pool: Vec<ScanDir>,
-    // handle: JoinHandle<_>,
+    pb_pos: Sender<MsgPos>,
+    pb_pos_recevier: Receiver<MsgPos>,
+    finder_state: Arc<FinderState>,
 }
 
-struct ScanDir {
-    tx: Sender<FinderMsg>,
-    handle: thread::JoinHandle<()>,
+struct FinderState {
+    size: u32,
+    rx: Mutex<Receiver<FinderMsg>>,
+    tx: Mutex<Sender<FinderMsg>>,
+    finder_tx: Mutex<Sender<MsgPos>>,
 }
 
-impl ScanDir {
-    pub fn new(tx: Sender<FinderMsg>) -> ScanDir {
-        ScanDir {
-            tx,
-            handle: thread::spawn(),
+impl Drop for Finder {
+    fn drop(&mut self) {
+        for _ in 0..self.finder_state.size {
+            self.finder_state.send(FinderMsg::Close);
+        }
+    }
+}
+
+
+impl FinderState {
+    pub fn new(finder_tx: Sender<MsgPos>, size: u32) -> FinderState {
+        let (sender, receiver) = channel::<FinderMsg>();
+        FinderState {
+            size,
+            finder_tx: Mutex::new(finder_tx),
+            rx: Mutex::new(receiver),
+            tx: Mutex::new(sender),
+        }
+    }
+
+    pub fn send(&self, msg: FinderMsg) {
+        self.tx.lock().unwrap().send(msg).unwrap();
+    }
+
+    pub fn run(&self) {
+        // println!("thread start");
+        loop {
+            self.finder_tx.lock().unwrap().send(MsgPos::WaitDir).unwrap();
+            let msg = self.rx.lock().unwrap().recv().unwrap();
+            self.finder_tx.lock().unwrap().send(MsgPos::BeginScan).unwrap();
+            match msg {
+                FinderMsg::Dir(path, level) => {
+                    self.finder_tx.lock().unwrap().send(
+                        MsgPos::ScanDir(String::from(path.to_str().unwrap()))).unwrap();
+                    self.load(&path, level);
+                },
+                FinderMsg::File(path) => {
+                    self.finder_tx.lock().unwrap().send(
+                        MsgPos::ScanFile(String::from(path.to_str().unwrap()))).unwrap();
+                },
+                FinderMsg::Close => break,
+            }
+
+        }
+        // println!("thread end");
+        self.finder_tx.lock().unwrap().send(MsgPos::EndScanThread(0)).unwrap();
+    }
+
+    fn load(&self, parent: &Path, level: u32) {
+        let dirs = fs::read_dir(parent).unwrap();
+
+        for f in dirs {
+            let ff = &f.unwrap().path();
+            if ff.is_dir() {
+                self.send(FinderMsg::Dir(ff.to_path_buf(), level + 1));
+            } else if ff.symlink_metadata().unwrap().file_type().is_symlink() {
+                // println!("is symlink: {}", ff.to_str().unwrap());
+            } else if ff.is_file() {
+                self.send(FinderMsg::File(ff.to_path_buf()));
+            }
         }
     }
 }
 
 impl Finder {
     pub fn new() -> Finder {
-        let (sender, receiver) = channel::<FinderMsg>();
+        let (sender, receiver) = channel::<MsgPos>();
+        let size = 2;
+        let state = Arc::new(FinderState::new(sender.clone(), size));
+
+        for _ in 0..size {
+            let mut pool = state.clone();
+            thread::spawn(move || pool.run());
+        }
+
         Finder {
+            scan_thread: size,
+            active_thread: size,
             count_dir: 0,
             count_file: 0,
+            count_wait: 0,
+            count_scan: 0,
 
-            pb_pos: sender,
+            pb_pos: sender.clone(),
             pb_pos_recevier: receiver,
-            pool: Vec::new(),
+            finder_state: state,
         }
     }
 
-    pub fn recv(&self) -> Result<FinderMsg, RecvError> {
-        self.pb_pos_recevier.recv()
+    pub fn recv(&mut self) -> MsgPos {
+        match self.pb_pos_recevier.recv() {
+            Ok(msg) => match msg {
+                MsgPos::EndScanThread(_i) => {
+                    self.active_thread -= 1;
+                    return MsgPos::EndScanThread(self.active_thread);
+                },
+                MsgPos::WaitDir => {
+                    self.count_wait += 1;
+                    if self.count_wait == self.scan_thread && self.count_scan > 0 {
+                        self.pb_pos.send(MsgPos::EndScan).unwrap();
+                        for _i in 0..self.scan_thread {
+                            self.finder_state.send(FinderMsg::Close);
+                        }
+                    }
+                    return MsgPos::WaitDir;
+                },
+                MsgPos::BeginScan => {
+                    self.count_wait -= 1;
+                    self.count_scan += 1;
+                    return MsgPos::BeginScan;
+                },
+                MsgPos::ScanDir(path) => {
+                    self.count_dir += 1;
+                    return MsgPos::ScanDir(path);
+                },
+                MsgPos::ScanFile(path) => {
+                    self.count_file += 1;
+                    return MsgPos::ScanFile(path);
+                },
+                _ => return msg,
+            },
+            Err(RecvError) => panic!("recv: {}", RecvError),
+        };
     }
 
     pub fn scan(&mut self, path: &str) {
-        let path = String::from(path);
-        let local_self = Arc::new(self);
-        let copy_self = local_self.clone();
-        let handle = thread::spawn(move|| {
-            let path = Path::new(&path);
-            &copy_self.load(path, 0);
-        });
-        handle.join().unwrap();
-    }
-
-    fn load(&mut self, parent: &Path, level: i32) {
-        let dirs = fs::read_dir(parent).unwrap();
-
-        for f in dirs {
-            let ff = &f.unwrap().path();
-            if ff.is_dir() {
-                self.count_dir += 1;
-                self.pb_pos.send(FinderMsg::Dir(ff.to_path_buf())).unwrap();
-                self.load(ff, level + 1);
-            } else if ff.symlink_metadata().unwrap().file_type().is_symlink() {
-                // println!("is symlink: {}", ff.to_str().unwrap());
-            } else if ff.is_file() {
-                self.count_file += 1;
-                self.pb_pos.send(FinderMsg::File(ff.to_path_buf())).unwrap();
-            }
-        }
-    }
-}
-
-impl SearchFile {
-    pub fn new(f: &Path) -> SearchFile {
-        SearchFile {
-            file: Box::new(f.to_path_buf()),
-            size: 0,
-            crc: 0,
-            sum: Sha1::default(),
-        }
-    }
-}
-
-impl Task {
-    pub fn new() -> Task {
-        Task {
-            file_list: Vec::new(),
-        }
+        self.pb_pos.send(MsgPos::Start).unwrap();
+        self.finder_state.send(FinderMsg::Dir(PathBuf::from(path), 0));
     }
 }

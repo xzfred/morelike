@@ -15,7 +15,7 @@ extern crate time;
 
 pub mod task;
 // mod pool;
-use task::{Task, FinderMsg, Finder};
+use task::{MsgPos, FinderMsg, Finder};
 
 use std::thread;
 use std::sync::mpsc::{channel,Sender,RecvError};
@@ -34,11 +34,17 @@ fn main() {
 
     loop {
         match finder.recv() {
-            Ok(msg) => match msg {
-                FinderMsg::Dir(path) => println!("{}", path.to_str().unwrap()),
-                FinderMsg::File(path) => println!("{}", path.to_str().unwrap()),
+            MsgPos::Start => {},
+            MsgPos::End => { break; },
+            MsgPos::ScanDir(path) => println!("{}", path),
+            MsgPos::ScanFile(path) => println!("{}", path),
+            MsgPos::EndScanThread(i) => {
+                println!("thread end: {}", i);
+                if i < 1 {
+                    break;
+                }
             },
-            Err(RecvError) => panic!("{}", RecvError),
+            _ => {},
         }
     }
 
