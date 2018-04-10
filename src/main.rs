@@ -24,9 +24,9 @@ use std::sync::{Mutex, Arc};
 fn main() {
     pretty_env_logger::init();
     info!("start");
-    // let p = "/Users/xuzhi/Music";
 
     let p = "test";
+    let p = "/Users/xuzhi/Music";
 
     let mut finder = Finder::new();
 

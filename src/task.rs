@@ -38,7 +38,7 @@ pub enum MsgPos {
 // 文件节点
 #[derive(Debug)]
 pub struct SearchFile {
-    file: Box<PathBuf>,
+    file: PathBuf,
     size: u64,
     crc: u32,
     sum: Sha1,
