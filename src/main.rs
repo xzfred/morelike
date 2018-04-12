@@ -26,7 +26,7 @@ fn main() {
     info!("start");
 
     let p = "test";
-    let p = "/Users/xuzhi/Music";
+    // let p = "/Users/xuzhi/Music";
 
     let mut finder = Finder::new();
 

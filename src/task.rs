@@ -32,6 +32,7 @@ pub enum MsgPos {
     EndScanThread(u32),
     ScanDir(String),
     ScanFile(String),
+    SumFile(Arc<SearchFile>),
     End,
 }
 
@@ -47,9 +48,11 @@ pub struct SearchFile {
 // type FinderMsg = Box<PathBuf>;
 pub enum FinderMsg {
     Dir(PathBuf, u32),
-    File(PathBuf, u64),
+    File(Arc<SearchFile>),
     Close,
 }
+
+type FileGroup = HashMap<u64, Vec<Arc<SearchFile>>>;
 
 pub struct Finder {
     //计数器
@@ -63,6 +66,12 @@ pub struct Finder {
     pb_pos: Sender<MsgPos>,
     pb_pos_recevier: Receiver<MsgPos>,
     finder_state: Arc<FinderState>,
+
+    file_list: Mutex<Vec<Arc<SearchFile>>>,
+    file_group: FileGroup,
+
+    rx_work: Arc<Mutex<Receiver<FinderMsg>>>,
+    tx_work: Mutex<Sender<FinderMsg>>,
 }
 
 struct FinderState {
@@ -70,7 +79,6 @@ struct FinderState {
     rx: Mutex<Receiver<FinderMsg>>,
     tx: Mutex<Sender<FinderMsg>>,
     finder_tx: Mutex<Sender<MsgPos>>,
-    file_group: Mutex<HashMap<u64, Arc<Vec<SearchFile>>>>,
 }
 
 impl Drop for Finder {
@@ -90,7 +98,7 @@ impl FinderState {
             finder_tx: Mutex::new(finder_tx),
             rx: Mutex::new(receiver),
             tx: Mutex::new(sender),
-            file_group: Mutex::new(HashMap::new()),
+            // file_group: Mutex::new(HashMap::new()),
         }
     }
 
@@ -110,9 +118,9 @@ impl FinderState {
                         MsgPos::ScanDir(String::from(path.to_str().unwrap()))).unwrap();
                     self.load(&path, level);
                 },
-                FinderMsg::File(path, _size) => {
+                FinderMsg::File(path) => {
                     self.finder_tx.lock().unwrap().send(
-                        MsgPos::ScanFile(String::from(path.to_str().unwrap()))).unwrap();
+                        MsgPos::SumFile(path)).unwrap();
                 },
                 FinderMsg::Close => break,
             }
@@ -140,11 +148,7 @@ impl FinderState {
                     sum: Sha1::default(),
                 };
 
-                let mut map = self.file_group.lock().unwrap();
-                
-                let ref mut group = map.entry(file.size).or_insert(Arc::new(Vec::new()));
-                self.send(FinderMsg::File(ff.to_path_buf(), file.size));
-                Arc::get_mut(group).unwrap().push(file);
+                self.send(FinderMsg::File(Arc::new(file)));
             }
         }
     }
@@ -161,6 +165,7 @@ impl Finder {
             thread::spawn(move || pool.run());
         }
 
+        let (tx, rx) = channel::<FinderMsg>();
         Finder {
             scan_thread: size,
             active_thread: size,
@@ -172,14 +177,25 @@ impl Finder {
             pb_pos: sender.clone(),
             pb_pos_recevier: receiver,
             finder_state: state,
+
+            file_list: Mutex::new(Vec::new()),
+            file_group: HashMap::new(),
+
+            rx_work: Arc::new(Mutex::new(rx)),
+            tx_work: Mutex::new(tx),
         }
     }
 
     pub fn recv(&mut self) -> MsgPos {
         match self.pb_pos_recevier.recv() {
             Ok(msg) => match msg {
-                MsgPos::EndScanThread(_i) => {
+                MsgPos::EndScanThread(i) => {
+                    info!("{:?}", i);
                     self.active_thread -= 1;
+                    if self.active_thread < 1 && i < 1 {
+                        self.tx_work.lock().unwrap().send(FinderMsg::Close).unwrap();
+                        self.active_thread += 1;
+                    }
                     return MsgPos::EndScanThread(self.active_thread);
                 },
                 MsgPos::WaitDir => {
@@ -201,8 +217,14 @@ impl Finder {
                     self.count_dir += 1;
                     return MsgPos::ScanDir(path);
                 },
-                MsgPos::ScanFile(path) => {
+                MsgPos::SumFile(file) => {
                     self.count_file += 1;
+                    // println!("{:?}", file);
+                    debug!("{:?}", file);
+                    self.add_file(file.clone());
+                    return MsgPos::ScanFile(String::from(file.file.to_str().unwrap()));
+                },
+                MsgPos::ScanFile(path) => {
                     return MsgPos::ScanFile(path);
                 },
                 _ => return msg,
@@ -214,5 +236,41 @@ impl Finder {
     pub fn scan(&mut self, path: &str) {
         self.pb_pos.send(MsgPos::Start).unwrap();
         self.finder_state.send(FinderMsg::Dir(PathBuf::from(path), 0));
+        self.run();
+    }
+
+    fn add_file(&mut self, file: Arc<SearchFile>) {
+        self.file_list.lock().unwrap().push(file.clone());
+        // let mut map = self.file_group.lock().unwrap();
+        let group = self.file_group.entry(file.size).or_insert(Vec::new());
+        group.push(file.clone());
+        if group.len() > 1 {
+            self.tx_work.lock().unwrap().send(FinderMsg::File(file.clone())).unwrap();
+        }
+    }
+
+    pub fn run(&self) {
+        let rx = self.rx_work.clone();
+        // let tx = self.tx_work.lock().unwrap().clone();
+        let tx = self.pb_pos.clone();
+        thread::spawn(move || {
+            info!("start work!");
+            loop {
+                match rx.lock().unwrap().recv() {
+                    Ok(msg) => match msg {
+                        FinderMsg::Dir(_path, _size) => {},
+                        FinderMsg::File(file) => {
+                            info!("dump {:?}", file);
+                        },
+                        FinderMsg::Close => {
+                            info!("exit work!");
+                            break;
+                        }
+                    },
+                    Err(RecvError) => panic!("recv: {}", RecvError),
+                }
+            }
+            tx.send(MsgPos::EndScanThread(1)).unwrap();
+        });
     }
 }
