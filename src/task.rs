@@ -47,7 +47,7 @@ pub struct SearchFile {
 // type FinderMsg = Box<PathBuf>;
 pub enum FinderMsg {
     Dir(PathBuf, u32),
-    File(PathBuf),
+    File(PathBuf, u64),
     Close,
 }
 
@@ -70,6 +70,7 @@ struct FinderState {
     rx: Mutex<Receiver<FinderMsg>>,
     tx: Mutex<Sender<FinderMsg>>,
     finder_tx: Mutex<Sender<MsgPos>>,
+    file_group: Mutex<HashMap<u64, Arc<Vec<SearchFile>>>>,
 }
 
 impl Drop for Finder {
@@ -89,6 +90,7 @@ impl FinderState {
             finder_tx: Mutex::new(finder_tx),
             rx: Mutex::new(receiver),
             tx: Mutex::new(sender),
+            file_group: Mutex::new(HashMap::new()),
         }
     }
 
@@ -108,7 +110,7 @@ impl FinderState {
                         MsgPos::ScanDir(String::from(path.to_str().unwrap()))).unwrap();
                     self.load(&path, level);
                 },
-                FinderMsg::File(path) => {
+                FinderMsg::File(path, _size) => {
                     self.finder_tx.lock().unwrap().send(
                         MsgPos::ScanFile(String::from(path.to_str().unwrap()))).unwrap();
                 },
@@ -130,7 +132,19 @@ impl FinderState {
             } else if ff.symlink_metadata().unwrap().file_type().is_symlink() {
                 // println!("is symlink: {}", ff.to_str().unwrap());
             } else if ff.is_file() {
-                self.send(FinderMsg::File(ff.to_path_buf()));
+                let meta = ff.metadata().unwrap();
+                let file = SearchFile {
+                    file: ff.to_path_buf(),
+                    size: meta.len(),
+                    crc: 0,
+                    sum: Sha1::default(),
+                };
+
+                let mut map = self.file_group.lock().unwrap();
+                
+                let ref mut group = map.entry(file.size).or_insert(Arc::new(Vec::new()));
+                self.send(FinderMsg::File(ff.to_path_buf(), file.size));
+                Arc::get_mut(group).unwrap().push(file);
             }
         }
     }
