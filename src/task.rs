@@ -1,6 +1,6 @@
 use std::fmt::{self, Display, Formatter};
 use std::collections::HashMap;
-use sha1::Sha1;
+use sha1::{Sha1, Digest};
 use std::path::Path;
 use std::path::PathBuf;
 use std::fs;
@@ -52,7 +52,16 @@ pub enum FinderMsg {
     Close,
 }
 
+pub enum FileCheckMsg {
+    Sum(Arc<SearchFile>),
+    Crc(Arc<SearchFile>),
+    Close,
+}
+
+const BUFSIZE: usize = 1024;
+
 type FileGroup = HashMap<u64, Vec<Arc<SearchFile>>>;
+type FileGroupCrc = HashMap<u32, Vec<Arc<SearchFile>>>;
 
 pub struct Finder {
     //计数器
@@ -69,9 +78,10 @@ pub struct Finder {
 
     file_list: Mutex<Vec<Arc<SearchFile>>>,
     file_group: FileGroup,
+    file_group_crc: FileGroupCrc,
 
-    rx_work: Arc<Mutex<Receiver<FinderMsg>>>,
-    tx_work: Mutex<Sender<FinderMsg>>,
+    rx_work: Arc<Mutex<Receiver<FileCheckMsg>>>,
+    tx_work: Mutex<Sender<FileCheckMsg>>,
 }
 
 struct FinderState {
@@ -165,7 +175,7 @@ impl Finder {
             thread::spawn(move || pool.run());
         }
 
-        let (tx, rx) = channel::<FinderMsg>();
+        let (tx, rx) = channel::<FileCheckMsg>();
         Finder {
             scan_thread: size,
             active_thread: size,
@@ -180,6 +190,7 @@ impl Finder {
 
             file_list: Mutex::new(Vec::new()),
             file_group: HashMap::new(),
+            file_group_crc: HashMap::new(),
 
             rx_work: Arc::new(Mutex::new(rx)),
             tx_work: Mutex::new(tx),
@@ -193,7 +204,7 @@ impl Finder {
                     info!("{:?}", i);
                     self.active_thread -= 1;
                     if self.active_thread < 1 && i < 1 {
-                        self.tx_work.lock().unwrap().send(FinderMsg::Close).unwrap();
+                        self.tx_work.lock().unwrap().send(FileCheckMsg::Close).unwrap();
                         self.active_thread += 1;
                     }
                     return MsgPos::EndScanThread(self.active_thread);
@@ -244,8 +255,12 @@ impl Finder {
         // let mut map = self.file_group.lock().unwrap();
         let group = self.file_group.entry(file.size).or_insert(Vec::new());
         group.push(file.clone());
-        if group.len() > 1 {
-            self.tx_work.lock().unwrap().send(FinderMsg::File(file.clone())).unwrap();
+        let count = group.len();
+        if count > 1 {
+            self.tx_work.lock().unwrap().send(FileCheckMsg::Crc(file.clone())).unwrap();
+            if count == 2 {
+                self.tx_work.lock().unwrap().send(FileCheckMsg::Crc(group[0].clone())).unwrap();
+            }
         }
     }
 
@@ -258,11 +273,16 @@ impl Finder {
             loop {
                 match rx.lock().unwrap().recv() {
                     Ok(msg) => match msg {
-                        FinderMsg::Dir(_path, _size) => {},
-                        FinderMsg::File(file) => {
+                        FileCheckMsg::Crc(file) => {
                             info!("dump {:?}", file);
+                            Finder::checksum(file);
                         },
-                        FinderMsg::Close => {
+                        FileCheckMsg::Sum(file) => {
+                            info!("dump {:?}", file);
+                            Finder::check_sha1(file);
+
+                        },
+                        FileCheckMsg::Close => {
                             info!("exit work!");
                             break;
                         }
@@ -272,5 +292,73 @@ impl Finder {
             }
             tx.send(MsgPos::EndScanThread(1)).unwrap();
         });
+    }
+
+    fn compare(&mut self, fil: Arc<SearchFile>) {
+        let mut file = fil.clone();
+        let mut_file = Arc::get_mut(&mut file).unwrap();
+        let group = self.file_group_crc.entry(mut_file.crc).or_insert(Vec::new());
+        group.push(fil.clone());
+        let count = group.len();
+        if count > 1 {
+            if count == 2 {
+                let file = group[0].clone();
+                // self.check_sha1(file);
+            }
+            // self.check_sha1(fil.clone());
+        }
+    }
+
+    fn check_sha1(file: Arc<SearchFile>) {
+        let mut file = file.clone();
+        let node = Arc::get_mut(&mut file).unwrap();
+        let display = node.file.display();
+        let file: File = match File::open(&node.file) {
+            Err(why) => panic!(
+                "couldn't open {}: {} ",
+                display,
+                why.description()
+            ),
+            Ok(file) => file,
+        };
+
+        let mut buf: [u8; BUFSIZE] = [0; BUFSIZE];
+
+        let mut handle = file.take(BUFSIZE as u64);
+        loop {
+            handle.read(&mut buf).unwrap();
+            node.sum.input(buf.as_ref());
+        }
+        // crc32c_hw::compute(buf.as_ref())
+    }
+
+    fn checksum(file: Arc<SearchFile>) {
+        let mut file = file.clone();
+        let node = Arc::get_mut(&mut file).unwrap();
+
+        let display = node.file.display();
+        let file: File = match File::open(&node.file) {
+            Err(why) => panic!(
+                "couldn't open {}: {} ",
+                display,
+                why.description()
+            ),
+            Ok(file) => file,
+        };
+
+        let mut buf: [u8; BUFSIZE] = [0; BUFSIZE];
+
+        let mut handle = file.take(BUFSIZE as u64);
+        handle.read(&mut buf).unwrap();
+        node.crc = crc32c_hw::compute(buf.as_ref());
+
+        // if file_info.size > BUFSIZE as u64 {
+        //     file.read_exact(&mut buf).unwrap();
+        //     crc32c_hw::compute(buf.as_ref())
+        // } else {
+        //     let mut buffer = Vec::new();
+        //     file.read_to_end(&mut buffer).unwrap();
+        //     crc32c_hw::compute(buffer.as_slice())
+        // }
     }
 }
