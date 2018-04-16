@@ -13,9 +13,11 @@ extern crate crc32c_hw;
 extern crate indicatif;
 extern crate time;
 
-pub mod task;
-// mod pool;
-use task::{MsgPos, FinderMsg, Finder};
+// pub mod task;
+// use task::{MsgPos, FinderMsg, Finder};
+
+pub mod finder;
+use finder::*;
 
 use std::thread;
 use std::sync::mpsc::{channel,Sender,RecvError};
@@ -28,25 +30,23 @@ fn main() {
     let p = "test";
     // let p = "/Users/xuzhi/Music";
 
-    let mut finder = Finder::new();
-
-    finder.scan(p);
-
-    loop {
-        match finder.recv() {
-            MsgPos::Start => {},
-            MsgPos::End => { break; },
-            MsgPos::ScanDir(path) => println!("{}", path),
-            MsgPos::ScanFile(path) => println!("{}", path),
-            MsgPos::EndScanThread(i) => {
-                println!("thread end: {}", i);
-                if i < 1 {
-                    break;
-                }
-            },
-            _ => {},
-        }
-    }
+    // let mut finder = Finder::new();
+    // finder.scan(p);
+    // loop {
+    //     match finder.recv() {
+    //         MsgPos::Start => {},
+    //         MsgPos::End => { break; },
+    //         MsgPos::ScanDir(path) => println!("{}", path),
+    //         MsgPos::ScanFile(path) => println!("{}", path),
+    //         MsgPos::EndScanThread(i) => {
+    //             println!("thread end: {}", i);
+    //             if i < 1 {
+    //                 break;
+    //             }
+    //         },
+    //         _ => {},
+    //     }
+    // }
 
 
     // let mut task = Task::new();
