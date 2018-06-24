@@ -97,13 +97,14 @@ impl ThreadPool {
         ThreadPoolBuilder::new()
     }
 
-    pub fn spawn<F>(&self, f: F) where
+    pub fn spawn<F>(&self, f: F)-> & ThreadPool where
         F: Fn() + Send + Sync + 'static
     {
         let task = Task {
             spawn: Some(Arc::new(f)),
         };
         self.state.send(Message::Run(task));
+        self
     }
 }
 

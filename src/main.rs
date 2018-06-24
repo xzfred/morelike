@@ -31,6 +31,7 @@ fn main() {
     let wait_before = wait.clone();
     {
         taskpool::ThreadPool::builder()
+            .pool_size(4)
             .after_start(move |_size: usize| {
                 wait_after.enter();
             })
@@ -38,10 +39,16 @@ fn main() {
                 info!("{}", size);
                 wait_before.leave();
             })
-            .create().spawn(|| {
+            .create()
+            .spawn(|| {
                 let ten_millis = time::Duration::from_millis(100);
                 thread::sleep(ten_millis);
                 info!("I am thread!");
+            })
+            .spawn(|| {
+                let ten_millis = time::Duration::from_millis(100);
+                thread::sleep(ten_millis);
+                info!("I am thread 1!");
             });
     }
 
