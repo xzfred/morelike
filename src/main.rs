@@ -12,7 +12,7 @@ extern crate indicatif;
 // pub mod task;
 // use task::{MsgPos, FinderMsg, Finder};
 use std::{thread, time};
-use std::sync::{Arc, Mutex};
+// use std::sync::{Arc};
 
 mod finder;
 mod taskpool;
@@ -20,38 +20,46 @@ mod taskpool;
 
 fn main() {
     pretty_env_logger::init();
-    info!("start: ++++++++++++++++++++++");
+    debug!("start: ++++++++++++++++++++++");
     // finder::scan("/Users/xuzhi/my");
 
     // taskpool::ThreadPool::new().spawn(|| info!("i am thread!"));
 
+    let f = finder::Finder::new(2);
+    // f.scan("/Users/xuzhi/my/zip");
+    f.scan("/Users/xuzhi/my/dev/morelike");
 
-    let wait = Arc::new(taskpool::WaitPool::new());
-    let wait_after = wait.clone();
-    let wait_before = wait.clone();
-    {
-        taskpool::ThreadPool::builder()
-            .pool_size(4)
-            .after_start(move |_size: usize| {
-                wait_after.enter();
-            })
-            .before_stop(move |size: usize| {
-                info!("{}", size);
-                wait_before.leave();
-            })
-            .create()
-            .spawn(|| {
-                let ten_millis = time::Duration::from_millis(100);
-                thread::sleep(ten_millis);
-                info!("I am thread!");
-            })
-            .spawn(|| {
-                let ten_millis = time::Duration::from_millis(100);
-                thread::sleep(ten_millis);
-                info!("I am thread 1!");
-            });
-    }
+    f.join();
 
-    wait.join();
-    info!("end: ++++++++++++++++++++++");
+    let ten_millis = time::Duration::from_millis(1);
+    thread::sleep(ten_millis);
+    // {
+    //     let pool = taskpool::ThreadPool::builder()
+    //         .pool_size(4)
+    //         .after_start(move |_size: usize| {
+    //         })
+    //         .before_stop(move |_size: usize| {
+    //             // info!("{}", size);
+    //         })
+    //         .create();
+    //     pool.spawn(|| {
+    //         let ten_millis = time::Duration::from_millis(100);
+    //         thread::sleep(ten_millis);
+    //         info!("I am thread 0!");
+    //         // finder::scan("/Users/xuzhi/my/zip");
+    //     });
+    //     pool.spawn(|| {
+    //         let ten_millis = time::Duration::from_millis(100);
+    //         thread::sleep(ten_millis);
+    //         info!("I am thread 1!");
+    //         // finder::scan("/Users/xuzhi/my/dev/morelike");
+    //     });
+    //     pool.spawn(|| {
+    //         let ten_millis = time::Duration::from_millis(100);
+    //         thread::sleep(ten_millis);
+    //         info!("I am thread 2!");
+    //     });
+    // }
+
+    debug!("end: ++++++++++++++++++++++");
 }

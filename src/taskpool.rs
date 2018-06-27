@@ -1,6 +1,5 @@
-
 use std::sync::{Arc, Mutex};
-use std::sync::atomic::{AtomicUsize, AtomicBool, Ordering};
+use std::sync::atomic::{AtomicUsize, Ordering};
 use std::sync::mpsc;
 use std::{thread, time};
 
@@ -36,20 +35,21 @@ impl WaitPool {
 
     pub fn enter(&self) {
         let idx = self.active_size.fetch_add(1, Ordering::Relaxed);
-        info!("enter:{}", idx);
+        debug!("thread enter:{}", idx);
     }
 
     pub fn leave(&self) {
         let idx = self.active_size.fetch_sub(1, Ordering::Relaxed);
-        info!("leave:{}", idx);
+        debug!("thread leave:{}", idx);
     }
 
     pub fn join(&self) {
         loop {
-            if self.active_size.load(Ordering::Relaxed) > 0 {
-                let ten_millis = time::Duration::from_millis(10);
+            let idx = self.active_size.load(Ordering::Relaxed);
+            if idx > 0 {
+                let ten_millis = time::Duration::from_millis(100);
                 thread::sleep(ten_millis);
-                info!("join...");
+                debug!("has {} join...", idx);
             } else {
                 break;
             }
@@ -64,6 +64,7 @@ struct PoolState {
     cnt: AtomicUsize,
     // active_size: Arc<AtomicUsize>,
     size: usize,
+    wait: WaitPool,
 }
 
 impl PoolState {
@@ -73,9 +74,11 @@ impl PoolState {
 
     fn work(&self,
             idx: usize,
+
             after_start: Option<Arc<Fn(usize) + Send + Sync>>,
             before_stop: Option<Arc<Fn(usize) + Send + Sync>>) {
         // let _scope = enter().unwrap();
+        self.wait.enter();
         after_start.map(|fun| fun(idx));
         loop {
             let msg = self.rx.lock().unwrap().recv().unwrap();
@@ -85,10 +88,12 @@ impl PoolState {
             }
         }
         before_stop.map(|fun| fun(idx));
+        self.wait.leave();
     }
 }
 
 impl ThreadPool {
+    #[allow(dead_code)]
     pub fn new() -> ThreadPool {
         ThreadPoolBuilder::new().create()
     }
@@ -97,14 +102,13 @@ impl ThreadPool {
         ThreadPoolBuilder::new()
     }
 
-    pub fn spawn<F>(&self, f: F)-> & ThreadPool where
+    pub fn spawn<F>(&self, f: F) where
         F: Fn() + Send + Sync + 'static
     {
         let task = Task {
             spawn: Some(Arc::new(f)),
         };
         self.state.send(Message::Run(task));
-        self
     }
 }
 
@@ -122,6 +126,7 @@ impl Drop for ThreadPool {
                 self.state.send(Message::Close);
             }
         }
+        self.state.wait.join();
     }
 }
 
@@ -141,16 +146,19 @@ impl ThreadPoolBuilder {
         self
     }
 
+    #[allow(dead_code)]
     pub fn stack_size(&mut self, stack_size: usize) -> &mut Self {
         self.stack_size = stack_size;
         self
     }
 
+    #[allow(dead_code)]
     pub fn name_prefix<S: Into<String>>(&mut self, name_prefix: S) -> &mut Self {
         self.name_prefix = Some(name_prefix.into());
         self
     }
 
+    #[allow(dead_code)]
     pub fn after_start<F>(&mut self, f: F) -> &mut Self
         where F: Fn(usize) + Send + Sync + 'static
     {
@@ -158,6 +166,7 @@ impl ThreadPoolBuilder {
         self
     }
 
+    #[allow(dead_code)]
     pub fn before_stop<F>(&mut self, f: F) -> &mut Self
         where F: Fn(usize) + Send + Sync + 'static
     {
@@ -174,6 +183,7 @@ impl ThreadPoolBuilder {
                 cnt: AtomicUsize::new(1),
                 // active_size: Arc::new(AtomicUsize::new(self.pool_size)),
                 size: self.pool_size,
+                wait: WaitPool::new(),
             }),
         };
         assert!(self.pool_size > 0);
