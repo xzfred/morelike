@@ -16,7 +16,7 @@ use std::{thread, time};
 
 mod finder;
 mod taskpool;
-// use finder::*;
+mod sum;
 
 fn main() {
     pretty_env_logger::init();
@@ -25,41 +25,7 @@ fn main() {
 
     // taskpool::ThreadPool::new().spawn(|| info!("i am thread!"));
 
-    let f = finder::Finder::new(2);
-    // f.scan("/Users/xuzhi/my/zip");
-    f.scan("/Users/xuzhi/my/dev/morelike");
-
-    f.join();
-
     let ten_millis = time::Duration::from_millis(1);
     thread::sleep(ten_millis);
-    // {
-    //     let pool = taskpool::ThreadPool::builder()
-    //         .pool_size(4)
-    //         .after_start(move |_size: usize| {
-    //         })
-    //         .before_stop(move |_size: usize| {
-    //             // info!("{}", size);
-    //         })
-    //         .create();
-    //     pool.spawn(|| {
-    //         let ten_millis = time::Duration::from_millis(100);
-    //         thread::sleep(ten_millis);
-    //         info!("I am thread 0!");
-    //         // finder::scan("/Users/xuzhi/my/zip");
-    //     });
-    //     pool.spawn(|| {
-    //         let ten_millis = time::Duration::from_millis(100);
-    //         thread::sleep(ten_millis);
-    //         info!("I am thread 1!");
-    //         // finder::scan("/Users/xuzhi/my/dev/morelike");
-    //     });
-    //     pool.spawn(|| {
-    //         let ten_millis = time::Duration::from_millis(100);
-    //         thread::sleep(ten_millis);
-    //         info!("I am thread 2!");
-    //     });
-    // }
-
     debug!("end: ++++++++++++++++++++++");
 }

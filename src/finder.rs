@@ -1,9 +1,11 @@
 use std::fs::{self};
+// use std::ffi::OsStr;
 use std::path::{Path, PathBuf};
 use std::sync::{Arc, Mutex};
 use std::sync::mpsc::{channel, Sender, Receiver};
 use std::sync::atomic::{AtomicUsize, Ordering};
 use std::{thread, time};
+// use alloc::vec::Vec;
 
 use taskpool::*;
 
@@ -37,12 +39,13 @@ pub enum FinderMsg {
 }
 
 pub struct Scan {
+    ignore: Mutex<Vec<String>>,
     rx: Mutex<Receiver<FinderMsg>>,
     tx: Mutex<Sender<FinderMsg>>,
-    cnt: AtomicUsize,
+    cnt: Arc<AtomicUsize>,
     sender: Arc<Fn(FinderMsg) -> bool + Send + Sync>,
-    dir_count: AtomicUsize,
-    file_count: AtomicUsize,
+    dir_count: Arc<AtomicUsize>,
+    file_count: Arc<AtomicUsize>,
 }
 
 pub struct Finder {
@@ -52,17 +55,29 @@ pub struct Finder {
 }
 
 impl Scan {
-    pub fn new<F>(f: F) -> Scan
-        where F: Fn(FinderMsg) -> bool + Send + Sync + 'static
+    pub fn is_ignore(ignore: &Vec<String>, path: &PathBuf) -> bool {
+        let isit = path.file_name().unwrap().to_str().unwrap();
+        for name in ignore {
+            if name.eq(isit) {
+                info!("{} vs {}", name, isit);
+                return true;
+            }
+        }
+        false
+    }
+
+    pub fn new<F>(f: F, ignore: Vec<String>) -> Scan
+    where F: Fn(FinderMsg) -> bool + Send + Sync + 'static
     {
         let (sender, receiver) = channel::<FinderMsg>();
         Scan {
+            ignore: Mutex::new(Vec::from(ignore)),
             rx: Mutex::new(receiver),
             tx: Mutex::new(sender),
-            cnt: AtomicUsize::new(0),
+            cnt: Arc::new(AtomicUsize::new(0)),
             sender: Arc::new(f),
-            dir_count: AtomicUsize::new(0),
-            file_count: AtomicUsize::new(0),
+            dir_count: Arc::new(AtomicUsize::new(0)),
+            file_count: Arc::new(AtomicUsize::new(0)),
         }
     }
 
@@ -81,20 +96,21 @@ impl Scan {
     }
 
     pub fn run(&self) {
+        let ignore = self.ignore.lock().unwrap().clone();
+        let sender = self.sender.clone();
         loop {
             let msg = self.rx.lock().unwrap().recv().unwrap();
-            let sender = self.sender.clone();
             match msg {
                 FinderMsg::Dir(path, level) => {
                     if sender(FinderMsg::Dir(path.clone(), level)) {
-                        self.load(path, level);
+                        self.load(path, level, &ignore);
                     }
                 },
                 FinderMsg::File(path, level) => {
                     sender(FinderMsg::File(path, level));
                 },
                 FinderMsg::Close => {
-                    info!("Close");
+                    // trace!("Close");
                     break;
                 },
             }
@@ -110,19 +126,23 @@ impl Scan {
         has > 0
     }
 
-    fn load(&self, parent: PathBuf, level: u32) {
+    fn load(&self, parent: PathBuf, level: u32, ignore: &Vec<String>) {
         let dirs = fs::read_dir(parent).unwrap();
 
+        // warn!("ID: {:?}", thread::current().id());
         for file in dirs {
             let ff = &file.unwrap().path();
             let buf = ff.to_owned();
+            if Scan::is_ignore(&ignore, &buf) {
+                continue;
+            }
 
             if ff.is_dir() {
                 // warn!("Dir: {}", ff.to_str().unwrap());
                 self.dir_count.fetch_add(1, Ordering::Relaxed);
                 self.send(FinderMsg::Dir(buf, level + 1));
             } else if ff.symlink_metadata().unwrap().file_type().is_symlink() {
-                // error!("Synlink: {}", ff.to_str().unwrap());
+                warn!("Synlink: {}", ff.to_str().unwrap());
             } else if ff.is_file() {
                 // warn!("File: {}", ff.to_str().unwrap());
                 self.file_count.fetch_add(1, Ordering::Relaxed);
@@ -135,24 +155,17 @@ impl Scan {
 }
 
 impl Finder {
-    pub fn new(size: usize) -> Finder {
+    pub fn new<F>(size: usize, ignore: Vec<String>, f: F) -> Finder
+    where F: Fn(FinderMsg) -> bool + Send + Sync + 'static
+    {
         let pool = ThreadPool::builder().pool_size(size)
-            .after_start(move |size: usize| {
-                debug!("start: {}", size);
-            }).before_stop(move |size: usize| {
-                debug!("stop: {}", size);
+            .after_start(move |_size: usize| {
+                // debug!("start: {}", size);
+            }).before_stop(move |_size: usize| {
+                // debug!("stop: {}", size);
             }).create();
 
-        let scan = Scan::new(|msg: FinderMsg|{
-            match msg {
-                FinderMsg::Dir(_path, level) => {
-                },
-                FinderMsg::File(_path, level) => {
-                },
-                FinderMsg::Close => {},
-            }
-            true
-        });
+        let scan = Scan::new(f, ignore);
 
         let obj = Finder {
             pool_size: size,
@@ -178,7 +191,7 @@ impl Finder {
         let ten_millis = time::Duration::from_millis(10);
         while self.scan.has_dir() {
             thread::sleep(ten_millis);
-            debug!("wait scan dir! has:{}, dir:{}, file:{}",
+            trace!("wait scan dir! has:{}, dir:{}, file:{}",
                    self.scan.cnt.load(Ordering::Relaxed),
                    self.scan.dir_count.load(Ordering::Relaxed),
                    self.scan.file_count.load(Ordering::Relaxed));
@@ -193,3 +206,29 @@ impl Drop for Finder {
         }
     }
 }
+
+
+// {
+//     let f = finder::Finder::new(4, vec![
+//         // ".git".to_owned(),
+//         // "target".to_owned(),
+//     ], |msg: FinderMsg|{
+//         match msg {
+//             FinderMsg::Dir(path, _level) => {
+//                 // trace!("{:?}", path);
+//                 println!("{:?}", path);
+//             },
+//             FinderMsg::File(path, _level) => {
+//                 // trace!("{:?}", path);
+//                 // println!("{:?}", path);
+//             },
+//             FinderMsg::Close => {},
+//         }
+//         true
+//     });
+//     // f.scan("/Users/xuzhi/my/zip");
+//     // f.scan("/Users/xuzhi/my/dev/morelike");
+//     f.scan("/Users/xuzhi/Music");
+
+//     f.join();
+// }
