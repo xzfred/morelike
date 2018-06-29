@@ -1,12 +1,15 @@
-#[macro_use]
-extern crate log;
+#[macro_use] extern crate log;
 extern crate pretty_env_logger;
 
-extern crate adler32;
-extern crate chrono;
-extern crate console;
-// extern crate crc32c_hw;
-extern crate indicatif;
+// extern crate adler32;
+// extern crate chrono;
+// extern crate console;
+extern crate crc32c_hw;
+extern crate sha1;
+extern crate typenum;
+extern crate digest;
+#[macro_use] extern crate generic_array;
+// extern crate indicatif;
 // extern crate time;
 
 // pub mod task;
@@ -24,6 +27,10 @@ fn main() {
     // finder::scan("/Users/xuzhi/my");
 
     // taskpool::ThreadPool::new().spawn(|| info!("i am thread!"));
+
+    let comparer = sum::Comparer::new();
+    //     // f.scan("/Users/xuzhi/my/dev/morelike");
+    comparer.run("/Users/xuzhi/my/dev/morelike/test");
 
     let ten_millis = time::Duration::from_millis(1);
     thread::sleep(ten_millis);
