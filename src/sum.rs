@@ -1,13 +1,14 @@
 
 use std::io::{Read, Result};
 use std::fs::{File};
-use std::rc::Rc;
+// use std::rc::Rc;
 use std::collections::HashMap;
 use std::hash::{Hasher, Hash};
 use std::path::{// Path ,
     PathBuf};
 use std::sync::{Arc, Mutex};
-use std::cell::RefCell;
+use std::sync::mpsc::{channel, Sender, Receiver};
+// use std::cell::RefCell;
 // use std::sync::mpsc::{channel, Sender, Receiver};
 // use std::sync::atomic::{AtomicUsize, Ordering};
 // use std::{thread, time};
@@ -134,44 +135,50 @@ type TFileList = Vec<TFile>;
 // type TFileGroupByCrc = HashMap<HashSum, Option<TFileList>>;
 // type TFileGroupBySum = HashMap<HashSum, Option<TFileList>>;
 
-struct FileTable<K>(Mutex<HashMap<K, Option<TFileList>>>, i32);
+#[derive(Debug)]
+struct FileTable<K>(Mutex<HashMap<K, Option<TFileList>>>, i32)
+where K: Eq + Hash + Copy;
 
 impl<K> FileTable<K>
-where K: Eq + Hash
+where K: Eq + Hash + Copy
 {
     pub fn new(step: i32) -> FileTable<K> {
         let map: HashMap<K, Option<TFileList>> = HashMap::new();
         FileTable(Mutex::new(map), step)
     }
 
-    pub fn entry(&mut self, k: K, f: TFile) -> Option<Option<TFile>> {
-        let mut lock = self.0.lock().unwrap();
-        let node = lock.entry(k).or_insert(Some(TFileList::new()));
-        let next = match node {
-            Some(list) => {
-                if list.len() < 1 {
-                    list.push(f);
-                    None
-                } else if self.1 == 2 {
-                    if let None = list.iter()
-                        .find(|&&x| {
-                            let x = x.clone();
-                            x.lock().unwrap().file == f.lock().unwrap().file  
-                        }) {
+    pub fn entry(&self, k: K, f: TFile) -> Option<Option<TFile>> {
+        let next = {
+            let mut lock = self.0.lock().unwrap();
+            let node = {
+                lock.entry(k).or_insert(Some(TFileList::new()))
+            };
+            match node {
+                Some(list) => {
+                    if list.len() < 1 {
                         list.push(f);
+                        None
+                    } else if self.1 == 2 {
+                        let ff = f.clone();
+                        if let None = list.iter().find(move |ref x| {
+                            x.lock().unwrap().file == ff.lock().unwrap().file
+                        }) {
+                            list.push(f);
+                        }
+                        None
+                    } else {
+                        Some(Some(list.pop().unwrap()))
                     }
-                    None
-                } else {
-                    Some(Some(list.pop().unwrap()))
+                },
+                None => {
+                    Some(None)
                 }
-            },
-            None => {
-                Some(None)
             }
         };
+        let mut lock = self.0.lock().unwrap();
         match next {
-            Some(ofile) => match ofile {
-                Some(file) => {
+            Some(ref ofile) => match ofile {
+                Some(_file) => {
                     lock.remove(&k);
                     lock.insert(k, None);
                 },
@@ -181,12 +188,36 @@ where K: Eq + Hash
         }
         next
     }
+
+    pub fn list(&self) {
+        for (_k, v) in self.0.lock().unwrap().iter() {
+            // println!("file:{:?}", v);
+            println!("--------------------------------");
+            match v {
+                Some(list) => {
+                    for f in list {
+                        let file = f.lock().unwrap();
+                        println!("file:sum={:?},path={:?}", file.sum, file.file);
+                    }
+                },
+                None => {}
+            }
+        }
+    }
 }
 
+pub enum CompareMsg {
+    File(PathBuf),
+    Close,
+}
+
+#[derive(Debug)]
 pub struct ComparerState {
     list_by_size: FileTable<u64>,
     list_by_crc: FileTable<HashSum>,
     list_by_sum: FileTable<HashSum>,
+    rx: Mutex<Receiver<CompareMsg>>,
+    tx: Mutex<Sender<CompareMsg>>,
 }
 
 pub struct Comparer {
@@ -196,20 +227,42 @@ pub struct Comparer {
 
 impl ComparerState {
     pub fn new() -> ComparerState {
+        let (sender, receiver) = channel::<CompareMsg>();
         ComparerState {
             list_by_size: FileTable::new(0),
             list_by_crc: FileTable::new(1),
             list_by_sum: FileTable::new(2),
+            rx: Mutex::new(receiver),
+            tx: Mutex::new(sender),
+
         }
     }
 
-    pub fn compare(&mut self, fil: PathBuf) {
+    pub fn send(&self, msg: CompareMsg) {
+        self.tx.lock().unwrap().send(msg).unwrap();
+    }
+
+    pub fn run(&self) {
+        loop {
+            let msg = self.rx.lock().unwrap().recv().unwrap();
+            match msg {
+                CompareMsg::File(path) => {
+                    self.compare(path);
+                },
+                CompareMsg::Close => {
+                    break;
+                }
+            }
+        }
+    }
+
+    pub fn compare(&self, fil: PathBuf) {
         let file = SearchFile::new(fil);
         let file = Arc::new(Mutex::new(file));
         self.next(0, file);
     }
 
-    fn next(&mut self, step: i32, f: TFile) {
+    fn next(&self, step: i32, f: TFile) {
         let queue = match step {
             0 => {
                 let file_size = f.lock().unwrap().size;
@@ -254,7 +307,7 @@ impl Comparer {
                         // let mut ssm = ss.clone();
                         // let ssss = Arc::get_mut(&mut ssm).unwrap();
                         // ssss.compare(path);
-                        info!("{:?}", path);
+                        // info!("{:?}", path);
                         ss.compare(path);
                     },
                     _ => {},
@@ -268,7 +321,8 @@ impl Comparer {
     pub fn run(&self, parent: &str) {
         self.finder.scan(parent);
         self.finder.join();
-        // println!("{:?}", self.state.file_list);
+        // println!("{:?}", self.state);
         // println!("{:?}", self.state.file_dup);
+        self.state.list_by_sum.list();
     }
 }

@@ -31,7 +31,8 @@ fn main() {
 
     let comparer = sum::Comparer::new();
     //     // f.scan("/Users/xuzhi/my/dev/morelike");
-    comparer.run("/Users/xuzhi/my/dev/morelike/test");
+    // comparer.run("/Users/fred/my/dev/morelike/test");
+    comparer.run("/Users/fred/my/zip");
 
     let ten_millis = time::Duration::from_millis(1);
     thread::sleep(ten_millis);
