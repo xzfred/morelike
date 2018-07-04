@@ -3,7 +3,7 @@ use std::io::{Read, Result};
 use std::fs::{File};
 use std::rc::Rc;
 use std::collections::HashMap;
-use std::hash::{Hasher};
+use std::hash::{Hasher, Hash};
 use std::path::{// Path ,
     PathBuf};
 use std::sync::{Arc, Mutex};
@@ -36,11 +36,11 @@ pub fn checksum(path: &PathBuf, all: bool) -> Result<HashSum> {
     let mut buf: [u8; BUFSIZE] = [0; BUFSIZE];
 
     let mut handle = file.take(BUFSIZE as u64);
-    let hash = XxHash::with_seed(0);
+    let mut hash = XxHash::with_seed(0);
     loop {
         let read_size = handle.read(&mut buf)?;
         if read_size > 0 {
-            hash.write(buf.as_ref());
+            hash.write(&buf.as_ref());
             if !all {
                 break;
             }
@@ -69,6 +69,18 @@ impl SearchFile {
             size: fs,
             crc: None,
             sum: None,
+        }
+    }
+
+    pub fn next(&self) -> i32 {
+        match self.crc {
+            None => 0,
+            Some(_) => {
+                match self.sum {
+                    None => 1,
+                    Some(_) => 2,
+                }
+            }
         }
     }
 
@@ -116,35 +128,65 @@ impl SearchFile {
 }
 
 // type Sha1Result = [u8; 20];
-type FileList = RefCell<Vec<SearchFile>>;
-type FileGroupByCrc = HashMap<HashSum, FileList>;
-type FileGroupBySize = HashMap<u64, Option<FileList>>;
-type FileGroupBySum = HashMap<HashSum, FileList>;
+type TFile = Arc<Mutex<SearchFile>>;
+type TFileList = Vec<TFile>;
+// type TFileGroupBySize = HashMap<u64, Option<TFileList>>;
+// type TFileGroupByCrc = HashMap<HashSum, Option<TFileList>>;
+// type TFileGroupBySum = HashMap<HashSum, Option<TFileList>>;
 
-struct FileTable<K>(Mutex<HashMap<K, Option<FileList>>>);
+struct FileTable<K>(Mutex<HashMap<K, Option<TFileList>>>, i32);
 
-impl<K> FileTable<K> {
-    pub fn new() -> FileTable<K> {
-        FileTable(Mutex::new(HashMap::new()))
+impl<K> FileTable<K>
+where K: Eq + Hash
+{
+    pub fn new(step: i32) -> FileTable<K> {
+        let map: HashMap<K, Option<TFileList>> = HashMap::new();
+        FileTable(Mutex::new(map), step)
     }
 
-    pub fn entry(&self, k: K, file: SearchFile) {
-        let mut lock = self.0.lock();
-        match lock.entry(k)
-            .or_insert(Some(Rc::new(RefCell::new(Vec::new())))) {
-                Some(list) => {
-                    list.push(file);
-                },
-                None => {
-                    
+    pub fn entry(&mut self, k: K, f: TFile) -> Option<Option<TFile>> {
+        let mut lock = self.0.lock().unwrap();
+        let node = lock.entry(k).or_insert(Some(TFileList::new()));
+        let next = match node {
+            Some(list) => {
+                if list.len() < 1 {
+                    list.push(f);
+                    None
+                } else if self.1 == 2 {
+                    if let None = list.iter()
+                        .find(|&&x| {
+                            let x = x.clone();
+                            x.lock().unwrap().file == f.lock().unwrap().file  
+                        }) {
+                        list.push(f);
+                    }
+                    None
+                } else {
+                    Some(Some(list.pop().unwrap()))
                 }
+            },
+            None => {
+                Some(None)
+            }
+        };
+        match next {
+            Some(ofile) => match ofile {
+                Some(file) => {
+                    lock.remove(&k);
+                    lock.insert(k, None);
+                },
+                None => {}
+            },
+            None => {}
         }
+        next
     }
 }
 
 pub struct ComparerState {
-    // file_list: Mutex<FileGroupBySize>,
-    // file_dup: Mutex<FileGroupBySum>,
+    list_by_size: FileTable<u64>,
+    list_by_crc: FileTable<HashSum>,
+    list_by_sum: FileTable<HashSum>,
 }
 
 pub struct Comparer {
@@ -155,46 +197,44 @@ pub struct Comparer {
 impl ComparerState {
     pub fn new() -> ComparerState {
         ComparerState {
-            // file_list: Mutex::new(FileGroupBySize::new()),
-            // file_dup: Mutex::new(FileGroupBySum::new()),
+            list_by_size: FileTable::new(0),
+            list_by_crc: FileTable::new(1),
+            list_by_sum: FileTable::new(2),
         }
     }
 
-    pub fn compare(&self, fil: PathBuf) {
-        // let afile = SearchFile::new(fil);
-        // let mut lock = self.file_list.lock().unwrap();
-        // let list = lock.entry(afile.size)
-        //     .or_insert(FileGroupByCrc::new()).entry(afile.crc)
-        //     .or_insert(FileList::new());
-        // list.push(afile);
+    pub fn compare(&mut self, fil: PathBuf) {
+        let file = SearchFile::new(fil);
+        let file = Arc::new(Mutex::new(file));
+        self.next(0, file);
+    }
 
-        // // info!("afile: {:?}", afile);
-        // if list.len() > 0 {
-        //     let mut dup_list = self.file_dup.lock().unwrap();
-        //     for item in list {
-        //         if item.is_default_sha1() {
-        //             item.check_sha1().unwrap();
-        //                 dup_list.entry(item.sum).or_insert(FileList::new())
-        //                 .push(item);
-        //         }
-        //         // let mut mut_item = item.clone();
-        //         // let mut_file = .unwrap();
-        //         // match Arc::get_mut(&mut mut_item) {
-        //         //     Some(mut_file) => {
-        //         //         info!("mut: {:?}", mut_file);
-        //         //         if mut_file.is_default_sha1() {
-        //         //             mut_file.check_sha1().unwrap();
-        //         //             self.file_dup.lock().unwrap()
-        //         //                 .entry(mut_file.sum)
-        //         //                 .or_insert(FileList::new());
-        //         //         }
-        //         //     },
-        //         //     None => {
-        //         //         info!("None: {:?}", item);
-        //         //     },
-        //         // }
-        //     }
-        // }
+    fn next(&mut self, step: i32, f: TFile) {
+        let queue = match step {
+            0 => {
+                let file_size = f.lock().unwrap().size;
+                self.list_by_size.entry(file_size, f.clone())
+            },
+            1 => {
+                let file_size = f.lock().unwrap().checkcrc().unwrap();
+                self.list_by_crc.entry(file_size, f.clone())
+            },
+            2 => {
+                let file_size = f.lock().unwrap().checksum().unwrap();
+                self.list_by_sum.entry(file_size, f.clone())
+            },
+            _ => {None}
+        };
+        match queue {
+            Some(ofile) => match ofile {
+                Some(old_file) => {
+                    self.next(step + 1, old_file);
+                    self.next(step + 1, f);
+                },
+                None => {},
+            },
+            None => {},
+        }
     }
 }
 
