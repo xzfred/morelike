@@ -1,0 +1,1764 @@
+--------------------------------
+{ "sum": 8588223718732412603, "path": "/Users/xuzhi/code/php/php-src/ext/exif/tests/bug68113.jpg" };
+{ "sum": 8588223718732412603, "path": "/Users/xuzhi/code/php/php-src/ext/exif/tests/bug68113私はガラスを食べられます.jpg" };
+--------------------------------
+{ "sum": 5253806285395578711, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/weak-lang-items.rs" };
+{ "sum": 5253806285395578711, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/weak-lang-items.rs" };
+--------------------------------
+{ "sum": 7605242268905849827, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_win.h" };
+{ "sum": 7605242268905849827, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_win.c" };
+{ "sum": 7605242268905849827, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_btree.h" };
+--------------------------------
+{ "sum": 3526959203123222726, "path": "/Users/xuzhi/code/rust/rust/src/test/ui-fulldeps/auxiliary/derive-foo.rs" };
+{ "sum": 3526959203123222726, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail-fulldeps/proc-macro/auxiliary/derive-foo.rs" };
+--------------------------------
+{ "sum": 13417072041392412110, "path": "/Users/xuzhi/code/rust/json/json-test/.gitignore" };
+{ "sum": 13417072041392412110, "path": "/Users/xuzhi/code/rust/json/rust-serialize/encode/.gitignore" };
+--------------------------------
+{ "sum": 10507336891006058169, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/Optimizer/zend_call_graph.c" };
+{ "sum": 10507336891006058169, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/Optimizer/zend_call_graph.h" };
+--------------------------------
+{ "sum": 11974856936281124946, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_net.h" };
+{ "sum": 11974856936281124946, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_http.h" };
+{ "sum": 11974856936281124946, "path": "/Users/xuzhi/code/php/php-src/ext/standard/http.c" };
+--------------------------------
+{ "sum": 17259174184047248793, "path": "/Users/xuzhi/code/php/php-src/ext/libxml/tests/bug69753私はガラスを食べられます.xml" };
+{ "sum": 17259174184047248793, "path": "/Users/xuzhi/code/php/php-src/ext/libxml/tests/bug69753.xml" };
+--------------------------------
+{ "sum": 9874026550519383043, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller2.phar" };
+{ "sum": 9874026550519383043, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller2.phar" };
+--------------------------------
+{ "sum": 7869412814665862322, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller18.phar" };
+{ "sum": 7869412814665862322, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller18.phar" };
+--------------------------------
+{ "sum": 8078642765170163988, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_webdata_transfer.c" };
+{ "sum": 8078642765170163988, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_rinit_hook.c" };
+{ "sum": 8078642765170163988, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_webdata_transfer.h" };
+{ "sum": 8078642765170163988, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_wait.h" };
+--------------------------------
+{ "sum": 2368618576639282349, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/include_bytes_deps/input.txt" };
+{ "sum": 2368618576639282349, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/include_bytes_deps/input.bin" };
+--------------------------------
+{ "sum": 17190114096827785024, "path": "/Users/xuzhi/code/php/php-src/ext/hash/hash_crc32.c" };
+{ "sum": 17190114096827785024, "path": "/Users/xuzhi/code/php/php-src/ext/hash/hash_snefru.c" };
+{ "sum": 17190114096827785024, "path": "/Users/xuzhi/code/php/php-src/ext/hash/hash_adler32.c" };
+--------------------------------
+{ "sum": 17316896449728594353, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/termite/Builtin Solarized Light" };
+{ "sum": 17316896449728594353, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/termite/Solarized Light" };
+--------------------------------
+{ "sum": 6294798630077568371, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass-fulldeps/auxiliary/issue-13560-2.rs" };
+{ "sum": 6294798630077568371, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/issue-12133-rlib.rs" };
+--------------------------------
+{ "sum": 9500830992236588070, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/tests/mb_substr_variation5.phpt" };
+{ "sum": 9500830992236588070, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/tests/mb_substr_variation7.phpt" };
+--------------------------------
+{ "sum": 873788371070311252, "path": "/Users/xuzhi/code/php/php-src/main/php_main.h" };
+{ "sum": 873788371070311252, "path": "/Users/xuzhi/code/php/php-src/ext/standard/datetime.h" };
+{ "sum": 873788371070311252, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_array.h" };
+--------------------------------
+{ "sum": 3040609983945473494, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/libgd00094私はガラスを食べられます.xbm" };
+{ "sum": 3040609983945473494, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/libgd00094.xbm" };
+--------------------------------
+{ "sum": 5934656157737472017, "path": "/Users/xuzhi/code/php/php-src/ext/reflection/tests/025.phpt" };
+{ "sum": 5934656157737472017, "path": "/Users/xuzhi/code/php/php-src/ext/reflection/tests/009.phpt" };
+--------------------------------
+{ "sum": 5766852068196931652, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass-fulldeps/auxiliary/lto-syntax-extension-lib.rs" };
+{ "sum": 5766852068196931652, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/issue-14344-1.rs" };
+--------------------------------
+{ "sum": 4124889330575803895, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/Xresources/Paraiso Dark" };
+{ "sum": 4124889330575803895, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/Xresources/Parasio Dark" };
+--------------------------------
+{ "sum": 2338219122691886938, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/bug22544私はガラスを食べられます.png" };
+{ "sum": 2338219122691886938, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/bug22544.png" };
+--------------------------------
+{ "sum": 4009044640966258722, "path": "/Users/xuzhi/code/php/php-src/ext/standard/hrtime.h" };
+{ "sum": 4009044640966258722, "path": "/Users/xuzhi/code/php/php-src/ext/standard/hrtime.c" };
+--------------------------------
+{ "sum": 8228151656384536147, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/book.js" };
+{ "sum": 8228151656384536147, "path": "/Users/xuzhi/code/rust/book/reference/book/book.js" };
+--------------------------------
+{ "sum": 12111544098113664020, "path": "/Users/xuzhi/code/rust/net/tokio/LICENSE" };
+{ "sum": 12111544098113664020, "path": "/Users/xuzhi/code/rust/net/tokio/tokio-reactor/LICENSE" };
+{ "sum": 12111544098113664020, "path": "/Users/xuzhi/code/rust/net/tokio/tokio-threadpool/LICENSE" };
+{ "sum": 12111544098113664020, "path": "/Users/xuzhi/code/rust/net/tokio/tokio-tcp/LICENSE" };
+{ "sum": 12111544098113664020, "path": "/Users/xuzhi/code/rust/net/tokio/tokio-executor/LICENSE" };
+{ "sum": 12111544098113664020, "path": "/Users/xuzhi/code/rust/net/tokio/tokio-timer/LICENSE" };
+{ "sum": 12111544098113664020, "path": "/Users/xuzhi/code/rust/net/tokio/tokio-udp/LICENSE" };
+{ "sum": 12111544098113664020, "path": "/Users/xuzhi/code/rust/net/tokio/tokio-io/LICENSE" };
+--------------------------------
+{ "sum": 7702912435983996659, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/lint_unused_extern_crate.rs" };
+{ "sum": 7702912435983996659, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/dep-info-spaces/foo foo.rs" };
+{ "sum": 7702912435983996659, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/dep-info/foo.rs" };
+--------------------------------
+{ "sum": 12540757631461508539, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_sjis_mac.h" };
+{ "sum": 12540757631461508539, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_sjis_mobile.h" };
+--------------------------------
+{ "sum": 2505257731728099255, "path": "/Users/xuzhi/code/php/php-src/ext/mysqli/mysqli_driver.c" };
+{ "sum": 2505257731728099255, "path": "/Users/xuzhi/code/php/php-src/ext/mysqli/mysqli_exception.c" };
+{ "sum": 2505257731728099255, "path": "/Users/xuzhi/code/php/php-src/ext/mysqli/mysqli_embedded.c" };
+{ "sum": 2505257731728099255, "path": "/Users/xuzhi/code/php/php-src/ext/mysqli/mysqli_report.c" };
+--------------------------------
+{ "sum": 7423676587364720135, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso2022_kr.c" };
+{ "sum": 7423676587364720135, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_euc_kr.c" };
+--------------------------------
+{ "sum": 7211325127847226973, "path": "/Users/xuzhi/code/php/php-src/ext/readline/php_readline.h" };
+{ "sum": 7211325127847226973, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_metaphone.h" };
+{ "sum": 7211325127847226973, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_assert.h" };
+{ "sum": 7211325127847226973, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_iptc.h" };
+{ "sum": 7211325127847226973, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_dir.h" };
+--------------------------------
+{ "sum": 10296532431053897362, "path": "/Users/xuzhi/code/php/php-src/ext/exif/tests/bug34704.jpg" };
+{ "sum": 10296532431053897362, "path": "/Users/xuzhi/code/php/php-src/ext/exif/tests/bug34704私はガラスを食べられます.jpg" };
+--------------------------------
+{ "sum": 14861707779194315048, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-i686-linux/shared.sh" };
+{ "sum": 14861707779194315048, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-powerpc64-linux/shared.sh" };
+{ "sum": 14861707779194315048, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-x86_64-linux/shared.sh" };
+{ "sum": 14861707779194315048, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-powerpc64le-linux/shared.sh" };
+--------------------------------
+{ "sum": 7122218752328680949, "path": "/Users/xuzhi/code/php/php-src/ext/standard/tests/image/getimagesize_variation3.phpt" };
+{ "sum": 7122218752328680949, "path": "/Users/xuzhi/code/php/php-src/ext/standard/tests/image/getimagesize_variation_003.phpt" };
+--------------------------------
+{ "sum": 9031415893470715901, "path": "/Users/xuzhi/code/php/php-src/ext/xmlrpc/libxmlrpc/xml_to_dandarpc.h" };
+{ "sum": 9031415893470715901, "path": "/Users/xuzhi/code/php/php-src/ext/xmlrpc/libxmlrpc/xml_to_xmlrpc.h" };
+{ "sum": 9031415893470715901, "path": "/Users/xuzhi/code/php/php-src/ext/xmlrpc/libxmlrpc/encodings.h" };
+{ "sum": 9031415893470715901, "path": "/Users/xuzhi/code/php/php-src/ext/xmlrpc/libxmlrpc/xml_to_xmlrpc.c" };
+{ "sum": 9031415893470715901, "path": "/Users/xuzhi/code/php/php-src/ext/xmlrpc/libxmlrpc/xml_to_soap.h" };
+{ "sum": 9031415893470715901, "path": "/Users/xuzhi/code/php/php-src/ext/xmlrpc/libxmlrpc/simplestring.h" };
+{ "sum": 9031415893470715901, "path": "/Users/xuzhi/code/php/php-src/ext/xmlrpc/libxmlrpc/xmlrpc_introspection.h" };
+{ "sum": 9031415893470715901, "path": "/Users/xuzhi/code/php/php-src/ext/xmlrpc/libxmlrpc/encodings.c" };
+{ "sum": 9031415893470715901, "path": "/Users/xuzhi/code/php/php-src/ext/xmlrpc/libxmlrpc/simplestring.c" };
+--------------------------------
+{ "sum": 12139916627172867439, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/test.wsdl" };
+{ "sum": 12139916627172867439, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/bugs/bug41337_2_1.wsdl" };
+{ "sum": 12139916627172867439, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/bugs/bug41337.wsdl" };
+--------------------------------
+{ "sum": 624548547606805973, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/php_mbregex.h" };
+{ "sum": 624548547606805973, "path": "/Users/xuzhi/code/php/php-src/sapi/cli/php_cli_server.h" };
+--------------------------------
+{ "sum": 542258776701772164, "path": "/Users/xuzhi/code/php/php-src/sapi/cli/php_cli_process_title.h" };
+{ "sum": 542258776701772164, "path": "/Users/xuzhi/code/php/php-src/sapi/cli/php_cli_process_title.c" };
+--------------------------------
+{ "sum": 9285164059326191013, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/openssl.phar.pubkey" };
+{ "sum": 9285164059326191013, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/openssl.phar.pubkey" };
+--------------------------------
+{ "sum": 736814242500620138, "path": "/Users/xuzhi/code/rust/rust/src/test/codegen/global_asm_include.rs" };
+{ "sum": 736814242500620138, "path": "/Users/xuzhi/code/rust/rust/src/test/codegen/global_asm.rs" };
+{ "sum": 736814242500620138, "path": "/Users/xuzhi/code/rust/rust/src/test/codegen/global_asm_x2.rs" };
+--------------------------------
+{ "sum": 18442498463828121721, "path": "/Users/xuzhi/code/curl-7.21.7/tests/data/test1122" };
+{ "sum": 18442498463828121721, "path": "/Users/xuzhi/code/curl-7.21.7/tests/data/test1125" };
+--------------------------------
+{ "sum": 10381305001667270215, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_easy_recv.3" };
+{ "sum": 10381305001667270215, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_easy_unescape.3" };
+--------------------------------
+{ "sum": 16966801223055880498, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_pgsql/php_pdo_pgsql.h" };
+{ "sum": 16966801223055880498, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_pgsql/pdo_pgsql.c" };
+--------------------------------
+{ "sum": 10861569928513211804, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller.phar" };
+{ "sum": 10861569928513211804, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller.phar" };
+--------------------------------
+{ "sum": 635182890848048108, "path": "/Users/xuzhi/code/rust/rust/src/test/pretty/example2.rs" };
+{ "sum": 635182890848048108, "path": "/Users/xuzhi/code/rust/rust/src/test/pretty/example2.pp" };
+--------------------------------
+{ "sum": 10552618435436322180, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_mysql/php_pdo_mysql_int.h" };
+{ "sum": 10552618435436322180, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_mysql/php_pdo_mysql.h" };
+--------------------------------
+{ "sum": 2906480818269313037, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/zfapp.tgz" };
+{ "sum": 2906480818269313037, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/zfapp.tgz" };
+--------------------------------
+{ "sum": 9871468350784561455, "path": "/Users/xuzhi/code/php/php-src/ext/openssl/tests/sni_server_cs.pem" };
+{ "sum": 9871468350784561455, "path": "/Users/xuzhi/code/php/php-src/ext/openssl/tests/sni_server_cs_key.pem" };
+--------------------------------
+{ "sum": 15592536191290092940, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/typeid-intrinsic-aux2.rs" };
+{ "sum": 15592536191290092940, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/typeid-intrinsic-aux1.rs" };
+--------------------------------
+{ "sum": 937599553932223923, "path": "/Users/xuzhi/code/rust/book/reference/reference.md" };
+{ "sum": 937599553932223923, "path": "/Users/xuzhi/code/rust/rust/src/doc/reference.md" };
+--------------------------------
+{ "sum": 12302058241959047035, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/mod_file_disambig_aux.rs" };
+{ "sum": 12302058241959047035, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/mod_file_disambig_aux/mod.rs" };
+--------------------------------
+{ "sum": 16190767032489274803, "path": "/Users/xuzhi/code/php/php-src/ext/exif/tests/redhat-bug1362571.jpg" };
+{ "sum": 16190767032489274803, "path": "/Users/xuzhi/code/php/php-src/ext/exif/tests/bug72735/panasonic.jpg" };
+--------------------------------
+{ "sum": 17433534831930633441, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/lint_unused_extern_crate2.rs" };
+{ "sum": 17433534831930633441, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/lint_unused_extern_crate3.rs" };
+--------------------------------
+{ "sum": 16911153391457611264, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/resolve-error.stderr" };
+{ "sum": 16911153391457611264, "path": "/Users/xuzhi/code/rust/rust/src/test/ui-fulldeps/resolve-error.stderr" };
+--------------------------------
+{ "sum": 13408798396314353105, "path": "/Users/xuzhi/code/php/php-src/ext/openssl/tests/bug68265.pem" };
+{ "sum": 13408798396314353105, "path": "/Users/xuzhi/code/php/php-src/ext/openssl/tests/bug68879.pem" };
+--------------------------------
+{ "sum": 8292394343700695238, "path": "/Users/xuzhi/code/php/php-src/win32/globals.c" };
+{ "sum": 8292394343700695238, "path": "/Users/xuzhi/code/php/php-src/win32/php_win32_globals.h" };
+--------------------------------
+{ "sum": 13054786677565879645, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/multiple-emits/foo.rs" };
+{ "sum": 13054786677565879645, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/extra-filename-with-temp-outputs/foo.rs" };
+{ "sum": 13054786677565879645, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/ls-metadata/foo.rs" };
+{ "sum": 13054786677565879645, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/error-writing-dependencies/foo.rs" };
+{ "sum": 13054786677565879645, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/weird-output-filenames/foo.rs" };
+{ "sum": 13054786677565879645, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/issue-26092/blank.rs" };
+{ "sum": 13054786677565879645, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/codegen-options-parsing/dummy.rs" };
+{ "sum": 13054786677565879645, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/crate-name-priority/foo.rs" };
+--------------------------------
+{ "sum": 4957533113332019779, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/wc/lorem_ipsum.txt" };
+{ "sum": 4957533113332019779, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/cksum/lorem_ipsum.txt" };
+{ "sum": 4957533113332019779, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/sum/lorem_ipsum.txt" };
+--------------------------------
+{ "sum": 5594401978277613343, "path": "/Users/xuzhi/code/php/php-src/ext/simplexml/php_simplexml.h" };
+{ "sum": 5594401978277613343, "path": "/Users/xuzhi/code/php/php-src/ext/bz2/php_bz2.h" };
+--------------------------------
+{ "sum": 11835957274067964975, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/issue-37893/a.rs" };
+{ "sum": 11835957274067964975, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/issue-37839/a.rs" };
+--------------------------------
+{ "sum": 17595395309671900729, "path": "/Users/xuzhi/code/curl-7.21.7/docs/curl-config.1" };
+{ "sum": 17595395309671900729, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_easy_send.3" };
+--------------------------------
+{ "sum": 1445632328955162287, "path": "/Users/xuzhi/code/php/php-src/ext/filter/callback_filter.c" };
+{ "sum": 1445632328955162287, "path": "/Users/xuzhi/code/php/php-src/ext/filter/filter_private.h" };
+--------------------------------
+{ "sum": 4616276269104766444, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/extracted.inc" };
+{ "sum": 4616276269104766444, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/extracted.inc" };
+--------------------------------
+{ "sum": 13171845467877963494, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/macro_reexport_1.rs" };
+{ "sum": 13171845467877963494, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/macro_reexport_1.rs" };
+{ "sum": 13171845467877963494, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail-fulldeps/auxiliary/macro_reexport_1.rs" };
+--------------------------------
+{ "sum": 4015077874920789171, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-i686-linux/build-headers.sh" };
+{ "sum": 4015077874920789171, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-x86_64-linux/build-headers.sh" };
+--------------------------------
+{ "sum": 8979650936666565247, "path": "/Users/xuzhi/code/rust/crayon/crayon-examples/assets/render_target_p2.vs" };
+{ "sum": 8979650936666565247, "path": "/Users/xuzhi/code/rust/crayon/crayon-examples/assets/texture.vs" };
+{ "sum": 8979650936666565247, "path": "/Users/xuzhi/code/rust/crayon/modules/3d/assets/shadow_texture.vs" };
+--------------------------------
+{ "sum": 1579931965907154610, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_long.h" };
+{ "sum": 1579931965907154610, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_range_check.h" };
+--------------------------------
+{ "sum": 16587102506827489007, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-x86_64-freebsd/build-toolchain.sh" };
+{ "sum": 16587102506827489007, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-i686-freebsd/build-toolchain.sh" };
+--------------------------------
+{ "sum": 2266040389591195450, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/private.pem" };
+{ "sum": 2266040389591195450, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/private.pem" };
+--------------------------------
+{ "sum": 3554069449394958633, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/imagelayereffect_basic.png" };
+{ "sum": 3554069449394958633, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/imagecreatetruecolor_basic.png" };
+--------------------------------
+{ "sum": 13842061539437574972, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/ayu-highlight.css" };
+{ "sum": 13842061539437574972, "path": "/Users/xuzhi/code/rust/book/reference/book/ayu-highlight.css" };
+--------------------------------
+{ "sum": 15010868945165272078, "path": "/Users/xuzhi/code/php/php-src/win32/grp.h" };
+{ "sum": 15010868945165272078, "path": "/Users/xuzhi/code/php/php-src/win32/syslog.h" };
+--------------------------------
+{ "sum": 13259169077947997218, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/unicode_table_cp1252.h" };
+{ "sum": 13259169077947997218, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/unicode_table_cp1254.h" };
+{ "sum": 13259169077947997218, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/unicode_table_cp1251.h" };
+--------------------------------
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib540.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib504.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib514.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib544.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib517.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib566.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/strequal.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib570.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib520.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/if2ip.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib562.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib512.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib541.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/certinfo.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/simplesmtp.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib511.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/persistant.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/cookie_interface.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/ftpgetresp.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/multithread.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/getinfo.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/src/getpass.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib568.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/simple.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib583.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/ftpupload.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/ghiper.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib567.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/md5.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib571.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/unit/unit1308.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/fileupload.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/hiperfifo.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib513.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib560.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib515.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/hostsyn.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib524.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/curl_memrchr.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/sethostname.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/sampleconv.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib564.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/simplepost.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib547.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib539.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib521.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib556.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/src/urlglob.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib505.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/simplessl.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/ftpuploadresume.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/httpcustomheader.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib523.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib519.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/sepheaders.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/chkhostname.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib574.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/unit/unit1307.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/netrc.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/ftpgetinfo.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/test.h" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/speedcheck.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib542.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib501.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib502.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib549.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib576.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/sethostname.h" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/httpput.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/smooth-gtk-thread.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib543.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/unit/curlcheck.h" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/http-post.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/slist.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/https.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/opensslthreadlock.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/src/homedir.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/unit/unit1301.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/sendrecv.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib506.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/threaded-ssl.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib526.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/llist.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/unit/unit1305.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/hostasyn.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/dict.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib569.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/gopher.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/src/writeenv.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/multi-post.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/lib/file.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib516.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/smtp-tls.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/getinmemory.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib508.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/unit/unit1309.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/multi-single.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib553.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib578.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/htmltidy.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/post-callback.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/docs/examples/evhiperfifo.c" };
+{ "sum": 11448901916170018266, "path": "/Users/xuzhi/code/curl-7.21.7/tests/libtest/lib500.c" };
+--------------------------------
+{ "sum": 6200484052838587505, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/cci_class.rs" };
+{ "sum": 6200484052838587505, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/cci_class.rs" };
+--------------------------------
+{ "sum": 368144813002927225, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/lto-smoke/main.rs" };
+{ "sum": 368144813002927225, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/lto-readonly-lib/main.rs" };
+--------------------------------
+{ "sum": 3792336637722532094, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/E0057.rs" };
+{ "sum": 3792336637722532094, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/span/E0057.rs" };
+--------------------------------
+{ "sum": 12646317415822614640, "path": "/Users/xuzhi/code/curl-7.21.7/packages/vms/openssl_ssl_vax.opt" };
+{ "sum": 12646317415822614640, "path": "/Users/xuzhi/code/curl-7.21.7/packages/vms/openssl_ssl_alpha.opt" };
+{ "sum": 12646317415822614640, "path": "/Users/xuzhi/code/curl-7.21.7/packages/vms/openssl_ssl_ia64.opt" };
+--------------------------------
+{ "sum": 1892050136115779179, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfl_string.h" };
+{ "sum": 1892050136115779179, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfl_encoding.h" };
+{ "sum": 1892050136115779179, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfl_convert.h" };
+{ "sum": 1892050136115779179, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfl_defs.h" };
+{ "sum": 1892050136115779179, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfl_allocators.h" };
+{ "sum": 1892050136115779179, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfl_filter_output.h" };
+--------------------------------
+{ "sum": 7043003519043949237, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/tests/mb_substr_variation4.phpt" };
+{ "sum": 7043003519043949237, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/tests/mb_substr_variation6.phpt" };
+--------------------------------
+{ "sum": 6656102286596018731, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/use_from_trait_xc.rs" };
+{ "sum": 6656102286596018731, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail-fulldeps/auxiliary/use_from_trait_xc.rs" };
+--------------------------------
+{ "sum": 7380698132355549399, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_koi8r.h" };
+{ "sum": 7380698132355549399, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_cp866.h" };
+--------------------------------
+{ "sum": 7805982655464307889, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller8.phar.inc" };
+{ "sum": 7805982655464307889, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller8.phar.inc" };
+--------------------------------
+{ "sum": 1528305145686051258, "path": "/Users/xuzhi/code/php/php-src/ext/mysqli/php_mysqli.h" };
+{ "sum": 1528305145686051258, "path": "/Users/xuzhi/code/php/php-src/ext/mysqli/mysqli_result_iterator.c" };
+--------------------------------
+{ "sum": 17834189341112574450, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/svh-b.rs" };
+{ "sum": 17834189341112574450, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/svh-b.rs" };
+--------------------------------
+{ "sum": 13656422305768021893, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/config.xml" };
+{ "sum": 13656422305768021893, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/config.xml" };
+--------------------------------
+{ "sum": 14163953141097637074, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_utf32.h" };
+{ "sum": 14163953141097637074, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_utf32.c" };
+--------------------------------
+{ "sum": 10797255207141370266, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller.phar.inc" };
+{ "sum": 10797255207141370266, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller.phar.inc" };
+--------------------------------
+{ "sum": 10261670592616827420, "path": "/Users/xuzhi/code/php/php-src/ext/intl/calendar/gregoriancalendar_methods.cpp" };
+{ "sum": 10261670592616827420, "path": "/Users/xuzhi/code/php/php-src/ext/intl/transliterator/transliterator.c" };
+--------------------------------
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_break.h" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_lexer.h" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_set.h" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_info.h" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_help.h" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_list.c" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_utils.h" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_break.c" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_frame.h" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_list.h" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_print.h" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_rinit_hook.h" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_opcode.c" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_opcode.h" };
+{ "sum": 1448064389601037520, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg.h" };
+--------------------------------
+{ "sum": 11818716454641876961, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/tests/magic私はガラスを食べられます" };
+{ "sum": 11818716454641876961, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/tests/magic" };
+--------------------------------
+{ "sum": 9891672957870738219, "path": "/Users/xuzhi/code/rust/json/rustache/test_data/test_spec_partials_standalone_without_newline" };
+{ "sum": 9891672957870738219, "path": "/Users/xuzhi/code/rust/json/rustache/test_data/test_spec_partials_inline_indentation" };
+{ "sum": 9891672957870738219, "path": "/Users/xuzhi/code/rust/json/rustache/test_data/test_spec_partials_standalone_without_previous_line" };
+--------------------------------
+{ "sum": 10938780553929238741, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/libmagic/print.c" };
+{ "sum": 10938780553929238741, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/libmagic/tar.h" };
+{ "sum": 10938780553929238741, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/libmagic/encoding.c" };
+{ "sum": 10938780553929238741, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/libmagic/is_tar.c" };
+--------------------------------
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/cargo/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/rust/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/net/futures-rs/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/shell/rusti/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/algorithms/crossbeam-channel/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/book/reference/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/cocoa/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/io-surface/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/core-graphics/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/core-text/LICENSE-APACHE" };
+{ "sum": 17287975990668031043, "path": "/Users/xuzhi/code/rust/rust/src/librustdoc/html/static/LICENSE-APACHE.txt" };
+--------------------------------
+{ "sum": 12356886705126166666, "path": "/Users/xuzhi/code/php/php-src/ext/exif/tests/test1.jpg" };
+{ "sum": 12356886705126166666, "path": "/Users/xuzhi/code/php/php-src/ext/standard/tests/image/test1pix.jpg" };
+--------------------------------
+{ "sum": 8494447529695135378, "path": "/Users/xuzhi/code/rust/game/magog/LICENSE" };
+{ "sum": 8494447529695135378, "path": "/Users/xuzhi/code/rust/rust/src/etc/third-party/COPYING3" };
+--------------------------------
+{ "sum": 4166517563564262342, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round3/GroupD/round3_groupD_import2_absolute.wsdl" };
+{ "sum": 4166517563564262342, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round3/GroupD/round3_groupD_import2.wsdl" };
+--------------------------------
+{ "sum": 4388122150596676117, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/terminal/Builtin Solarized Dark.terminal" };
+{ "sum": 4388122150596676117, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/terminal/Builtin Solarized Light.terminal" };
+{ "sum": 4388122150596676117, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/terminal/Solarized Dark - Patched.terminal" };
+{ "sum": 4388122150596676117, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/terminal/Solarized Dark.terminal" };
+{ "sum": 4388122150596676117, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/terminal/Solarized Dark Higher Contrast.terminal" };
+--------------------------------
+{ "sum": 907214031364374483, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/borrowck/borrowck-lend-flow.rs" };
+{ "sum": 907214031364374483, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/borrowck/borrowck-lend-flow-if.rs" };
+--------------------------------
+{ "sum": 17396759854029418594, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-powerpc64-linux/patches/glibc/2.12.2/001-PowerPC-Remove-unnecessary-mnew-mnemonics.patch" };
+{ "sum": 17396759854029418594, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-powerpc-linux/patches/glibc/2.12.2/001-PowerPC-Remove-unnecessary-mnew-mnemonics.patch" };
+--------------------------------
+{ "sum": 10996664294074460926, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_firebird/php_pdo_firebird.h" };
+{ "sum": 10996664294074460926, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_firebird/pdo_firebird.c" };
+--------------------------------
+{ "sum": 15625273668738673622, "path": "/Users/xuzhi/code/rust/rust/src/test/rustdoc/auxiliary/extern-links.rs" };
+{ "sum": 15625273668738673622, "path": "/Users/xuzhi/code/rust/rust/src/test/rustdoc/auxiliary/src-links-external.rs" };
+--------------------------------
+{ "sum": 2244744961580199675, "path": "/Users/xuzhi/code/php/php-src/ext/session/tests/rfc1867.phpt" };
+{ "sum": 2244744961580199675, "path": "/Users/xuzhi/code/php/php-src/ext/session/tests/rfc1867_inter.phpt" };
+--------------------------------
+{ "sum": 13595015188887507067, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/lto-smoke/lib.rs" };
+{ "sum": 13595015188887507067, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/lto-readonly-lib/lib.rs" };
+{ "sum": 13595015188887507067, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/manual-crate-name/bar.rs" };
+{ "sum": 13595015188887507067, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/duplicate-output-flavors/foo.rs" };
+--------------------------------
+{ "sum": 14892123975035387563, "path": "/Users/xuzhi/code/curl-7.21.7/tests/certs/EdelCurlRoot-ca.crt" };
+{ "sum": 14892123975035387563, "path": "/Users/xuzhi/code/curl-7.21.7/tests/certs/EdelCurlRoot-ca.cacert" };
+--------------------------------
+{ "sum": 13968758412918750593, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller16.phar.inc" };
+{ "sum": 13968758412918750593, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller16.phar.inc" };
+--------------------------------
+{ "sum": 13234346929850041385, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller3.phar.inc" };
+{ "sum": 13234346929850041385, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller3.phar.inc" };
+--------------------------------
+{ "sum": 4669957758135294452, "path": "/Users/xuzhi/code/php/php-src/ext/oci8/tests/db_op_2.phpt" };
+{ "sum": 4669957758135294452, "path": "/Users/xuzhi/code/php/php-src/ext/oci8/tests/db_op_1.phpt" };
+--------------------------------
+{ "sum": 4173769665624441693, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic64lc/KeccakSponge.inc" };
+{ "sum": 4173769665624441693, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic32lc/KeccakSponge.inc" };
+--------------------------------
+{ "sum": 14491749756312823479, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller13.phar" };
+{ "sum": 14491749756312823479, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller13.phar" };
+--------------------------------
+{ "sum": 12639217254286217386, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller16.phar" };
+{ "sum": 12639217254286217386, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller16.phar" };
+--------------------------------
+{ "sum": 1351469917127888516, "path": "/Users/xuzhi/code/rust/rust/src/test/debuginfo/lexical-scope-in-unique-closure.rs" };
+{ "sum": 1351469917127888516, "path": "/Users/xuzhi/code/rust/rust/src/test/debuginfo/lexical-scope-in-stack-closure.rs" };
+--------------------------------
+{ "sum": 15386907657061137998, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_sigio_win32.h" };
+{ "sum": 15386907657061137998, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_sigio_win32.c" };
+--------------------------------
+{ "sum": 8680623184540019221, "path": "/Users/xuzhi/code/php/php-src/ext/xmlrpc/libxmlrpc/xmlrpc_introspection_private.h" };
+{ "sum": 8680623184540019221, "path": "/Users/xuzhi/code/php/php-src/ext/xmlrpc/libxmlrpc/system_methods_private.h" };
+--------------------------------
+{ "sum": 15025935164381544401, "path": "/Users/xuzhi/code/php/php-src/ext/zip/tests/bug7658.odt" };
+{ "sum": 15025935164381544401, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/zip/files/odt.odt" };
+--------------------------------
+{ "sum": 6138300351513670685, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder2/fixture.inc" };
+{ "sum": 6138300351513670685, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder3/fixture.inc" };
+{ "sum": 6138300351513670685, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder4/fixture.inc" };
+{ "sum": 6138300351513670685, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder1/fixture.inc" };
+--------------------------------
+{ "sum": 12830744244613934757, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/specialization/specialization-allowed-cross-crate.rs" };
+{ "sum": 12830744244613934757, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/specialization/defaultimpl/allowed-cross-crate.rs" };
+--------------------------------
+{ "sum": 18344599345746907551, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/tail/follow_stdin.expected" };
+{ "sum": 18344599345746907551, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/tail/foobar_stdin_default.expected" };
+{ "sum": 18344599345746907551, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/tail/foobar_single_default.expected" };
+--------------------------------
+{ "sum": 15331122001599045251, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/trait_safety_lib.rs" };
+{ "sum": 15331122001599045251, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/trait_safety_lib.rs" };
+--------------------------------
+{ "sum": 7201421400056429985, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/md5.phar" };
+{ "sum": 7201421400056429985, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/md5.phar" };
+--------------------------------
+{ "sum": 16447078097470595999, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_cp866.c" };
+{ "sum": 16447078097470595999, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_cp1251.c" };
+{ "sum": 16447078097470595999, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_koi8r.c" };
+--------------------------------
+{ "sum": 9364171799153035642, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/termite/Paraiso Dark" };
+{ "sum": 9364171799153035642, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/termite/Parasio Dark" };
+--------------------------------
+{ "sum": 2087674502463210643, "path": "/Users/xuzhi/code/rust/net/tokio/tokio-io/src/window.rs" };
+{ "sum": 2087674502463210643, "path": "/Users/xuzhi/code/rust/net/futures-rs/futures-util/src/io/window.rs" };
+--------------------------------
+{ "sum": 13720357089619524430, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/favicon.png" };
+{ "sum": 13720357089619524430, "path": "/Users/xuzhi/code/rust/book/reference/book/favicon.png" };
+--------------------------------
+{ "sum": 12193556984529019247, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-i686-linux/build-gcc.sh" };
+{ "sum": 12193556984529019247, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-x86_64-linux/build-gcc.sh" };
+--------------------------------
+{ "sum": 2376387412203162185, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/coherence_copy_like_lib.rs" };
+{ "sum": 2376387412203162185, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/coherence_copy_like_lib.rs" };
+--------------------------------
+{ "sum": 796251267218015901, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/sha512.phar" };
+{ "sum": 796251267218015901, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/sha512.phar" };
+--------------------------------
+{ "sum": 17869279278997582913, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/comm/a" };
+{ "sum": 17869279278997582913, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/comm/aempty.expected" };
+--------------------------------
+{ "sum": 16055912445843139768, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_eol.h" };
+{ "sum": 16055912445843139768, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_io.h" };
+{ "sum": 16055912445843139768, "path": "/Users/xuzhi/code/php/php-src/sapi/phpdbg/phpdbg_eol.c" };
+{ "sum": 16055912445843139768, "path": "/Users/xuzhi/code/php/php-src/win32/dllmain.c" };
+--------------------------------
+{ "sum": 4532219892493279705, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/macro_crate_nonterminal.rs" };
+{ "sum": 4532219892493279705, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/macro_crate_nonterminal.rs" };
+--------------------------------
+{ "sum": 16570243068098163651, "path": "/Users/xuzhi/code/php/php-src/main/streams/mmap.c" };
+{ "sum": 16570243068098163651, "path": "/Users/xuzhi/code/php/php-src/win32/select.h" };
+{ "sum": 16570243068098163651, "path": "/Users/xuzhi/code/php/php-src/ext/sysvmsg/php_sysvmsg.h" };
+{ "sum": 16570243068098163651, "path": "/Users/xuzhi/code/php/php-src/main/streams/php_stream_mmap.h" };
+{ "sum": 16570243068098163651, "path": "/Users/xuzhi/code/php/php-src/win32/build/deplister.c" };
+{ "sum": 16570243068098163651, "path": "/Users/xuzhi/code/php/php-src/main/streams/php_streams_int.h" };
+{ "sum": 16570243068098163651, "path": "/Users/xuzhi/code/php/php-src/main/streams/php_stream_transport.h" };
+--------------------------------
+{ "sum": 87972058763498981, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller11.phar.inc" };
+{ "sum": 87972058763498981, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller11.phar.inc" };
+--------------------------------
+{ "sum": 16352397395426570257, "path": "/Users/xuzhi/code/php/php-src/win32/php_registry.h" };
+{ "sum": 16352397395426570257, "path": "/Users/xuzhi/code/php/php-src/main/php_open_temporary_file.h" };
+{ "sum": 16352397395426570257, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_browscap.h" };
+{ "sum": 16352397395426570257, "path": "/Users/xuzhi/code/php/php-src/main/php_globals.h" };
+--------------------------------
+{ "sum": 10213765864568903554, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/fileinfo.c" };
+{ "sum": 10213765864568903554, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/php_fileinfo.h" };
+--------------------------------
+{ "sum": 6077451207960178339, "path": "/Users/xuzhi/code/curl-7.21.7/lib/curl_config.h.in" };
+{ "sum": 6077451207960178339, "path": "/Users/xuzhi/code/curl-7.21.7/src/curl_config.h.in" };
+--------------------------------
+{ "sum": 10828661220300671069, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/_FontAwesome/fonts/fontawesome-webfont.svg" };
+{ "sum": 10828661220300671069, "path": "/Users/xuzhi/code/rust/book/reference/book/_FontAwesome/fonts/fontawesome-webfont.svg" };
+--------------------------------
+{ "sum": 9644087369201266893, "path": "/Users/xuzhi/code/php/php-src/win32/nice.h" };
+{ "sum": 9644087369201266893, "path": "/Users/xuzhi/code/php/php-src/win32/getrusage.c" };
+{ "sum": 9644087369201266893, "path": "/Users/xuzhi/code/php/php-src/win32/nice.c" };
+--------------------------------
+{ "sum": 3610989827237259063, "path": "/Users/xuzhi/code/php/php-src/ext/openssl/tests/sni_server_us_key.pem" };
+{ "sum": 3610989827237259063, "path": "/Users/xuzhi/code/php/php-src/ext/openssl/tests/sni_server_us.pem" };
+--------------------------------
+{ "sum": 7820174393202776412, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/mv/hello_world.txt" };
+{ "sum": 7820174393202776412, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/cp/hello_world.txt" };
+{ "sum": 7820174393202776412, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/cp/hello_dir_with_file/hello_world.txt" };
+--------------------------------
+{ "sum": 15735077496445459351, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/prefer-dylib/foo.rs" };
+{ "sum": 15735077496445459351, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/prefer-rlib/foo.rs" };
+{ "sum": 15735077496445459351, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/simple-rlib/foo.rs" };
+{ "sum": 15735077496445459351, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/simple-dylib/foo.rs" };
+--------------------------------
+{ "sum": 5855402840630599616, "path": "/Users/xuzhi/code/rust/rust/src/libstd/os/emscripten/mod.rs" };
+{ "sum": 5855402840630599616, "path": "/Users/xuzhi/code/rust/rust/src/libstd/os/linux/mod.rs" };
+--------------------------------
+{ "sum": 8024103327251901328, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/xrdb/Paraiso Dark.xrdb" };
+{ "sum": 8024103327251901328, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/xrdb/Parasio Dark.xrdb" };
+--------------------------------
+{ "sum": 8267267788243354969, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/namespaced_enums.rs" };
+{ "sum": 8267267788243354969, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/namespaced_enums.rs" };
+{ "sum": 8267267788243354969, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/resolve/auxiliary/namespaced_enums.rs" };
+--------------------------------
+{ "sum": 4802294280422044104, "path": "/Users/xuzhi/code/curl-7.21.7/tests/rtspserver.pl" };
+{ "sum": 4802294280422044104, "path": "/Users/xuzhi/code/curl-7.21.7/tests/secureserver.pl" };
+{ "sum": 4802294280422044104, "path": "/Users/xuzhi/code/curl-7.21.7/tests/tftpserver.pl" };
+{ "sum": 4802294280422044104, "path": "/Users/xuzhi/code/curl-7.21.7/tests/httpserver.pl" };
+--------------------------------
+{ "sum": 9016386966052619373, "path": "/Users/xuzhi/code/rust/rust/src/libstd/sys/redox/backtrace/tracing.rs" };
+{ "sum": 9016386966052619373, "path": "/Users/xuzhi/code/rust/rust/src/libstd/sys/unix/backtrace/tracing/gcc_s.rs" };
+--------------------------------
+{ "sum": 5976757416738372759, "path": "/Users/xuzhi/code/php/php-src/ext/soap/php_http.h" };
+{ "sum": 5976757416738372759, "path": "/Users/xuzhi/code/php/php-src/ext/soap/php_packet_soap.h" };
+{ "sum": 5976757416738372759, "path": "/Users/xuzhi/code/php/php-src/ext/soap/php_schema.h" };
+{ "sum": 5976757416738372759, "path": "/Users/xuzhi/code/php/php-src/ext/soap/php_encoding.h" };
+{ "sum": 5976757416738372759, "path": "/Users/xuzhi/code/php/php-src/ext/soap/php_xml.h" };
+--------------------------------
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_14.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_utf7imap.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_4.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_10.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_6.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_2.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_8.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_qprint.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_9.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_3.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_13.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_1.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_7.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_utf8.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_ucs4.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_2.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_utf7.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_10.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_8.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_4.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_16.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_6.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_qprint.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_uuencode.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_7.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_15.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_13.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_5.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_9.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso8859_3.c" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_ucs2.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_utf16.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfilter_pass.h" };
+{ "sum": 8934267844765558055, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfilter_pass.c" };
+--------------------------------
+{ "sum": 9014012889931787712, "path": "/Users/xuzhi/code/php/php-src/ext/gettext/tests/locale/en/LC_CTYPE/dgettextTest.po" };
+{ "sum": 9014012889931787712, "path": "/Users/xuzhi/code/php/php-src/ext/gettext/tests/locale/en/LC_MESSAGES/dgettextTest.po" };
+{ "sum": 9014012889931787712, "path": "/Users/xuzhi/code/php/php-src/ext/gettext/tests/locale/en/LC_MESSAGES/dngettextTest.po" };
+--------------------------------
+{ "sum": 16981860561473771092, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/save-analysis/SameDir.rs" };
+{ "sum": 16981860561473771092, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/save-analysis-fail/SameDir.rs" };
+--------------------------------
+{ "sum": 8321409781065030098, "path": "/Users/xuzhi/code/php/php-src/ext/curl/curl_file.c" };
+{ "sum": 8321409781065030098, "path": "/Users/xuzhi/code/php/php-src/ext/gmp/php_gmp.h" };
+--------------------------------
+{ "sum": 5157881644215667593, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/schemes/LiquidCarbonTransparent.itermcolors" };
+{ "sum": 5157881644215667593, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/schemes/LiquidCarbon.itermcolors" };
+--------------------------------
+{ "sum": 7732226333898537971, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/_FontAwesome/fonts/fontawesome-webfont.eot" };
+{ "sum": 7732226333898537971, "path": "/Users/xuzhi/code/rust/book/reference/book/_FontAwesome/fonts/fontawesome-webfont.eot" };
+--------------------------------
+{ "sum": 17478083818632177962, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/sort/default_unsorted_ints.txt" };
+{ "sum": 17478083818632177962, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/sort/numeric_unsorted_ints.txt" };
+--------------------------------
+{ "sum": 7505553483500111528, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/nophar.phar" };
+{ "sum": 7505553483500111528, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/openssl.phar" };
+{ "sum": 7505553483500111528, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/nophar.phar" };
+{ "sum": 7505553483500111528, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/openssl.phar" };
+--------------------------------
+{ "sum": 16559672135921497648, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/skipif.inc" };
+{ "sum": 16559672135921497648, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/bugs/skipif.inc" };
+{ "sum": 16559672135921497648, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/soap12/skipif.inc" };
+{ "sum": 16559672135921497648, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round4/GroupG/skipif.inc" };
+{ "sum": 16559672135921497648, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round4/GroupI/skipif.inc" };
+{ "sum": 16559672135921497648, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round4/GroupH/skipif.inc" };
+{ "sum": 16559672135921497648, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round3/GroupF/skipif.inc" };
+{ "sum": 16559672135921497648, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round3/GroupD/skipif.inc" };
+{ "sum": 16559672135921497648, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round3/GroupE/skipif.inc" };
+{ "sum": 16559672135921497648, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round2/Base/skipif.inc" };
+{ "sum": 16559672135921497648, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round2/GroupB/skipif.inc" };
+--------------------------------
+{ "sum": 2075853632166613465, "path": "/Users/xuzhi/code/curl-7.21.7/tests/server/Makefile.am" };
+{ "sum": 2075853632166613465, "path": "/Users/xuzhi/code/curl-7.21.7/src/Makefile.am" };
+{ "sum": 2075853632166613465, "path": "/Users/xuzhi/code/curl-7.21.7/tests/unit/Makefile.am" };
+--------------------------------
+{ "sum": 15380058437276262675, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller4.phar.inc" };
+{ "sum": 15380058437276262675, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller4.phar.inc" };
+--------------------------------
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_share_strerror.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_multi_init.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_multi_remove_handle.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_multi_info_read.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_slist_free_all.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_share_cleanup.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_easy_pause.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_easy_strerror.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_multi_add_handle.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_slist_append.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_multi_timeout.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_getenv.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_multi_perform.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_version.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_multi_fdset.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_unescape.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_multi_cleanup.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/libcurl-easy.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_easy_reset.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_free.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_easy_init.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_easy_escape.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_formfree.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_share_init.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_escape.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_formget.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_global_init.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_multi_assign.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_global_cleanup.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_easy_duphandle.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_getdate.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/libcurl-share.3" };
+{ "sum": 3488762737529022946, "path": "/Users/xuzhi/code/curl-7.21.7/docs/libcurl/curl_global_init_mem.3" };
+--------------------------------
+{ "sum": 8937766707281219467, "path": "/Users/xuzhi/code/rust/book/reference/.gitignore" };
+{ "sum": 8937766707281219467, "path": "/Users/xuzhi/code/rust/rust/src/doc/rustdoc/.gitignore" };
+{ "sum": 8937766707281219467, "path": "/Users/xuzhi/code/rust/rust/src/doc/unstable-book/.gitignore" };
+--------------------------------
+{ "sum": 3874485805253022894, "path": "/Users/xuzhi/code/php/php-src/ext/date/lib/unixtime2tm.c" };
+{ "sum": 3874485805253022894, "path": "/Users/xuzhi/code/php/php-src/ext/date/lib/astro.h" };
+{ "sum": 3874485805253022894, "path": "/Users/xuzhi/code/php/php-src/ext/date/lib/parse_iso_intervals.re" };
+--------------------------------
+{ "sum": 7607605968606955004, "path": "/Users/xuzhi/code/php/php-src/ext/intl/formatter/formatter_data.c" };
+{ "sum": 7607605968606955004, "path": "/Users/xuzhi/code/php/php-src/ext/intl/msgformat/msgformat_data.c" };
+{ "sum": 7607605968606955004, "path": "/Users/xuzhi/code/php/php-src/ext/intl/msgformat/msgformat_attr.c" };
+{ "sum": 7607605968606955004, "path": "/Users/xuzhi/code/php/php-src/ext/intl/msgformat/msgformat_format.c" };
+{ "sum": 7607605968606955004, "path": "/Users/xuzhi/code/php/php-src/ext/intl/msgformat/msgformat_parse.c" };
+--------------------------------
+{ "sum": 16644978151994774271, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/prefer-dylib/bar.rs" };
+{ "sum": 16644978151994774271, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/prefer-rlib/bar.rs" };
+{ "sum": 16644978151994774271, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/dep-info-spaces/bar.rs" };
+{ "sum": 16644978151994774271, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/dep-info/bar.rs" };
+{ "sum": 16644978151994774271, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/simple-rlib/bar.rs" };
+{ "sum": 16644978151994774271, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/simple-dylib/bar.rs" };
+--------------------------------
+{ "sum": 17886409366517989257, "path": "/Users/xuzhi/code/php/php-src/sapi/fpm/fpm/events/port.h" };
+{ "sum": 17886409366517989257, "path": "/Users/xuzhi/code/php/php-src/sapi/fpm/fpm/events/devpoll.h" };
+{ "sum": 17886409366517989257, "path": "/Users/xuzhi/code/php/php-src/sapi/fpm/fpm/events/epoll.h" };
+{ "sum": 17886409366517989257, "path": "/Users/xuzhi/code/php/php-src/sapi/fpm/fpm/events/kqueue.h" };
+{ "sum": 17886409366517989257, "path": "/Users/xuzhi/code/php/php-src/sapi/fpm/fpm/events/select.c" };
+{ "sum": 17886409366517989257, "path": "/Users/xuzhi/code/php/php-src/sapi/fpm/fpm/events/port.c" };
+{ "sum": 17886409366517989257, "path": "/Users/xuzhi/code/php/php-src/sapi/fpm/fpm/events/poll.h" };
+{ "sum": 17886409366517989257, "path": "/Users/xuzhi/code/php/php-src/sapi/fpm/fpm/events/epoll.c" };
+{ "sum": 17886409366517989257, "path": "/Users/xuzhi/code/php/php-src/sapi/fpm/fpm/events/kqueue.c" };
+{ "sum": 17886409366517989257, "path": "/Users/xuzhi/code/php/php-src/sapi/fpm/fpm/events/select.h" };
+--------------------------------
+{ "sum": 13501203771626164884, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/no-intermediate-extras/foo.rs" };
+{ "sum": 13501203771626164884, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/extern-flag-fun/bar.rs" };
+{ "sum": 13501203771626164884, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/mixing-formats/foo.rs" };
+--------------------------------
+{ "sum": 13574942965902193274, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller19.phar" };
+{ "sum": 13574942965902193274, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller19.phar" };
+--------------------------------
+{ "sum": 7399853465622169500, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/extern-multiple-copies/foo1.rs" };
+{ "sum": 7399853465622169500, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/extern-multiple-copies/foo2.rs" };
+--------------------------------
+{ "sum": 14917514006453849105, "path": "/Users/xuzhi/code/php/php-src/ext/bz2/tests/003.txt.bz2" };
+{ "sum": 14917514006453849105, "path": "/Users/xuzhi/code/php/php-src/ext/bz2/tests/003私はガラスを食べられます.txt.bz2" };
+--------------------------------
+{ "sum": 8728891219576079713, "path": "/Users/xuzhi/code/php/php-src/ext/intl/spoofchecker/spoofchecker.c" };
+{ "sum": 8728891219576079713, "path": "/Users/xuzhi/code/php/php-src/ext/intl/spoofchecker/spoofchecker_create.c" };
+--------------------------------
+{ "sum": 8197322519692422899, "path": "/Users/xuzhi/code/php/php-src/ext/exif/tests/bug54002_2.jpeg" };
+{ "sum": 8197322519692422899, "path": "/Users/xuzhi/code/php/php-src/ext/exif/tests/bug54002_1.jpeg" };
+--------------------------------
+{ "sum": 13738146777942755275, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_gb18030.h" };
+{ "sum": 13738146777942755275, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_cp936.h" };
+--------------------------------
+{ "sum": 4160364377595418780, "path": "/Users/xuzhi/code/rust/book/reference/book/book.css" };
+{ "sum": 4160364377595418780, "path": "/Users/xuzhi/code/rust/book/reference/book/theme/book.css" };
+{ "sum": 4160364377595418780, "path": "/Users/xuzhi/code/rust/book/reference/src/theme/book.css" };
+--------------------------------
+{ "sum": 16944242373528134359, "path": "/Users/xuzhi/code/rust/json/json-rust/GPATH" };
+{ "sum": 16944242373528134359, "path": "/Users/xuzhi/code/rust/json/json-rust/src/GPATH" };
+--------------------------------
+{ "sum": 4095171995808293907, "path": "/Users/xuzhi/code/php/php-src/ext/odbc/php_odbc.h" };
+{ "sum": 4095171995808293907, "path": "/Users/xuzhi/code/php/php-src/ext/oci8/php_oci8.h" };
+--------------------------------
+{ "sum": 1615694016985975722, "path": "/Users/xuzhi/code/php/php-src/header" };
+{ "sum": 1615694016985975722, "path": "/Users/xuzhi/code/php/php-src/main/php_syslog.h" };
+{ "sum": 1615694016985975722, "path": "/Users/xuzhi/code/php/php-src/ext/xsl/php_xsl.h" };
+{ "sum": 1615694016985975722, "path": "/Users/xuzhi/code/php/php-src/main/php_content_types.h" };
+{ "sum": 1615694016985975722, "path": "/Users/xuzhi/code/php/php-src/main/explicit_bzero.c" };
+{ "sum": 1615694016985975722, "path": "/Users/xuzhi/code/php/php-src/main/strlcat.c" };
+{ "sum": 1615694016985975722, "path": "/Users/xuzhi/code/php/php-src/ext/zend_test/php_test.h" };
+{ "sum": 1615694016985975722, "path": "/Users/xuzhi/code/php/php-src/main/rfc1867.h" };
+--------------------------------
+{ "sum": 10525943035336374169, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_multibyte.c" };
+{ "sum": 10525943035336374169, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_multibyte.h" };
+--------------------------------
+{ "sum": 1513164640312092912, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller11.phar" };
+{ "sum": 1513164640312092912, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller11.phar" };
+--------------------------------
+{ "sum": 1927719790545455133, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller19.phar.inc" };
+{ "sum": 1927719790545455133, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller19.phar.inc" };
+--------------------------------
+{ "sum": 1798708229779826242, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/cgu_test_b.rs" };
+{ "sum": 1798708229779826242, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/cgu_test_a.rs" };
+--------------------------------
+{ "sum": 16241105099594386485, "path": "/Users/xuzhi/code/php/php-src/ext/xml/tests/inc.ent" };
+{ "sum": 16241105099594386485, "path": "/Users/xuzhi/code/php/php-src/ext/simplexml/tests/sxe.ent" };
+--------------------------------
+{ "sum": 8771298757924871260, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/print_type_sizes/multiple_types.stdout" };
+{ "sum": 8771298757924871260, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/print_type_sizes/variants.stdout" };
+--------------------------------
+{ "sum": 9312487879868091685, "path": "/Users/xuzhi/code/rust/json/json-benchmark/src/borrow/mod.rs" };
+{ "sum": 9312487879868091685, "path": "/Users/xuzhi/code/rust/json/json-benchmark/src/copy/mod.rs" };
+--------------------------------
+{ "sum": 1623939635586216004, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/_FontAwesome/fonts/FontAwesome.ttf" };
+{ "sum": 1623939635586216004, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/_FontAwesome/fonts/fontawesome-webfont.ttf" };
+{ "sum": 1623939635586216004, "path": "/Users/xuzhi/code/rust/book/reference/book/_FontAwesome/fonts/FontAwesome.ttf" };
+{ "sum": 1623939635586216004, "path": "/Users/xuzhi/code/rust/book/reference/book/_FontAwesome/fonts/fontawesome-webfont.ttf" };
+--------------------------------
+{ "sum": 27187104838414523, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/sort/month_default.txt" };
+{ "sum": 27187104838414523, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/sort/month_stable.txt" };
+--------------------------------
+{ "sum": 6539570681273309705, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/sanitizer-dylib-link/library.rs" };
+{ "sum": 6539570681273309705, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/sanitizer-staticlib-link/library.rs" };
+{ "sum": 6539570681273309705, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/sanitizer-cdylib-link/library.rs" };
+--------------------------------
+{ "sum": 15940940542589599695, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/nophar.phar.inc" };
+{ "sum": 15940940542589599695, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/nophar.phar.inc" };
+--------------------------------
+{ "sum": 18032599335773057173, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/tests/strwidth.tests/Makefile.am" };
+{ "sum": 18032599335773057173, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/tests/conv_kana.tests/Makefile.am" };
+{ "sum": 18032599335773057173, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/tests/strcut.tests/Makefile.am" };
+--------------------------------
+{ "sum": 10266042431958028139, "path": "/Users/xuzhi/code/php/php-src/ext/pcre/pcre2lib/pcre2_jit_misc.c" };
+{ "sum": 10266042431958028139, "path": "/Users/xuzhi/code/php/php-src/ext/pcre/pcre2lib/pcre2_ord2utf.c" };
+{ "sum": 10266042431958028139, "path": "/Users/xuzhi/code/php/php-src/ext/pcre/pcre2lib/pcre2_newline.c" };
+--------------------------------
+{ "sum": 1517330528913846661, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/c-link-to-rust-staticlib/foo.rs" };
+{ "sum": 1517330528913846661, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/lto-smoke-c/foo.rs" };
+--------------------------------
+{ "sum": 3164866429151982927, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/searcher.js" };
+{ "sum": 3164866429151982927, "path": "/Users/xuzhi/code/rust/book/reference/book/searcher.js" };
+--------------------------------
+{ "sum": 3522832113410836958, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/wc/alice_in_wonderland.txt" };
+{ "sum": 3522832113410836958, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/cksum/alice_in_wonderland.txt" };
+{ "sum": 3522832113410836958, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/sum/alice_in_wonderland.txt" };
+--------------------------------
+{ "sum": 11590342276977878765, "path": "/Users/xuzhi/code/php/php-src/php.gif" };
+{ "sum": 11590342276977878765, "path": "/Users/xuzhi/code/php/php-src/ext/oci8/tests/test.gif" };
+{ "sum": 11590342276977878765, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/php.gif" };
+{ "sum": 11590342276977878765, "path": "/Users/xuzhi/code/php/php-src/ext/standard/tests/image/test.gif" };
+--------------------------------
+{ "sum": 1500127891679352326, "path": "/Users/xuzhi/code/php/php-src/travis/ext/pdo_mysql/setup.sh" };
+{ "sum": 1500127891679352326, "path": "/Users/xuzhi/code/php/php-src/travis/ext/mysql/setup.sh" };
+{ "sum": 1500127891679352326, "path": "/Users/xuzhi/code/php/php-src/travis/ext/mysqli/setup.sh" };
+--------------------------------
+{ "sum": 17494486272930579318, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/associated-types-where-clause-impl-ambiguity.rs" };
+{ "sum": 17494486272930579318, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/associated-types-impl-redirect.rs" };
+--------------------------------
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/main/spprintf.h" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/main/php_getopt.h" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/ext/readline/readline_cli.h" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/ext/dba/dba_inifile.c" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/ext/dba/libflatfile/flatfile.h" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/ext/dba/libcdb/uint32.h" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/ext/dba/libcdb/cdb.c" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/ext/dba/libcdb/uint32.c" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/ext/dba/libinifile/inifile.h" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/ext/dba/libcdb/cdb.h" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/main/streams/php_stream_glob_wrapper.h" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/ext/gd/libgd/gd_xbm.c" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/main/streams/memory.c" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/ext/dba/libcdb/cdb_make.h" };
+{ "sum": 6403348185632995963, "path": "/Users/xuzhi/code/php/php-src/ext/dba/dba_flatfile.c" };
+--------------------------------
+{ "sum": 16473285958607457661, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_cp1252.h" };
+{ "sum": 16473285958607457661, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_cp1252.c" };
+--------------------------------
+{ "sum": 7387251066639062063, "path": "/Users/xuzhi/code/php/php-src/ext/openssl/tests/bug65538.phar" };
+{ "sum": 7387251066639062063, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/include_path2.phar" };
+--------------------------------
+{ "sum": 5941745066750044899, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/remmina/Paraiso Dark.colors" };
+{ "sum": 5941745066750044899, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/remmina/Parasio Dark.colors" };
+--------------------------------
+{ "sum": 18414061614121803335, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/clipboard.min.js" };
+{ "sum": 18414061614121803335, "path": "/Users/xuzhi/code/rust/book/reference/book/clipboard.min.js" };
+--------------------------------
+{ "sum": 6838323870172095862, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/coherence_lib.rs" };
+{ "sum": 6838323870172095862, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/coherence_lib.rs" };
+--------------------------------
+{ "sum": 3887316685919881830, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_base64.h" };
+{ "sum": 3887316685919881830, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_ascii.c" };
+{ "sum": 3887316685919881830, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_7bit.h" };
+{ "sum": 3887316685919881830, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_byte4.h" };
+{ "sum": 3887316685919881830, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_ascii.h" };
+{ "sum": 3887316685919881830, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_7bit.c" };
+{ "sum": 3887316685919881830, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_byte4.c" };
+{ "sum": 3887316685919881830, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_byte2.h" };
+--------------------------------
+{ "sum": 15322269873029571426, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/save-analysis/krate2.rs" };
+{ "sum": 15322269873029571426, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/save-analysis-fail/krate2.rs" };
+--------------------------------
+{ "sum": 5579379647551780047, "path": "/Users/xuzhi/code/php/php-src/main/php_ticks.c" };
+{ "sum": 5579379647551780047, "path": "/Users/xuzhi/code/php/php-src/main/php_ticks.h" };
+--------------------------------
+{ "sum": 382890893878583960, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass-fulldeps/auxiliary/lint_for_crate.rs" };
+{ "sum": 382890893878583960, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail-fulldeps/auxiliary/lint_for_crate.rs" };
+--------------------------------
+{ "sum": 11073731396162152686, "path": "/Users/xuzhi/code/rust/rust/src/test/debuginfo/shadowed-argument.rs" };
+{ "sum": 11073731396162152686, "path": "/Users/xuzhi/code/rust/rust/src/test/debuginfo/shadowed-variable.rs" };
+--------------------------------
+{ "sum": 1993050237244119488, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller7.phar" };
+{ "sum": 1993050237244119488, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller7.phar" };
+--------------------------------
+{ "sum": 14078819054078280915, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/lint_unused_extern_crate4.rs" };
+{ "sum": 14078819054078280915, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/lint_unused_extern_crate5.rs" };
+--------------------------------
+{ "sum": 10202487373813409841, "path": "/Users/xuzhi/code/rust/json/rustache/test_data/test_spec_partials_padding_whitespace" };
+{ "sum": 10202487373813409841, "path": "/Users/xuzhi/code/rust/json/json-benchmark/data/roundtrip/roundtrip06.json" };
+--------------------------------
+{ "sum": 16775956485194641576, "path": "/Users/xuzhi/code/rust/rust/src/librustc_metadata/build.rs" };
+{ "sum": 16775956485194641576, "path": "/Users/xuzhi/code/rust/rust/src/librustc_incremental/build.rs" };
+--------------------------------
+{ "sum": 2628085669183832646, "path": "/Users/xuzhi/code/curl-7.21.7/lib/nonblock.c" };
+{ "sum": 2628085669183832646, "path": "/Users/xuzhi/code/curl-7.21.7/lib/nwos.c" };
+{ "sum": 2628085669183832646, "path": "/Users/xuzhi/code/curl-7.21.7/lib/amigaos.c" };
+{ "sum": 2628085669183832646, "path": "/Users/xuzhi/code/curl-7.21.7/lib/getenv.c" };
+{ "sum": 2628085669183832646, "path": "/Users/xuzhi/code/curl-7.21.7/lib/curl_rand.c" };
+{ "sum": 2628085669183832646, "path": "/Users/xuzhi/code/curl-7.21.7/lib/libcurl.rc" };
+{ "sum": 2628085669183832646, "path": "/Users/xuzhi/code/curl-7.21.7/src/os-specific.c" };
+{ "sum": 2628085669183832646, "path": "/Users/xuzhi/code/curl-7.21.7/src/curl.rc" };
+--------------------------------
+{ "sum": 15927954496752185728, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/dylib-chain/m4.rs" };
+{ "sum": 15927954496752185728, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/rlib-chain/m4.rs" };
+--------------------------------
+{ "sum": 15909369122771667220, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/Xresources/Builtin Solarized Light" };
+{ "sum": 15909369122771667220, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/Xresources/Solarized Light" };
+--------------------------------
+{ "sum": 13270526734633783636, "path": "/Users/xuzhi/code/php/php-src/ext/openssl/tests/bug46127.pem" };
+{ "sum": 13270526734633783636, "path": "/Users/xuzhi/code/php/php-src/ext/openssl/tests/streams_crypto_method.pem" };
+--------------------------------
+{ "sum": 9023596419397085839, "path": "/Users/xuzhi/code/php/php-src/ext/spl/spl_fixedarray.c" };
+{ "sum": 9023596419397085839, "path": "/Users/xuzhi/code/php/php-src/ext/spl/spl_fixedarray.h" };
+--------------------------------
+{ "sum": 12562833905679296201, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/remmina/Builtin Solarized Light.colors" };
+{ "sum": 12562833905679296201, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/remmina/Solarized Light.colors" };
+--------------------------------
+{ "sum": 12102137140436460641, "path": "/Users/xuzhi/code/curl-7.21.7/packages/vms/openssl_alpha.opt" };
+{ "sum": 12102137140436460641, "path": "/Users/xuzhi/code/curl-7.21.7/packages/vms/openssl_ia64.opt" };
+{ "sum": 12102137140436460641, "path": "/Users/xuzhi/code/curl-7.21.7/packages/vms/openssl_vax.opt" };
+--------------------------------
+{ "sum": 12539904749392581915, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller9.phar.inc" };
+{ "sum": 12539904749392581915, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller9.phar.inc" };
+--------------------------------
+{ "sum": 13205786440889933586, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller18.phar.inc" };
+{ "sum": 13205786440889933586, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller18.phar.inc" };
+--------------------------------
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/dba/dba_dbm.c" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/dba/dba_db3.c" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_smart_string.h" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_smart_str_public.h" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_smart_string_public.h" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/session/mod_user.h" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/session/mod_files.h" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/standard/lcg.c" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_smart_string_public.h" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/session/mod_mm.h" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/standard/flock_compat.h" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_smart_string.h" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_lcg.h" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/standard/flock_compat.c" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/dba/dba_ndbm.c" };
+{ "sum": 16328755548160259907, "path": "/Users/xuzhi/code/php/php-src/ext/session/mod_user.c" };
+--------------------------------
+{ "sum": 13817281088278456082, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/schemes/Solarized Dark - Patched.itermcolors" };
+{ "sum": 13817281088278456082, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/schemes/Solarized Dark.itermcolors" };
+--------------------------------
+{ "sum": 12761232780826873719, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller13.phar.inc" };
+{ "sum": 12761232780826873719, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller13.phar.inc" };
+--------------------------------
+{ "sum": 16436868054260890478, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller2.phar.inc" };
+{ "sum": 16436868054260890478, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller2.phar.inc" };
+--------------------------------
+{ "sum": 12631381251837550848, "path": "/Users/xuzhi/code/php/php-src/LICENSE" };
+{ "sum": 12631381251837550848, "path": "/Users/xuzhi/code/php/php-src/ext/oci8/LICENSE" };
+--------------------------------
+{ "sum": 13546769923010375088, "path": "/Users/xuzhi/code/rust/rust/src/test/ui-fulldeps/auxiliary/lint_group_plugin_test.rs" };
+{ "sum": 13546769923010375088, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail-fulldeps/auxiliary/lint_group_plugin_test.rs" };
+--------------------------------
+{ "sum": 4083033397130589928, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/core-graphics/.gitignore" };
+{ "sum": 4083033397130589928, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/core-text/.gitignore" };
+--------------------------------
+{ "sum": 1016627946472786560, "path": "/Users/xuzhi/code/rust/rust/src/librustc_msan/lib.rs" };
+{ "sum": 1016627946472786560, "path": "/Users/xuzhi/code/rust/rust/src/librustc_lsan/lib.rs" };
+--------------------------------
+{ "sum": 10190906387888070956, "path": "/Users/xuzhi/code/php/php-src/main/php_variables.h" };
+{ "sum": 10190906387888070956, "path": "/Users/xuzhi/code/php/php-src/main/php_variables.c" };
+{ "sum": 10190906387888070956, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_mt_rand.h" };
+{ "sum": 10190906387888070956, "path": "/Users/xuzhi/code/php/php-src/ext/standard/rand.c" };
+{ "sum": 10190906387888070956, "path": "/Users/xuzhi/code/php/php-src/ext/standard/credits.h" };
+{ "sum": 10190906387888070956, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_fopen_wrappers.h" };
+{ "sum": 10190906387888070956, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_image.h" };
+{ "sum": 10190906387888070956, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_rand.h" };
+{ "sum": 10190906387888070956, "path": "/Users/xuzhi/code/php/php-src/ext/exif/php_exif.h" };
+{ "sum": 10190906387888070956, "path": "/Users/xuzhi/code/php/php-src/ext/zlib/php_zlib.h" };
+--------------------------------
+{ "sum": 2214771838732123216, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic64lc/KeccakHash.c" };
+{ "sum": 2214771838732123216, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic32lc/KeccakHash.c" };
+--------------------------------
+{ "sum": 11181137896593211434, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_sjis_open.h" };
+{ "sum": 11181137896593211434, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_cp932.h" };
+--------------------------------
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/entity.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/notation.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/domimplementationsource.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/dom_iterators.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/entityreference.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/domstringlist.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/string_extend.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/cdatasection.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/dom_ce.h" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/domlocator.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/domerrorhandler.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/userdatahandler.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/documentfragment.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/typeinfo.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/dom_fe.h" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/domexception.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/xpath.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/namelist.c" };
+{ "sum": 14815905306942306723, "path": "/Users/xuzhi/code/php/php-src/ext/dom/domimplementationlist.c" };
+--------------------------------
+{ "sum": 14077112596920058893, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/lifetime-errors/ex3-both-anon-regions-one-is-struct-3.rs" };
+{ "sum": 14077112596920058893, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/lifetime-errors/ex3-both-anon-regions-one-is-struct-4.rs" };
+--------------------------------
+{ "sum": 12445298088178323262, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic64lc/SnP-Relaned.h" };
+{ "sum": 12445298088178323262, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic32lc/SnP-Relaned.h" };
+--------------------------------
+{ "sum": 15138831808849690822, "path": "/Users/xuzhi/code/php/php-src/ext/zlib/tests/004私はガラスを食べられます.txt.gz" };
+{ "sum": 15138831808849690822, "path": "/Users/xuzhi/code/php/php-src/ext/zlib/tests/004.txt.gz" };
+--------------------------------
+{ "sum": 3933548811262273208, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/many-crates-but-no-match/crateC.rs" };
+{ "sum": 3933548811262273208, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/missing-crate-dependency/crateC.rs" };
+--------------------------------
+{ "sum": 1057686147275306671, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/_FontAwesome/fonts/fontawesome-webfont.woff2" };
+{ "sum": 1057686147275306671, "path": "/Users/xuzhi/code/rust/book/reference/book/_FontAwesome/fonts/fontawesome-webfont.woff2" };
+--------------------------------
+{ "sum": 3240909378285864031, "path": "/Users/xuzhi/code/curl-7.21.7/lib/curl_gethostname.c" };
+{ "sum": 3240909378285864031, "path": "/Users/xuzhi/code/curl-7.21.7/tests/server/testpart.c" };
+{ "sum": 3240909378285864031, "path": "/Users/xuzhi/code/curl-7.21.7/tests/server/resolve.c" };
+--------------------------------
+{ "sum": 1758139840384854247, "path": "/Users/xuzhi/code/curl-7.21.7/packages/OS400/os400sys.h" };
+{ "sum": 1758139840384854247, "path": "/Users/xuzhi/code/curl-7.21.7/packages/OS400/ccsidcurl.h" };
+--------------------------------
+{ "sum": 1281976447926468451, "path": "/Users/xuzhi/code/php/php-src/ext/intl/normalizer/normalizer_normalize.h" };
+{ "sum": 1281976447926468451, "path": "/Users/xuzhi/code/php/php-src/ext/intl/normalizer/normalizer.h" };
+--------------------------------
+{ "sum": 18226120268764004701, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/sha256.phar" };
+{ "sum": 18226120268764004701, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/sha256.phar" };
+--------------------------------
+{ "sum": 2534955558807256529, "path": "/Users/xuzhi/code/rust/rust/src/test/ui-fulldeps/auxiliary/bang_proc_macro.rs" };
+{ "sum": 2534955558807256529, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail-fulldeps/proc-macro/auxiliary/bang_proc_macro.rs" };
+--------------------------------
+{ "sum": 2247248258362294756, "path": "/Users/xuzhi/code/rust/rust/src/test/ui-fulldeps/auxiliary/derive-clona.rs" };
+{ "sum": 2247248258362294756, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail-fulldeps/proc-macro/auxiliary/derive-clona.rs" };
+--------------------------------
+{ "sum": 17340585409843679157, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_dtrace.d" };
+{ "sum": 17340585409843679157, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_dtrace.c" };
+{ "sum": 17340585409843679157, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_dtrace.h" };
+--------------------------------
+{ "sum": 3773015320864299594, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_euc_tw.h" };
+{ "sum": 3773015320864299594, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_big5.h" };
+--------------------------------
+{ "sum": 2005382490776253554, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller10.phar.inc" };
+{ "sum": 2005382490776253554, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller10.phar.inc" };
+--------------------------------
+{ "sum": 17839097106247474471, "path": "/Users/xuzhi/code/php/php-src/ext/spl/spl_dllist.h" };
+{ "sum": 17839097106247474471, "path": "/Users/xuzhi/code/php/php-src/ext/spl/spl_heap.h" };
+--------------------------------
+{ "sum": 14317781953167234551, "path": "/Users/xuzhi/code/rust/json/json-rust/GTAGS" };
+{ "sum": 14317781953167234551, "path": "/Users/xuzhi/code/rust/json/json-rust/GRTAGS" };
+{ "sum": 14317781953167234551, "path": "/Users/xuzhi/code/rust/json/json-rust/src/GTAGS" };
+{ "sum": 14317781953167234551, "path": "/Users/xuzhi/code/rust/json/json-rust/src/GRTAGS" };
+--------------------------------
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder2/subfolder4/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder2/subfolder3/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder2/subfolder2/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder2/subfolder1/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder3/subfolder4/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder3/subfolder3/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder3/subfolder2/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder3/subfolder1/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder4/subfolder4/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder4/subfolder3/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder4/subfolder2/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder4/subfolder1/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder1/subfolder4/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder1/subfolder3/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder1/subfolder2/fixture.inc" };
+{ "sum": 10092203627702042761, "path": "/Users/xuzhi/code/php/php-src/Zend/tests/constants/fixtures/folder1/subfolder1/fixture.inc" };
+--------------------------------
+{ "sum": 4719459256910374985, "path": "/Users/xuzhi/code/php/php-src/ext/simplexml/tests/sxe.xml" };
+{ "sum": 4719459256910374985, "path": "/Users/xuzhi/code/php/php-src/ext/simplexml/tests/sxe私はガラスを食べられます.xml" };
+--------------------------------
+{ "sum": 12544652861769886476, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/highlight.css" };
+{ "sum": 12544652861769886476, "path": "/Users/xuzhi/code/rust/book/reference/book/highlight.css" };
+--------------------------------
+{ "sum": 9498178436766194930, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/Xresources/Builtin Solarized Dark" };
+{ "sum": 9498178436766194930, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/Xresources/Solarized Dark" };
+--------------------------------
+{ "sum": 18233579976068089783, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller17.phar.inc" };
+{ "sum": 18233579976068089783, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller17.phar.inc" };
+--------------------------------
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_charset.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_commands.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_auth.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_plugin.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/php_mysqlnd.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_reverse_api.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_block_alloc.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_result_meta.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_protocol_frame_codec.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_ps.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_priv.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_read_buffer.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_vio.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_result.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_enum_n_def.h" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_reverse_api.c" };
+{ "sum": 9313982201332398223, "path": "/Users/xuzhi/code/php/php-src/ext/mysqlnd/mysqlnd_protocol_frame_codec.c" };
+--------------------------------
+{ "sum": 5101015825250255328, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/tests/mb_encode_mimeheader_basic3.phpt" };
+{ "sum": 5101015825250255328, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/tests/mb_encode_mimeheader_basic2.phpt" };
+--------------------------------
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/net/hyper/.github/PULL_REQUEST_TEMPLATE" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/crayon/modules/3d/README.md" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/php/php-src/sapi/cgi/php.sym" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/join/empty.txt" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/comm/empty" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/comm/emptyempty.expected" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/net/futures-rs/futures/testcrate/lib.rs" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/php/php-src/ext/dom/tests/empty.html" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/oniguruma/ChangeLog" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/oniguruma/NEWS" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/cp/hello_dir/hello.txt" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/reachable/expr_oror.stderr" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/reachable/expr_andand.stderr" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/compare-method/region-unrelated.stdout" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/compare-method/proj-outlives-region.stdout" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/compare-method/region-extra.stdout" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/rustdoc/src-links/compiletest-ignore-dir" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/macro-expanded-include/file.txt" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/module-polymorphism3-files/compiletest-ignore-dir" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/issue_26873_multifile/compiletest-ignore-dir" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/foreign-mod-src/compiletest-ignore-dir" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/mod_dir_simple/compiletest-ignore-dir" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/foreign-src/compiletest-ignore-dir" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/mod_dir_implicit_aux/compiletest-ignore-dir" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/bug53872/second.txt" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/php/php-src/ext/standard/tests/image/blank_file.bmp" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/bug54289/in/dirA/fileB" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/bug54289/in/dirA/fileA" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/bug54289/in/dirAB/file3" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/bug54289/in/dirAB/file2" };
+{ "sum": 17241709254077376921, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/bug54289/in/dirAB/file1" };
+--------------------------------
+{ "sum": 11013506568371520381, "path": "/Users/xuzhi/code/php/php-src/ext/exif/tests/test2.jpg" };
+{ "sum": 11013506568371520381, "path": "/Users/xuzhi/code/php/php-src/ext/exif/tests/test2私はガラスを食べられます.jpg" };
+--------------------------------
+{ "sum": 4107938540546362933, "path": "/Users/xuzhi/code/rust/rust/src/test/pretty/vec-comments.pp" };
+{ "sum": 4107938540546362933, "path": "/Users/xuzhi/code/rust/rust/src/test/pretty/vec-comments.rs" };
+--------------------------------
+{ "sum": 13508971487019919658, "path": "/Users/xuzhi/code/php/php-src/ext/json/php_json_encoder.h" };
+{ "sum": 13508971487019919658, "path": "/Users/xuzhi/code/php/php-src/ext/json/php_json_scanner.h" };
+{ "sum": 13508971487019919658, "path": "/Users/xuzhi/code/php/php-src/ext/json/php_json_parser.h" };
+--------------------------------
+{ "sum": 3831574850396369251, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round4/GroupG/round4_groupG_mimerpc.inc" };
+{ "sum": 3831574850396369251, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/interop/Round4/GroupG/round4_groupG_mimedoc.inc" };
+--------------------------------
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/intl_convert.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/intl_convert.c" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/common/common_error.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/common/common_enum.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_attr.c" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_error.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_create.c" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_locale.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_sort.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_compare.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_create.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_attr.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_is_numeric.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_convert.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_sort.c" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_locale.c" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_compare.c" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator_class.h" };
+{ "sum": 16779806254808387020, "path": "/Users/xuzhi/code/php/php-src/ext/intl/collator/collator.c" };
+--------------------------------
+{ "sum": 14107731302649890423, "path": "/Users/xuzhi/code/php/php-src/ext/wddx/php_wddx.h" };
+{ "sum": 14107731302649890423, "path": "/Users/xuzhi/code/php/php-src/ext/tokenizer/php_tokenizer.h" };
+{ "sum": 14107731302649890423, "path": "/Users/xuzhi/code/php/php-src/ext/pcre/php_pcre.h" };
+--------------------------------
+{ "sum": 8550654851062175719, "path": "/Users/xuzhi/code/php/php-src/ext/spl/tests/testclass" };
+{ "sum": 8550654851062175719, "path": "/Users/xuzhi/code/php/php-src/ext/spl/tests/testclass.inc" };
+{ "sum": 8550654851062175719, "path": "/Users/xuzhi/code/php/php-src/ext/spl/tests/testclass.php.inc" };
+--------------------------------
+{ "sum": 7111635172223394137, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/sha1.phar" };
+{ "sum": 7111635172223394137, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/sha1.phar" };
+--------------------------------
+{ "sum": 9463558704081019965, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller9.phar" };
+{ "sum": 9463558704081019965, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller9.phar" };
+--------------------------------
+{ "sum": 11401868413116874837, "path": "/Users/xuzhi/code/rust/rust/src/test/rustdoc/auxiliary/empty.rs" };
+{ "sum": 11401868413116874837, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/compiler-lookup-paths/native.c" };
+--------------------------------
+{ "sum": 2691332362238796329, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic64lc/align.h" };
+{ "sum": 2691332362238796329, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic32lc/align.h" };
+--------------------------------
+{ "sum": 9153616907834371412, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic64lc/KeccakSponge.h" };
+{ "sum": 9153616907834371412, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic32lc/KeccakSponge.h" };
+--------------------------------
+{ "sum": 5809883785582673947, "path": "/Users/xuzhi/code/php/php-src/ext/intl/intl_common.h" };
+{ "sum": 5809883785582673947, "path": "/Users/xuzhi/code/php/php-src/ext/intl/php_intl.h" };
+{ "sum": 5809883785582673947, "path": "/Users/xuzhi/code/php/php-src/ext/intl/intl_data.h" };
+--------------------------------
+{ "sum": 17798457537831701190, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/issue-20616-9.rs" };
+{ "sum": 17798457537831701190, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/issue-20616-8.rs" };
+{ "sum": 17798457537831701190, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/issue-20616-7.rs" };
+{ "sum": 17798457537831701190, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/issue-20616-6.rs" };
+--------------------------------
+{ "sum": 3595211258765797666, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-i686-linux/build-binutils.sh" };
+{ "sum": 3595211258765797666, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-x86_64-linux/build-binutils.sh" };
+--------------------------------
+{ "sum": 16174511767284262410, "path": "/Users/xuzhi/code/php/php-src/ext/sqlite3/php_sqlite3.h" };
+{ "sum": 16174511767284262410, "path": "/Users/xuzhi/code/php/php-src/ext/sqlite3/php_sqlite3_structs.h" };
+--------------------------------
+{ "sum": 11638758558218972433, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_closures.h" };
+{ "sum": 11638758558218972433, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_float.c" };
+--------------------------------
+{ "sum": 14218418970279370194, "path": "/Users/xuzhi/code/php/php-src/ext/gettext/tests/locale/en/LC_CTYPE/dgettextTest_switch.mo" };
+{ "sum": 14218418970279370194, "path": "/Users/xuzhi/code/php/php-src/ext/gettext/tests/locale/en/LC_MESSAGES/dgettextTest_switch.mo" };
+--------------------------------
+{ "sum": 8186697147531433770, "path": "/Users/xuzhi/code/curl-7.21.7/packages/Symbian/bwins/libcurlu.def" };
+{ "sum": 8186697147531433770, "path": "/Users/xuzhi/code/curl-7.21.7/packages/Symbian/eabi/libcurlu.def" };
+--------------------------------
+{ "sum": 7250736765209640023, "path": "/Users/xuzhi/code/php/php-src/ext/tidy/tests/013.html" };
+{ "sum": 7250736765209640023, "path": "/Users/xuzhi/code/php/php-src/ext/tidy/tests/015.html" };
+{ "sum": 7250736765209640023, "path": "/Users/xuzhi/code/php/php-src/ext/tidy/tests/007.html" };
+--------------------------------
+{ "sum": 16483627869734564281, "path": "/Users/xuzhi/code/php/php-src/ext/standard/uniqid.h" };
+{ "sum": 16483627869734564281, "path": "/Users/xuzhi/code/php/php-src/ext/standard/versioning.c" };
+{ "sum": 16483627869734564281, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_versioning.h" };
+{ "sum": 16483627869734564281, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_ext_syslog.h" };
+{ "sum": 16483627869734564281, "path": "/Users/xuzhi/code/php/php-src/ext/standard/uniqid.c" };
+--------------------------------
+{ "sum": 11755882176234019092, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/elasticlunr.min.js" };
+{ "sum": 11755882176234019092, "path": "/Users/xuzhi/code/rust/book/reference/book/elasticlunr.min.js" };
+--------------------------------
+{ "sum": 17735431468697578896, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/issue-37893/b.rs" };
+{ "sum": 17735431468697578896, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/issue-37839/b.rs" };
+--------------------------------
+{ "sum": 12034606811833178395, "path": "/Users/xuzhi/code/php/php-src/ext/soap/interop/server_round2_groupC.php" };
+{ "sum": 12034606811833178395, "path": "/Users/xuzhi/code/php/php-src/ext/soap/interop/server_round2_groupB.php" };
+{ "sum": 12034606811833178395, "path": "/Users/xuzhi/code/php/php-src/ext/soap/interop/server_round2_base.php" };
+--------------------------------
+{ "sum": 9458563859225011016, "path": "/Users/xuzhi/code/php/php-src/ext/phar/stream.h" };
+{ "sum": 9458563859225011016, "path": "/Users/xuzhi/code/php/php-src/ext/phar/func_interceptors.h" };
+{ "sum": 9458563859225011016, "path": "/Users/xuzhi/code/php/php-src/ext/phar/dirstream.h" };
+--------------------------------
+{ "sum": 11681339583411976346, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/c-static-rlib/bar.rs" };
+{ "sum": 11681339583411976346, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/c-dynamic-rlib/bar.rs" };
+{ "sum": 11681339583411976346, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/c-dynamic-dylib/bar.rs" };
+{ "sum": 11681339583411976346, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/c-static-dylib/bar.rs" };
+--------------------------------
+{ "sum": 1381168464400567518, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-i686-linux/build-openssl.sh" };
+{ "sum": 1381168464400567518, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-x86_64-linux/build-openssl.sh" };
+--------------------------------
+{ "sum": 17198367175093327322, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/_FontAwesome/fonts/fontawesome-webfont.woff" };
+{ "sum": 17198367175093327322, "path": "/Users/xuzhi/code/rust/book/reference/book/_FontAwesome/fonts/fontawesome-webfont.woff" };
+--------------------------------
+{ "sum": 9002988597350269224, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/mod_file_aux.rs" };
+{ "sum": 9002988597350269224, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/mod_file_aux.rs" };
+--------------------------------
+{ "sum": 14082912988455681411, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/conv_test.jpeg" };
+{ "sum": 14082912988455681411, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/conv_test私はガラスを食べられます.jpeg" };
+--------------------------------
+{ "sum": 6687756910169491033, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/sum/bsd_stdin.expected" };
+{ "sum": 6687756910169491033, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/sum/bsd_single_file.expected" };
+--------------------------------
+{ "sum": 18138643750745703234, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/mod_dir_simple/test.rs" };
+{ "sum": 18138643750745703234, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/mod_dir_implicit_aux/mod.rs" };
+--------------------------------
+{ "sum": 7339272384566524538, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/COPYRIGHT" };
+{ "sum": 7339272384566524538, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/cocoa/COPYRIGHT" };
+{ "sum": 7339272384566524538, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/io-surface/COPYRIGHT" };
+{ "sum": 7339272384566524538, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/core-graphics/COPYRIGHT" };
+{ "sum": 7339272384566524538, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/core-text/COPYRIGHT" };
+--------------------------------
+{ "sum": 8898621712440582271, "path": "/Users/xuzhi/code/php/php-src/main/php_stdint.h" };
+{ "sum": 8898621712440582271, "path": "/Users/xuzhi/code/php/php-src/ext/hash/php_hash_gost.h" };
+{ "sum": 8898621712440582271, "path": "/Users/xuzhi/code/php/php-src/ext/hash/php_hash_whirlpool.h" };
+{ "sum": 8898621712440582271, "path": "/Users/xuzhi/code/php/php-src/ext/hash/php_hash_crc32.h" };
+{ "sum": 8898621712440582271, "path": "/Users/xuzhi/code/php/php-src/ext/hash/php_hash_adler32.h" };
+{ "sum": 8898621712440582271, "path": "/Users/xuzhi/code/php/php-src/ext/hash/php_hash_snefru.h" };
+{ "sum": 8898621712440582271, "path": "/Users/xuzhi/code/php/php-src/ext/hash/php_hash_crc32_tables.h" };
+{ "sum": 8898621712440582271, "path": "/Users/xuzhi/code/php/php-src/ext/hash/php_hash_tiger.h" };
+--------------------------------
+{ "sum": 25324556221376763, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/extern-fn-with-packed-struct/Makefile" };
+{ "sum": 25324556221376763, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/extern-fn-struct-passing-abi/Makefile" };
+{ "sum": 25324556221376763, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/extern-fn-mangle/Makefile" };
+{ "sum": 25324556221376763, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/issue-25581/Makefile" };
+--------------------------------
+{ "sum": 12330243688614482470, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/many-crates-but-no-match/crateB.rs" };
+{ "sum": 12330243688614482470, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/missing-crate-dependency/crateB.rs" };
+--------------------------------
+{ "sum": 7227358657698385344, "path": "/Users/xuzhi/code/rust/rust/src/libstd/os/netbsd/mod.rs" };
+{ "sum": 7227358657698385344, "path": "/Users/xuzhi/code/rust/rust/src/libstd/os/openbsd/mod.rs" };
+--------------------------------
+{ "sum": 17972177566622785849, "path": "/Users/xuzhi/code/php/php-src/tests/lang/inc.inc" };
+{ "sum": 17972177566622785849, "path": "/Users/xuzhi/code/php/php-src/tests/lang/include_files/echo.inc" };
+--------------------------------
+{ "sum": 4740778360715011406, "path": "/Users/xuzhi/code/rust/rust/src/test/ui-fulldeps/auxiliary/lint_plugin_test.rs" };
+{ "sum": 4740778360715011406, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail-fulldeps/auxiliary/lint_plugin_test.rs" };
+--------------------------------
+{ "sum": 13357711261396110087, "path": "/Users/xuzhi/code/rust/.DS_Store" };
+{ "sum": 13357711261396110087, "path": "/Users/xuzhi/code/javascript/.DS_Store" };
+{ "sum": 13357711261396110087, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/.DS_Store" };
+--------------------------------
+{ "sum": 14170180248533519460, "path": "/Users/xuzhi/code/php/php-src/ext/standard/crypt.c" };
+{ "sum": 14170180248533519460, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_crypt.h" };
+--------------------------------
+{ "sum": 17654163970031560137, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/issue-14500/bar.rs" };
+{ "sum": 17654163970031560137, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/mixing-formats/bar1.rs" };
+{ "sum": 17654163970031560137, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/mixing-formats/bar2.rs" };
+--------------------------------
+{ "sum": 4406414392076150307, "path": "/Users/xuzhi/code/php/php-src/ext/hash/php_hash_haval.h" };
+{ "sum": 4406414392076150307, "path": "/Users/xuzhi/code/php/php-src/ext/hash/php_hash_ripemd.h" };
+{ "sum": 4406414392076150307, "path": "/Users/xuzhi/code/php/php-src/ext/hash/php_hash_sha3.h" };
+--------------------------------
+{ "sum": 1142717011976900327, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/zip/files/badalias2.phar.zip" };
+{ "sum": 1142717011976900327, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/zip/files/badalias3.phar.zip" };
+--------------------------------
+{ "sum": 5927569496594312574, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/cut/sequences/field_subsumed.expected" };
+{ "sum": 5927569496594312574, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/cut/sequences/field_suffix.expected" };
+--------------------------------
+{ "sum": 11723982145619974986, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/save-analysis/SubDir/mod.rs" };
+{ "sum": 11723982145619974986, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/save-analysis-fail/SubDir/mod.rs" };
+--------------------------------
+{ "sum": 11210315229533735536, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/save-analysis/SameDir3.rs" };
+{ "sum": 11210315229533735536, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/save-analysis-fail/SameDir3.rs" };
+--------------------------------
+{ "sum": 2420225369878942534, "path": "/Users/xuzhi/code/rust/rust/src/librustc_trans/cabi_mips.rs" };
+{ "sum": 2420225369878942534, "path": "/Users/xuzhi/code/rust/rust/src/librustc_trans/cabi_sparc.rs" };
+--------------------------------
+{ "sum": 15987632035128669768, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/dst-bad-assign-2.rs" };
+{ "sum": 15987632035128669768, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/dst-bad-assign.rs" };
+--------------------------------
+{ "sum": 9862661019519370328, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/c-static-rlib/cfoo.c" };
+{ "sum": 9862661019519370328, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/c-static-dylib/cfoo.c" };
+--------------------------------
+{ "sum": 7646640010265743750, "path": "/Users/xuzhi/code/php/php-src/ext/tidy/tests/005.html" };
+{ "sum": 7646640010265743750, "path": "/Users/xuzhi/code/php/php-src/ext/tidy/tests/005私はガラスを食べられます.html" };
+--------------------------------
+{ "sum": 4097531481710060474, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/mark.min.js" };
+{ "sum": 4097531481710060474, "path": "/Users/xuzhi/code/rust/book/reference/book/mark.min.js" };
+--------------------------------
+{ "sum": 13907015045248773279, "path": "/Users/xuzhi/code/rust/algorithms/crossbeam-channel/LICENSE-MIT" };
+{ "sum": 13907015045248773279, "path": "/Users/xuzhi/code/rust/book/reference/LICENSE-MIT" };
+--------------------------------
+{ "sum": 15508482099885098564, "path": "/Users/xuzhi/code/php/php-src/ext/xsl/tests/streamsinclude.xsl" };
+{ "sum": 15508482099885098564, "path": "/Users/xuzhi/code/php/php-src/ext/xsl/tests/私はガラスを食べられますstreamsinclude.xsl" };
+--------------------------------
+{ "sum": 12505601650677676943, "path": "/Users/xuzhi/code/php/php-src/ext/standard/exec.h" };
+{ "sum": 12505601650677676943, "path": "/Users/xuzhi/code/php/php-src/ext/standard/pack.h" };
+{ "sum": 12505601650677676943, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_type.h" };
+{ "sum": 12505601650677676943, "path": "/Users/xuzhi/code/php/php-src/ext/standard/crc32.c" };
+{ "sum": 12505601650677676943, "path": "/Users/xuzhi/code/php/php-src/ext/standard/head.h" };
+{ "sum": 12505601650677676943, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_mail.h" };
+{ "sum": 12505601650677676943, "path": "/Users/xuzhi/code/php/php-src/ext/standard/crc32.h" };
+--------------------------------
+{ "sum": 630122698014932432, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/remmina/Builtin Solarized Dark.colors" };
+{ "sum": 630122698014932432, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/remmina/Solarized Dark.colors" };
+--------------------------------
+{ "sum": 17388341017655947616, "path": "/Users/xuzhi/code/rust/rust/src/test/pretty/issue-31073.rs" };
+{ "sum": 17388341017655947616, "path": "/Users/xuzhi/code/rust/rust/src/test/pretty/issue-31073.pp" };
+--------------------------------
+{ "sum": 12809908453977303030, "path": "/Users/xuzhi/code/rust/net/tokio/.gitignore" };
+{ "sum": 12809908453977303030, "path": "/Users/xuzhi/code/rust/algorithms/twox-hash/.gitignore" };
+{ "sum": 12809908453977303030, "path": "/Users/xuzhi/code/rust/json/json-rust/.gitignore" };
+--------------------------------
+{ "sum": 9877066671242431229, "path": "/Users/xuzhi/code/php/php-src/Zend/buildconf" };
+{ "sum": 9877066671242431229, "path": "/Users/xuzhi/code/php/php-src/TSRM/buildconf" };
+--------------------------------
+{ "sum": 440898560313425621, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic64lc/KeccakHash.h" };
+{ "sum": 440898560313425621, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic32lc/KeccakHash.h" };
+--------------------------------
+{ "sum": 1073883127597694833, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/panic-runtime/auxiliary/panic-runtime-unwind.rs" };
+{ "sum": 1073883127597694833, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/panic-runtime/auxiliary/panic-runtime-unwind2.rs" };
+--------------------------------
+{ "sum": 9463980527870588389, "path": "/Users/xuzhi/code/rust/net/tokio/tokio-tcp/CHANGELOG.md" };
+{ "sum": 9463980527870588389, "path": "/Users/xuzhi/code/rust/net/tokio/tokio-udp/CHANGELOG.md" };
+--------------------------------
+{ "sum": 14046884885789724391, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_sqlite/php_pdo_sqlite.h" };
+{ "sum": 14046884885789724391, "path": "/Users/xuzhi/code/php/php-src/ext/pdo/php_pdo_error.h" };
+{ "sum": 14046884885789724391, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_dblib/php_pdo_dblib.h" };
+{ "sum": 14046884885789724391, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_oci/pdo_oci.c" };
+{ "sum": 14046884885789724391, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_oci/php_pdo_oci.h" };
+{ "sum": 14046884885789724391, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_sqlite/pdo_sqlite.c" };
+{ "sum": 14046884885789724391, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_sqlite/sqlite_statement.c" };
+{ "sum": 14046884885789724391, "path": "/Users/xuzhi/code/php/php-src/ext/pdo/php_pdo_int.h" };
+{ "sum": 14046884885789724391, "path": "/Users/xuzhi/code/php/php-src/ext/pdo/php_pdo.h" };
+{ "sum": 14046884885789724391, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_oci/php_pdo_oci_int.h" };
+{ "sum": 14046884885789724391, "path": "/Users/xuzhi/code/php/php-src/ext/pdo_sqlite/php_pdo_sqlite_int.h" };
+--------------------------------
+{ "sum": 17682617701313233391, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-i686-linux/build-curl.sh" };
+{ "sum": 17682617701313233391, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-x86_64-linux/build-curl.sh" };
+--------------------------------
+{ "sum": 1431403850659691786, "path": "/Users/xuzhi/code/php/php-src/ext/standard/incomplete_class.c" };
+{ "sum": 1431403850659691786, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_incomplete_class.h" };
+--------------------------------
+{ "sum": 17659207622288076790, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/invalid-library/foo.rs" };
+{ "sum": 17659207622288076790, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/libs-through-symlinks/bar.rs" };
+{ "sum": 17659207622288076790, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/issue-11908/bar.rs" };
+--------------------------------
+{ "sum": 1366030996224917905, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/imagefilledarc_error1.png" };
+{ "sum": 1366030996224917905, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/imagearc_error1.png" };
+--------------------------------
+{ "sum": 6191766979899130051, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfl_allocators.c" };
+{ "sum": 6191766979899130051, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfilter_wchar.c" };
+{ "sum": 6191766979899130051, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfilter_8bit.c" };
+{ "sum": 6191766979899130051, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfl_filter_output.c" };
+{ "sum": 6191766979899130051, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfl_string.c" };
+{ "sum": 6191766979899130051, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfilter_wchar.h" };
+{ "sum": 6191766979899130051, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfilter_8bit.h" };
+{ "sum": 6191766979899130051, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfl_ident.c" };
+{ "sum": 6191766979899130051, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/mbfl/mbfl_language.c" };
+--------------------------------
+{ "sum": 17932274810096374853, "path": "/Users/xuzhi/code/php/php-src/ext/posix/php_posix.h" };
+{ "sum": 17932274810096374853, "path": "/Users/xuzhi/code/php/php-src/ext/recode/recode.c" };
+--------------------------------
+{ "sum": 2549560173168886804, "path": "/Users/xuzhi/code/php/php-src/ext/spl/spl_exceptions.h" };
+{ "sum": 2549560173168886804, "path": "/Users/xuzhi/code/php/php-src/ext/spl/php_spl.h" };
+{ "sum": 2549560173168886804, "path": "/Users/xuzhi/code/php/php-src/ext/spl/spl_array.h" };
+{ "sum": 2549560173168886804, "path": "/Users/xuzhi/code/php/php-src/ext/spl/spl_exceptions.c" };
+{ "sum": 2549560173168886804, "path": "/Users/xuzhi/code/php/php-src/ext/dba/libflatfile/flatfile.c" };
+{ "sum": 2549560173168886804, "path": "/Users/xuzhi/code/php/php-src/ext/spl/spl_observer.h" };
+{ "sum": 2549560173168886804, "path": "/Users/xuzhi/code/php/php-src/ext/spl/spl_engine.h" };
+{ "sum": 2549560173168886804, "path": "/Users/xuzhi/code/php/php-src/ext/simplexml/sxe.h" };
+--------------------------------
+{ "sum": 15217518284014646813, "path": "/Users/xuzhi/code/php/php-src/ext/standard/link.c" };
+{ "sum": 15217518284014646813, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_standard.h" };
+{ "sum": 15217518284014646813, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_link.h" };
+{ "sum": 15217518284014646813, "path": "/Users/xuzhi/code/php/php-src/main/php_content_types.c" };
+--------------------------------
+{ "sum": 1795262197556959627, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/invalid_neg_size.gd2" };
+{ "sum": 1795262197556959627, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/invalid_neg_size私はガラスを食べられます.gd2" };
+--------------------------------
+{ "sum": 14168084390729448204, "path": "/Users/xuzhi/code/rust/cargo/LICENSE-MIT" };
+{ "sum": 14168084390729448204, "path": "/Users/xuzhi/code/rust/rust/LICENSE-MIT" };
+{ "sum": 14168084390729448204, "path": "/Users/xuzhi/code/rust/rust/src/librustdoc/html/static/LICENSE-MIT.txt" };
+--------------------------------
+{ "sum": 17285605570890465802, "path": "/Users/xuzhi/code/php/php-src/win32/php7ts_cli.rc2" };
+{ "sum": 17285605570890465802, "path": "/Users/xuzhi/code/php/php-src/win32/php7ts.rc2" };
+--------------------------------
+{ "sum": 13664891663787829906, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/bugs/bug50698_1.wsdl" };
+{ "sum": 13664891663787829906, "path": "/Users/xuzhi/code/php/php-src/ext/soap/tests/bugs/bug50698_4.wsdl" };
+--------------------------------
+{ "sum": 14918190031879144207, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso2022_kr.h" };
+{ "sum": 14918190031879144207, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_euc_kr.h" };
+{ "sum": 14918190031879144207, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_uhc.h" };
+--------------------------------
+{ "sum": 6029112051385323449, "path": "/Users/xuzhi/code/php/php-src/ext/intl/dateformat/dateformat_attr.c" };
+{ "sum": 6029112051385323449, "path": "/Users/xuzhi/code/php/php-src/ext/intl/dateformat/dateformat.c" };
+{ "sum": 6029112051385323449, "path": "/Users/xuzhi/code/php/php-src/ext/intl/dateformat/dateformat_data.c" };
+--------------------------------
+{ "sum": 8505712915569408191, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/manual-link/foo.c" };
+{ "sum": 8505712915569408191, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/manual-link/bar.c" };
+--------------------------------
+{ "sum": 6702972485378239147, "path": "/Users/xuzhi/code/php/php-src/ext/zip/lib/config.h" };
+{ "sum": 6702972485378239147, "path": "/Users/xuzhi/code/php/php-src/ext/zip/php_zip.h" };
+--------------------------------
+{ "sum": 15183281559895185116, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/termite/Builtin Solarized Dark" };
+{ "sum": 15183281559895185116, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/termite/Solarized Dark" };
+--------------------------------
+{ "sum": 6329492260705815212, "path": "/Users/xuzhi/code/curl-7.21.7/lib/strdup.c" };
+{ "sum": 6329492260705815212, "path": "/Users/xuzhi/code/curl-7.21.7/lib/timeval.c" };
+--------------------------------
+{ "sum": 6003062860352871294, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_ftok.h" };
+{ "sum": 6003062860352871294, "path": "/Users/xuzhi/code/php/php-src/ext/standard/ftok.c" };
+--------------------------------
+{ "sum": 18299489856543412428, "path": "/Users/xuzhi/code/php/php-src/ext/standard/uuencode.c" };
+{ "sum": 18299489856543412428, "path": "/Users/xuzhi/code/php/php-src/ext/standard/php_uuencode.h" };
+--------------------------------
+{ "sum": 574261513660920648, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/tests/bug71527私はガラスを食べられます.magic" };
+{ "sum": 574261513660920648, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/tests/bug71527.magic" };
+--------------------------------
+{ "sum": 14888476323688369302, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-i686-linux/build-cmake.sh" };
+{ "sum": 14888476323688369302, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-x86_64-linux/build-cmake.sh" };
+--------------------------------
+{ "sum": 17315472173861921976, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/terminal/Violet Dark.terminal" };
+{ "sum": 17315472173861921976, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/terminal/Violet Light.terminal" };
+--------------------------------
+{ "sum": 11857191050551550975, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/specialization/specialization-no-default.rs" };
+{ "sum": 11857191050551550975, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/specialization/defaultimpl/specialization-no-default.rs" };
+--------------------------------
+{ "sum": 995792448508227275, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/tests/skipif.inc" };
+{ "sum": 995792448508227275, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/tests/opt/skipif.inc" };
+--------------------------------
+{ "sum": 5087461535098838565, "path": "/Users/xuzhi/code/php/php-src/ext/gettext/tests/locale/en/LC_CTYPE/dgettextTest.mo" };
+{ "sum": 5087461535098838565, "path": "/Users/xuzhi/code/php/php-src/ext/gettext/tests/locale/en/LC_MESSAGES/dgettextTest.mo" };
+{ "sum": 5087461535098838565, "path": "/Users/xuzhi/code/php/php-src/ext/gettext/tests/locale/en/LC_MESSAGES/dngettextTest.mo" };
+--------------------------------
+{ "sum": 13832357666817281889, "path": "/Users/xuzhi/code/php/php-src/ext/standard/css.h" };
+{ "sum": 13832357666817281889, "path": "/Users/xuzhi/code/php/php-src/ext/standard/css.c" };
+--------------------------------
+{ "sum": 15246315166481088912, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic64lc/brg_endian.h" };
+{ "sum": 15246315166481088912, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic32lc/brg_endian.h" };
+--------------------------------
+{ "sum": 15729805334882316483, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller5.phar.inc" };
+{ "sum": 15729805334882316483, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller5.phar.inc" };
+--------------------------------
+{ "sum": 4380629100517142250, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/svh-a-base.rs" };
+{ "sum": 4380629100517142250, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/svh-a-no-change.rs" };
+{ "sum": 4380629100517142250, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/svh-a-base.rs" };
+--------------------------------
+{ "sum": 16957598901156859570, "path": "/Users/xuzhi/code/curl-7.21.7/lib/Makefile.vc9" };
+{ "sum": 16957598901156859570, "path": "/Users/xuzhi/code/curl-7.21.7/lib/Makefile.vc6" };
+{ "sum": 16957598901156859570, "path": "/Users/xuzhi/code/curl-7.21.7/src/Makefile.vc9" };
+{ "sum": 16957598901156859570, "path": "/Users/xuzhi/code/curl-7.21.7/src/Makefile.vc6" };
+{ "sum": 16957598901156859570, "path": "/Users/xuzhi/code/curl-7.21.7/src/Makefile.vc10" };
+--------------------------------
+{ "sum": 3009142863771519737, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/cut/sequences/byte_suffix.expected" };
+{ "sum": 3009142863771519737, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/cut/sequences/byte_subsumed.expected" };
+--------------------------------
+{ "sum": 16866025006224645478, "path": "/Users/xuzhi/code/php/php-src/ext/intl/breakiterator/codepointiterator_internal.cpp" };
+{ "sum": 16866025006224645478, "path": "/Users/xuzhi/code/php/php-src/ext/intl/breakiterator/codepointiterator_methods.cpp" };
+--------------------------------
+{ "sum": 6334107523087797521, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/schemes/Material.itermcolors" };
+{ "sum": 6334107523087797521, "path": "/Users/xuzhi/code/iTerm2-Color-Schemes/schemes/MaterialDark.itermcolors" };
+--------------------------------
+{ "sum": 16419656797052110127, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_euc_jp_win.h" };
+{ "sum": 16419656797052110127, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_cp51932.h" };
+{ "sum": 16419656797052110127, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_euc_jp.h" };
+--------------------------------
+{ "sum": 15321956304464633881, "path": "/Users/xuzhi/code/rust/rust/src/test/ui-fulldeps/auxiliary/attr_proc_macro.rs" };
+{ "sum": 15321956304464633881, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail-fulldeps/proc-macro/auxiliary/attr_proc_macro.rs" };
+--------------------------------
+{ "sum": 11034133427208978689, "path": "/Users/xuzhi/code/php/php-src/ext/standard/tests/array/array_multisort_variation9.phpt" };
+{ "sum": 11034133427208978689, "path": "/Users/xuzhi/code/php/php-src/ext/standard/tests/array/array_multisort_variation7.phpt" };
+--------------------------------
+{ "sum": 3453871754226270103, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/src.wbmp" };
+{ "sum": 3453871754226270103, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/src.png" };
+{ "sum": 3453871754226270103, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/src私はガラスを食べられます.wbmp" };
+--------------------------------
+{ "sum": 8031755983460532090, "path": "/Users/xuzhi/code/php/php-src/ext/openssl/tests/sni_server_uk.pem" };
+{ "sum": 8031755983460532090, "path": "/Users/xuzhi/code/php/php-src/ext/openssl/tests/sni_server_uk_key.pem" };
+--------------------------------
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_errors.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_objects_API.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_ptr_stack.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_object_handlers.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_globals_macros.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_builtin_functions.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_highlight.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_sprintf.c" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_execute.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_stack.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_stack.c" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_variables.c" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_ptr_stack.c" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_llist.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_inheritance.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_istdiostream.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_objects.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_config.w32.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_list.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_exceptions.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_config.nw.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_ini_scanner.h" };
+{ "sum": 13919747281443714062, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_language_scanner.h" };
+--------------------------------
+{ "sum": 12778496435714642637, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/fpic/hello.rs" };
+{ "sum": 12778496435714642637, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/prune-link-args/empty.rs" };
+--------------------------------
+{ "sum": 2999024464597467726, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/allocator/auxiliary/system-allocator.rs" };
+{ "sum": 2999024464597467726, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/allocator/auxiliary/system-allocator2.rs" };
+--------------------------------
+{ "sum": 9155698586096700263, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_cp5022x.h" };
+{ "sum": 9155698586096700263, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso2022_jp_ms.h" };
+{ "sum": 9155698586096700263, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_cp51932.c" };
+{ "sum": 9155698586096700263, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_jis.h" };
+{ "sum": 9155698586096700263, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_sjis.h" };
+{ "sum": 9155698586096700263, "path": "/Users/xuzhi/code/php/php-src/ext/mbstring/libmbfl/filters/mbfilter_iso2022jp_2004.h" };
+--------------------------------
+{ "sum": 3212679594696159877, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller12.phar.inc" };
+{ "sum": 3212679594696159877, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller12.phar.inc" };
+--------------------------------
+{ "sum": 6256992256020845840, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/sanitizer-dylib-link/program.rs" };
+{ "sum": 6256992256020845840, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/sanitizer-cdylib-link/program.rs" };
+--------------------------------
+{ "sum": 2998301606426018070, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/c-link-to-rust-staticlib/bar.c" };
+{ "sum": 2998301606426018070, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/c-link-to-rust-dylib/bar.c" };
+{ "sum": 2998301606426018070, "path": "/Users/xuzhi/code/rust/rust/src/test/run-make/lto-smoke-c/bar.c" };
+--------------------------------
+{ "sum": 10359908639372852209, "path": "/Users/xuzhi/code/php/php-src/ext/gettext/tests/locale/en/LC_CTYPE/dgettextTest_switch.po" };
+{ "sum": 10359908639372852209, "path": "/Users/xuzhi/code/php/php-src/ext/gettext/tests/locale/en/LC_MESSAGES/dgettextTest_switch.po" };
+--------------------------------
+{ "sum": 3993651380405136053, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/trait_superkinds_in_metadata.rs" };
+{ "sum": 3993651380405136053, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/trait_superkinds_in_metadata.rs" };
+--------------------------------
+{ "sum": 3852221976348420593, "path": "/Users/xuzhi/code/php/php-src/ext/pcntl/php_signal.c" };
+{ "sum": 3852221976348420593, "path": "/Users/xuzhi/code/php/php-src/ext/pcntl/php_signal.h" };
+{ "sum": 3852221976348420593, "path": "/Users/xuzhi/code/php/php-src/ext/pcntl/php_pcntl.h" };
+--------------------------------
+{ "sum": 17975745312462361503, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller14.phar.inc" };
+{ "sum": 17975745312462361503, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller14.phar.inc" };
+--------------------------------
+{ "sum": 11660737841379891653, "path": "/Users/xuzhi/code/php/php-src/sapi/litespeed/lscriu.h" };
+{ "sum": 11660737841379891653, "path": "/Users/xuzhi/code/php/php-src/sapi/litespeed/lsapidef.h" };
+--------------------------------
+{ "sum": 14569122401529495387, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/highlight.js" };
+{ "sum": 14569122401529495387, "path": "/Users/xuzhi/code/rust/book/reference/book/highlight.js" };
+--------------------------------
+{ "sum": 2263835974685037067, "path": "/Users/xuzhi/code/php/php-src/win32/ftok.c" };
+{ "sum": 2263835974685037067, "path": "/Users/xuzhi/code/php/php-src/win32/ipc.h" };
+--------------------------------
+{ "sum": 12305033090197104036, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/xcrate_unit_struct.rs" };
+{ "sum": 12305033090197104036, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/xcrate_unit_struct.rs" };
+--------------------------------
+{ "sum": 18122450532830416754, "path": "/Users/xuzhi/code/php/php-src/ext/standard/base64.h" };
+{ "sum": 18122450532830416754, "path": "/Users/xuzhi/code/php/php-src/ext/standard/pageinfo.h" };
+{ "sum": 18122450532830416754, "path": "/Users/xuzhi/code/php/php-src/ext/standard/url.h" };
+{ "sum": 18122450532830416754, "path": "/Users/xuzhi/code/php/php-src/ext/standard/pageinfo.c" };
+{ "sum": 18122450532830416754, "path": "/Users/xuzhi/code/php/php-src/main/fopen_wrappers.h" };
+--------------------------------
+{ "sum": 12113950290817019039, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/auxiliary/go_trait.rs" };
+{ "sum": 12113950290817019039, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/auxiliary/go_trait.rs" };
+{ "sum": 12113950290817019039, "path": "/Users/xuzhi/code/rust/rust/src/test/run-pass/specialization/auxiliary/go_trait.rs" };
+--------------------------------
+{ "sum": 13774708365665173989, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/Optimizer/zend_dfg.h" };
+{ "sum": 13774708365665173989, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/Optimizer/zend_dfg.c" };
+--------------------------------
+{ "sum": 13068084227350779850, "path": "/Users/xuzhi/code/rust/rust/src/test/ui/regions-fn-subtyping-return-static.rs" };
+{ "sum": 13068084227350779850, "path": "/Users/xuzhi/code/rust/rust/src/test/compile-fail/regions-fn-subtyping-return-static.rs" };
+--------------------------------
+{ "sum": 6392807886038278769, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/LICENSE-MIT" };
+{ "sum": 6392807886038278769, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/cocoa/LICENSE-MIT" };
+{ "sum": 6392807886038278769, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/io-surface/LICENSE-MIT" };
+{ "sum": 6392807886038278769, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/core-graphics/LICENSE-MIT" };
+{ "sum": 6392807886038278769, "path": "/Users/xuzhi/code/rust/gui/core-foundation-rs/core-text/LICENSE-MIT" };
+--------------------------------
+{ "sum": 8416286068514330106, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/tomorrow-night.css" };
+{ "sum": 8416286068514330106, "path": "/Users/xuzhi/code/rust/book/reference/book/tomorrow-night.css" };
+--------------------------------
+{ "sum": 3910225577051398698, "path": "/Users/xuzhi/code/php/php-src/ext/standard/levenshtein.c" };
+{ "sum": 3910225577051398698, "path": "/Users/xuzhi/code/php/php-src/ext/ctype/php_ctype.h" };
+--------------------------------
+{ "sum": 7578575456180877116, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-i686-linux/build-git.sh" };
+{ "sum": 7578575456180877116, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-x86_64-linux/build-git.sh" };
+--------------------------------
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/zend_persist.h" };
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/zend_accelerator_util_funcs.h" };
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/zend_accelerator_debug.c" };
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/shared_alloc_posix.c" };
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/zend_accelerator_debug.h" };
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/shared_alloc_mmap.c" };
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/zend_accelerator_blacklist.h" };
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/Optimizer/zend_optimizer.h" };
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/zend_accelerator_module.h" };
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/zend_accelerator_hash.h" };
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/Optimizer/pass3.c" };
+{ "sum": 16301975414886510648, "path": "/Users/xuzhi/code/php/php-src/ext/opcache/shared_alloc_shm.c" };
+--------------------------------
+{ "sum": 8438592605889434951, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/Tuffy.ttf" };
+{ "sum": 8438592605889434951, "path": "/Users/xuzhi/code/php/php-src/ext/gd/tests/Tuffy私はガラスを食べられます.ttf" };
+--------------------------------
+{ "sum": 16273026195242879734, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/libmagic/readcdf.c" };
+{ "sum": 16273026195242879734, "path": "/Users/xuzhi/code/php/php-src/ext/fileinfo/libmagic/cdf_time.c" };
+--------------------------------
+{ "sum": 2243697956414003277, "path": "/Users/xuzhi/code/rust/book/rust-by-example-cn/book/_FontAwesome/css/font-awesome.css" };
+{ "sum": 2243697956414003277, "path": "/Users/xuzhi/code/rust/book/reference/book/_FontAwesome/css/font-awesome.css" };
+--------------------------------
+{ "sum": 15939198279434679421, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_string.c" };
+{ "sum": 15939198279434679421, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_vm_trace_handlers.h" };
+{ "sum": 15939198279434679421, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_type_info.h" };
+{ "sum": 15939198279434679421, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_arena.h" };
+{ "sum": 15939198279434679421, "path": "/Users/xuzhi/code/php/php-src/Zend/zend_vm.h" };
+--------------------------------
+{ "sum": 16422140668044016927, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/sort/merge_ints_interleaved.expected" };
+{ "sum": 16422140668044016927, "path": "/Users/xuzhi/code/rust/coreutils/tests/fixtures/sort/multiple_files.expected" };
+--------------------------------
+{ "sum": 5342722618001430384, "path": "/Users/xuzhi/code/rust/rust/src/test/codegen-units/item-collection/auxiliary/cgu_generic_function.rs" };
+{ "sum": 5342722618001430384, "path": "/Users/xuzhi/code/rust/rust/src/test/codegen-units/partitioning/auxiliary/cgu_generic_function.rs" };
+--------------------------------
+{ "sum": 2748074648237229315, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller10.phar" };
+{ "sum": 2748074648237229315, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller10.phar" };
+--------------------------------
+{ "sum": 11250491453875026005, "path": "/Users/xuzhi/code/php/php-src/win32/inet.h" };
+{ "sum": 11250491453875026005, "path": "/Users/xuzhi/code/php/php-src/win32/inet.c" };
+--------------------------------
+{ "sum": 8305450850850412259, "path": "/Users/xuzhi/code/php/php-src/ext/standard/proc_open.c" };
+{ "sum": 8305450850850412259, "path": "/Users/xuzhi/code/php/php-src/ext/standard/proc_open.h" };
+{ "sum": 8305450850850412259, "path": "/Users/xuzhi/code/php/php-src/ext/com_dotnet/com_olechar.c" };
+{ "sum": 8305450850850412259, "path": "/Users/xuzhi/code/php/php-src/main/streams/php_stream_filter_api.h" };
+{ "sum": 8305450850850412259, "path": "/Users/xuzhi/code/php/php-src/main/streams/php_stream_context.h" };
+{ "sum": 8305450850850412259, "path": "/Users/xuzhi/code/php/php-src/main/streams/php_stream_userspace.h" };
+{ "sum": 8305450850850412259, "path": "/Users/xuzhi/code/php/php-src/ext/com_dotnet/php_com_dotnet.h" };
+--------------------------------
+{ "sum": 13259164300990457329, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic64lc/KeccakSponge.c" };
+{ "sum": 13259164300990457329, "path": "/Users/xuzhi/code/php/php-src/ext/hash/sha3/generic32lc/KeccakSponge.c" };
+--------------------------------
+{ "sum": 17337669565947085690, "path": "/Users/xuzhi/code/rust/rust/src/librustc_tsan/lib.rs" };
+{ "sum": 17337669565947085690, "path": "/Users/xuzhi/code/rust/rust/src/librustc_asan/lib.rs" };
+--------------------------------
+{ "sum": 13406373739211564692, "path": "/Users/xuzhi/code/rust/rust/src/test/run-fail/unreachable.rs" };
+{ "sum": 13406373739211564692, "path": "/Users/xuzhi/code/rust/rust/src/test/run-fail/unreachable-macro-panic.rs" };
+--------------------------------
+{ "sum": 13298015255465637366, "path": "/Users/xuzhi/code/php/php-src/ext/zip/tests/bug40228私はガラスを食べられます.zip" };
+{ "sum": 13298015255465637366, "path": "/Users/xuzhi/code/php/php-src/ext/zip/tests/bug40228.zip" };
+--------------------------------
+{ "sum": 4783839003069849715, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-i686-linux/build-python.sh" };
+{ "sum": 4783839003069849715, "path": "/Users/xuzhi/code/rust/rust/src/ci/docker/dist-x86_64-linux/build-python.sh" };
+--------------------------------
+{ "sum": 7264734414012331605, "path": "/Users/xuzhi/code/php/php-src/ext/sockets/sockets.c" };
+{ "sum": 7264734414012331605, "path": "/Users/xuzhi/code/php/php-src/win32/sockets.h" };
+--------------------------------
+{ "sum": 12531519944643813060, "path": "/Users/xuzhi/code/rust/rust/src/test/rustdoc/recursion1.rs" };
+{ "sum": 12531519944643813060, "path": "/Users/xuzhi/code/rust/rust/src/test/rustdoc/recursion2.rs" };
+--------------------------------
+{ "sum": 5111382153664706055, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/files/frontcontroller6.phar" };
+{ "sum": 5111382153664706055, "path": "/Users/xuzhi/code/php/php-src/ext/phar/tests/cache_list/files/frontcontroller6.phar" };
+--------------------------------
+{ "sum": 17161996575449165123, "path": "/Users/xuzhi/code/curl-7.21.7/packages/vms/hpssl_vax.opt" };
+{ "sum": 17161996575449165123, "path": "/Users/xuzhi/code/curl-7.21.7/packages/vms/hpssl_alpha.opt" };

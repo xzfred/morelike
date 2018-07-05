@@ -23,6 +23,4 @@ typenum = "1.9.0"
 # futures = "0.2"
 crossbeam-channel = "0.2.1"
 twox-hash = "1.1.0"
-
-[dependencies.adler32]
-version = "1.0"
+clap = "2.32.0"

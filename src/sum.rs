@@ -1,4 +1,3 @@
-
 use std::io::{Read, Result};
 use std::fs::{File};
 // use std::rc::Rc;
@@ -73,6 +72,7 @@ impl SearchFile {
         }
     }
 
+    #[allow(dead_code)]
     pub fn next(&self) -> i32 {
         match self.crc {
             None => 0,
@@ -196,8 +196,8 @@ where K: Eq + Hash + Copy
             match v {
                 Some(list) => {
                     for f in list {
-                        let file = f.lock().unwrap();
-                        println!("file:sum={:?},path={:?}", file.sum, file.file);
+                        let file: &SearchFile = &f.lock().unwrap();
+                        println!("{{ \"sum\": {0}, \"path\": \"{1}\" }};", file.sum.unwrap(), file.file.display());
                     }
                 },
                 None => {}
@@ -206,6 +206,7 @@ where K: Eq + Hash + Copy
     }
 }
 
+#[allow(dead_code)]
 pub enum CompareMsg {
     File(PathBuf),
     Close,
@@ -238,10 +239,18 @@ impl ComparerState {
         }
     }
 
+    #[allow(dead_code)]
     pub fn send(&self, msg: CompareMsg) {
+        if false {
+            match msg {
+                CompareMsg::File(_) => {},
+                CompareMsg::Close => {}
+            };
+        }
         self.tx.lock().unwrap().send(msg).unwrap();
     }
 
+    #[allow(dead_code)]
     pub fn run(&self) {
         loop {
             let msg = self.rx.lock().unwrap().recv().unwrap();
@@ -284,7 +293,9 @@ impl ComparerState {
                     self.next(step + 1, old_file);
                     self.next(step + 1, f);
                 },
-                None => {},
+                None => {
+                    self.next(step + 1, f);
+                },
             },
             None => {},
         }
@@ -296,7 +307,7 @@ impl Comparer {
         let s = Arc::new(ComparerState::new());
         let ss = s.clone();
         Comparer {
-            finder: Finder::new(1, vec![
+            finder: Finder::new(4, vec![
                 ".git".to_owned(),
                 "target".to_owned(),
             ], move |msg: FinderMsg| {
