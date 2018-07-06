@@ -2,6 +2,8 @@
 #[macro_use] extern crate log;
 extern crate pretty_env_logger;
 extern crate clap;
+extern crate indicatif;
+extern crate console;
 use clap::{Arg, App, ArgMatches};
 
 // extern crate adler32;

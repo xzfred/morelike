@@ -2,11 +2,30 @@ use std::sync::{Arc, Mutex};
 use std::sync::atomic::{AtomicUsize, Ordering};
 use std::sync::mpsc;
 use std::{thread, time};
+use std::sync::mpsc::{Sender};
 
 /// 线程池消息
 pub enum Message {
     Run(Task),
     Close,
+}
+
+pub enum PosMsg {
+    Start(i64),
+    Pos(i64, String),
+    End(i64),
+}
+
+pub struct Pos {
+    id: i32,
+    t: i32,
+    tx: Sender,
+}
+
+impl Pos {
+    pub fn new() {
+        
+    }
 }
 
 /// 线程池
@@ -121,12 +140,16 @@ impl Clone for ThreadPool {
 
 impl Drop for ThreadPool {
     fn drop(&mut self) {
+        trace!("cnt: {}, size: {}",
+               self.state.cnt.load(Ordering::Relaxed),
+               self.state.size
+        );
         if self.state.cnt.fetch_sub(1, Ordering::Relaxed) == 1 {
             for _ in 0..self.state.size {
                 self.state.send(Message::Close);
             }
+            self.state.wait.join();
         }
-        self.state.wait.join();
     }
 }
 
@@ -160,7 +183,7 @@ impl ThreadPoolBuilder {
 
     #[allow(dead_code)]
     pub fn after_start<F>(&mut self, f: F) -> &mut Self
-        where F: Fn(usize) + Send + Sync + 'static
+    where F: Fn(usize) + Send + Sync + 'static
     {
         self.after_start = Some(Arc::new(f));
         self
@@ -168,7 +191,7 @@ impl ThreadPoolBuilder {
 
     #[allow(dead_code)]
     pub fn before_stop<F>(&mut self, f: F) -> &mut Self
-        where F: Fn(usize) + Send + Sync + 'static
+    where F: Fn(usize) + Send + Sync + 'static
     {
         self.before_stop = Some(Arc::new(f));
         self

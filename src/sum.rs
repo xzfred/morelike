@@ -17,8 +17,10 @@ use std::sync::mpsc::{channel, Sender, Receiver};
 
 // use generic_array::{GenericArray};
 // use digest::generic_array::typenum::{U20};
+use indicatif::{HumanDuration, MultiProgress, ProgressBar, ProgressStyle};
 
-use finder::{Finder, FinderMsg};
+use finder::*;
+use taskpool::*;
 
 use twox_hash::{XxHash};
 
@@ -239,7 +241,7 @@ impl ComparerState {
         }
     }
 
-    #[allow(dead_code)]
+    // #[allow(dead_code)]
     pub fn send(&self, msg: CompareMsg) {
         if false {
             match msg {
@@ -250,7 +252,7 @@ impl ComparerState {
         self.tx.lock().unwrap().send(msg).unwrap();
     }
 
-    #[allow(dead_code)]
+    // #[allow(dead_code)]
     pub fn run(&self) {
         loop {
             let msg = self.rx.lock().unwrap().recv().unwrap();
@@ -306,25 +308,36 @@ impl Comparer {
     pub fn new() -> Comparer {
         let s = Arc::new(ComparerState::new());
         let ss = s.clone();
-        Comparer {
-            finder: Finder::new(4, vec![
+        let pool = ThreadPool::builder().pool_size(6).create();
+        let one_ss = ss.clone();
+        pool.spawn(move || {
+            one_ss.run();
+        });
+        let one_ss = ss.clone();
+        pool.spawn(move || {
+            one_ss.run();
+        });
+
+        let finder = FinderBuilder::new()
+            .ignore(vec![
                 ".git".to_owned(),
                 "target".to_owned(),
-            ], move |msg: FinderMsg| {
+            ])
+            .scan_pool_size(4)
+            .pool(pool.clone())
+            .create(move |msg: FinderMsg| {
                 match msg {
                     FinderMsg::Dir(_path, _level) => {
                     },
                     FinderMsg::File(path, _level) => {
-                        // let mut ssm = ss.clone();
-                        // let ssss = Arc::get_mut(&mut ssm).unwrap();
-                        // ssss.compare(path);
-                        // info!("{:?}", path);
-                        ss.compare(path);
+                        ss.send(CompareMsg::File(path));
                     },
                     _ => {},
                 }
                 true
-            }),
+            });
+        Comparer {
+            finder: finder,
             state: s,
         }
     }
@@ -332,6 +345,8 @@ impl Comparer {
     pub fn run(&self, parent: &str) {
         self.finder.scan(parent);
         self.finder.join();
+        self.state.send(CompareMsg::Close);
+        self.state.send(CompareMsg::Close);
         // println!("{:?}", self.state);
         // println!("{:?}", self.state.file_dup);
         self.state.list_by_sum.list();

@@ -9,28 +9,28 @@ use std::{thread, time};
 
 use taskpool::*;
 
-#[allow(dead_code)]
-pub fn scan(path: &str) {
-    let path = PathBuf::from(path);
-    load(&path);
-}
+// #[allow(dead_code)]
+// pub fn scan(path: &str) {
+//     let path = PathBuf::from(path);
+//     load(&path);
+// }
 
-fn load(parent: &Path) {
-    let dirs = fs::read_dir(parent).unwrap();
+// fn load(parent: &Path) {
+//     let dirs = fs::read_dir(parent).unwrap();
 
-    for file in dirs {
-        let ff = &file.unwrap().path();
+//     for file in dirs {
+//         let ff = &file.unwrap().path();
 
-        if ff.is_dir() {
-            warn!("Dir: {}", ff.to_str().unwrap());
-            load(ff);
-        } else if ff.symlink_metadata().unwrap().file_type().is_symlink() {
-            error!("Synlink: {}", ff.to_str().unwrap());
-        } else if ff.is_file() {
-            info!("File: {}", ff.to_str().unwrap());
-        }
-    }
-}
+//         if ff.is_dir() {
+//             warn!("Dir: {}", ff.to_str().unwrap());
+//             load(ff);
+//         } else if ff.symlink_metadata().unwrap().file_type().is_symlink() {
+//             error!("Synlink: {}", ff.to_str().unwrap());
+//         } else if ff.is_file() {
+//             info!("File: {}", ff.to_str().unwrap());
+//         }
+//     }
+// }
 
 pub enum FinderMsg {
     Dir(PathBuf, u32),
@@ -55,7 +55,7 @@ pub struct Finder {
 }
 
 impl Scan {
-    pub fn is_ignore(ignore: &Vec<String>, path: &PathBuf) -> bool {
+    fn is_ignore(ignore: &Vec<String>, path: &PathBuf) -> bool {
         let isit = path.file_name().unwrap().to_str().unwrap();
         for name in ignore {
             if name.eq(isit) {
@@ -154,33 +154,69 @@ impl Scan {
 
 }
 
-impl Finder {
-    pub fn new<F>(size: usize, ignore: Vec<String>, f: F) -> Finder
+pub struct FinderBuilder {
+    scan_pool_size: usize,
+    ignore: Option<Vec<String>>,
+    pool: Option<ThreadPool>,
+}
+
+impl FinderBuilder {
+    pub fn new() -> FinderBuilder {
+        FinderBuilder {
+            scan_pool_size: 2,
+            ignore: None,
+            pool: None,
+        }
+    }
+
+    pub fn ignore(&mut self, ignore: Vec<String>) -> &mut Self {
+        self.ignore = Some(ignore);
+        self
+    }
+
+    pub fn scan_pool_size(&mut self, size: usize) -> &mut Self {
+        self.scan_pool_size = size;
+        self
+    }
+
+    pub fn pool(&mut self, pool: ThreadPool) -> &mut Self {
+        self.pool = Some(pool.clone());
+        self
+    }
+
+    pub fn create<F>(&mut self, f: F) -> Finder
     where F: Fn(FinderMsg) -> bool + Send + Sync + 'static
     {
-        let pool = ThreadPool::builder().pool_size(size)
-            .after_start(move |_size: usize| {
-                // debug!("start: {}", size);
-            }).before_stop(move |_size: usize| {
-                // debug!("stop: {}", size);
-            }).create();
-
-        let scan = Scan::new(f, ignore);
-
-        let obj = Finder {
-            pool_size: size,
-            pool: pool,
-            scan: Arc::new(scan),
+        let pool = match self.pool {
+            Some(ref p) => p.clone(),
+            None => ThreadPool::builder().pool_size(self.scan_pool_size).create(),
         };
 
-        for _i in 0..size {
+        let ss = Scan::new(f, match self.ignore {
+            Some(ref i) => i.clone(),
+            None => vec![],});
+        let obj = Finder {
+            pool_size: self.scan_pool_size,
+            pool: pool,
+            scan: Arc::new(ss),
+        };
+
+        for _i in 0..self.scan_pool_size {
             let s = obj.scan.clone();
             obj.pool.spawn(move || {
                 s.run();
             });
         }
 
-        return obj;
+        obj
+    }
+}
+
+impl Finder {
+    pub fn new<F>(f: F) -> Finder
+    where F: Fn(FinderMsg) -> bool + Send + Sync + 'static
+    {
+        FinderBuilder::new().create(f)
     }
 
     pub fn scan(&self, parent: &str) {
