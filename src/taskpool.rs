@@ -11,20 +11,39 @@ pub enum Message {
 }
 
 pub enum PosMsg {
-    Start(i64),
-    Pos(i64, String),
-    End(i64),
+    Start(i32, i64),
+    Point(i32, i64, String),
+    End(i32, i64),
 }
+
+pub struct WrapPosMsg (
+    i32,
+    i32,
+    PosMsg,
+);
 
 pub struct Pos {
     id: i32,
     t: i32,
-    tx: Sender,
+    tx: Mutex<Sender<WrapPosMsg>>,
 }
 
 impl Pos {
-    pub fn new() {
-        
+    pub fn new(id: i32, t: i32, tx: Sender<WrapPosMsg>) -> Pos {
+        let tx = Mutex::new(tx);
+        Pos {
+            id: id,
+            t: t,
+            tx: tx,
+        }
+    }
+
+    pub fn setId(&mut self, id: i32) {
+        self.id = id;
+    }
+
+    pub fn send(&self, pos: PosMsg) {
+        self.tx.lock().unwrap().send(WrapPosMsg(self.id, self.t, pos)).unwrap();
     }
 }
 

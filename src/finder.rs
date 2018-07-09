@@ -243,28 +243,3 @@ impl Drop for Finder {
     }
 }
 
-
-// {
-//     let f = finder::Finder::new(4, vec![
-//         // ".git".to_owned(),
-//         // "target".to_owned(),
-//     ], |msg: FinderMsg|{
-//         match msg {
-//             FinderMsg::Dir(path, _level) => {
-//                 // trace!("{:?}", path);
-//                 println!("{:?}", path);
-//             },
-//             FinderMsg::File(path, _level) => {
-//                 // trace!("{:?}", path);
-//                 // println!("{:?}", path);
-//             },
-//             FinderMsg::Close => {},
-//         }
-//         true
-//     });
-//     // f.scan("/Users/xuzhi/my/zip");
-//     // f.scan("/Users/xuzhi/my/dev/morelike");
-//     f.scan("/Users/xuzhi/Music");
-
-//     f.join();
-// }
