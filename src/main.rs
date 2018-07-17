@@ -18,6 +18,10 @@ use clap::{Arg, App, ArgMatches};
 // extern crate time;
 extern crate twox_hash;
 
+extern crate actix;
+extern crate futures;
+extern crate tokio;
+
 // pub mod task;
 // use task::{MsgPos, FinderMsg, Finder};
 use std::{thread, time};
@@ -26,26 +30,30 @@ use std::{thread, time};
 // use std::env;
 
 mod finder;
-mod taskpool;
-mod sum;
+// mod taskpool;
+// mod sum;
 
 fn main() {
     pretty_env_logger::init();
     debug!("start: ++++++++++++++++++++++");
-    // finder::scan("/Users/xuzhi/my");
 
-    // taskpool::ThreadPool::new().spawn(|| info!("i am thread!"));
-
-    let comparer = sum::Comparer::new();
-    //     // f.scan("/Users/xuzhi/my/dev/morelike");
-    // comparer.run("/Users/fred/my/dev/morelike/test");
-    // comparer.run(&get_path("/my/zip"));
-    comparer.run(&get_matchs());
+    finder::run();
+    finder::run();
 
     let ten_millis = time::Duration::from_millis(1);
     thread::sleep(ten_millis);
     debug!("end: ++++++++++++++++++++++");
 }
+
+// finder::scan("/Users/xuzhi/my");
+
+// taskpool::ThreadPool::new().spawn(|| info!("i am thread!"));
+
+// let comparer = sum::Comparer::new();
+//     // f.scan("/Users/xuzhi/my/dev/morelike");
+// comparer.run("/Users/fred/my/dev/morelike/test");
+// comparer.run(&get_path("/my/zip"));
+// comparer.run(&get_matchs());
 
 // fn get_path(s: &str) -> String {
 //     let path = match env::var_os("HOME") {

@@ -10,6 +10,15 @@ pub enum Message {
     Close,
 }
 
+trait StateGen<T> {
+}
+
+trait SendState {
+    fn send(&self, pos: PosMsg);
+    fn setT(&mut self, t: i32);
+    fn setId(&mut self, id: i32);
+}
+
 pub enum PosMsg {
     Start(i32, i64),
     Point(i32, i64, String),
@@ -22,27 +31,34 @@ pub struct WrapPosMsg (
     PosMsg,
 );
 
-pub struct Pos {
+pub struct PosState {
     id: i32,
     t: i32,
     tx: Mutex<Sender<WrapPosMsg>>,
 }
 
-impl Pos {
-    pub fn new(id: i32, t: i32, tx: Sender<WrapPosMsg>) -> Pos {
+impl PosState {
+    pub fn new(id: i32, t: i32, tx: Sender<WrapPosMsg>) -> PosState {
         let tx = Mutex::new(tx);
-        Pos {
+        PosState {
             id: id,
             t: t,
             tx: tx,
         }
     }
 
-    pub fn setId(&mut self, id: i32) {
+}
+
+impl SendState for PosState {
+    fn setId(&mut self, id: i32) {
         self.id = id;
     }
 
-    pub fn send(&self, pos: PosMsg) {
+    fn setT(&mut self, t: i32) {
+        self.t = t;
+    }
+
+    fn send(&self, pos: PosMsg) {
         self.tx.lock().unwrap().send(WrapPosMsg(self.id, self.t, pos)).unwrap();
     }
 }
