@@ -21,7 +21,12 @@ impl Message for Dir {
     type Result = Result<(), io::Error>;
 }
 
+#[derive(Debug)]
 pub struct File(PathBuf);
+
+impl Message for File {
+    type Result = Result<(), io::Error>;
+}
 
 impl Scan {
     pub fn new(i: Vec<String>) -> Scan {
@@ -50,10 +55,18 @@ impl Handler<Dir> for Scan {
         debug!("handle: {:?}; {:?}", msg, thread::current().name());
 
         let mut over_builder = OverrideBuilder::new(msg.0.to_path_buf());
+        // let mut over_builder = OverrideBuilder::new("/");
         for i in &self.ignore {
             over_builder.add(i);
         }
         let ovr = over_builder.build().unwrap();
+        // debug!("ignore:{:?}", ovr);
+        // debug!("ignore:\n {:?},\n {:?}, \n{:?}, \n{:?}",
+        //        ovr.matched(PathBuf::from(".git"), true),
+        //        ovr.matched(PathBuf::from("./Library/Containers"), true),
+        //        ovr.matched(PathBuf::from("/Users/xuzhi/Library/Containers"), true),
+        //        ovr.matched(PathBuf::from("/Users/xuzhi/my/dev/morelike/target"), true));
+        // return Ok(());
 
         let mut walker_builder = WalkBuilder::new(msg.0);
         walker_builder.threads(2).standard_filters(false).ignore(true);
@@ -63,13 +76,12 @@ impl Handler<Dir> for Scan {
             Box::new(move |result| {
                 use ignore::WalkState::*;
                 let entry = result.unwrap();
-                debug!("file:{:?}, {:?}", entry,
-                       thread::current().id());
-                // if entry.file_type().is_file() {
-                //     debug!("file:{:?}", entry.path());
-                // } else {
-                //     debug!("dir:{:?}", entry.path());
-                // }
+                // debug!("{:?}, {:?}", entry.path(), thread::current().id());
+                if entry.file_type().unwrap().is_file() {
+                    // debug!("file:{:?}", entry.path());
+                } else {
+                    // debug!("dir:{:?}", entry.path());
+                }
                 Continue
             })
         });
@@ -99,6 +111,7 @@ mod tests {
             let addr = Scan::new(vec![
                 "!.git".to_owned(),
                 "!target".to_owned(),
+                "!**/Library/Containers/**".to_owned(),
             ]).start();
             let res = addr.send(Dir(PathBuf::from(".")));
 
