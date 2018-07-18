@@ -4,7 +4,11 @@ extern crate pretty_env_logger;
 extern crate clap;
 extern crate indicatif;
 extern crate console;
+extern crate ignore;
+
+
 use clap::{Arg, App, ArgMatches};
+
 
 // extern crate adler32;
 // extern crate chrono;
@@ -29,19 +33,20 @@ use std::{thread, time};
 
 // use std::env;
 
-mod finder;
+// mod finder;
 // mod taskpool;
 // mod sum;
+
+mod scan;
 
 fn main() {
     pretty_env_logger::init();
     debug!("start: ++++++++++++++++++++++");
 
-    finder::run();
-    finder::run();
+    // finder::run();
 
-    let ten_millis = time::Duration::from_millis(1);
-    thread::sleep(ten_millis);
+    // let ten_millis = time::Duration::from_millis(1);
+    // thread::sleep(ten_millis);
     debug!("end: ++++++++++++++++++++++");
 }
 
