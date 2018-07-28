@@ -1,3 +1,6 @@
+#![allow(dead_code)]
+#![allow(unused_must_use)]
+
 use actix::prelude::*;
 use futures::Future;
 use tokio;
@@ -76,11 +79,10 @@ impl Handler<Dir> for Scan {
             Box::new(move |result| {
                 use ignore::WalkState::*;
                 let entry = result.unwrap();
-                // debug!("{:?}, {:?}", entry.path(), thread::current().id());
                 if entry.file_type().unwrap().is_file() {
-                    // debug!("file:{:?}", entry.path());
+                    debug!("file: {:?}, {:?}", entry.path(), thread::current().id());
                 } else {
-                    // debug!("dir:{:?}", entry.path());
+                    debug!("dir: {:?}, {:?}", entry.path(), thread::current().id());
                 }
                 Continue
             })
@@ -91,7 +93,6 @@ impl Handler<Dir> for Scan {
 
 #[cfg(test)]
 mod tests {
-
     extern crate log;
     extern crate pretty_env_logger;
     extern crate actix;
