@@ -4,6 +4,7 @@
 use actix::prelude::*;
 use futures::Future;
 use tokio;
+
 use std::{thread, time};
 use ignore::WalkBuilder;
 use ignore::overrides::{Override, OverrideBuilder};
@@ -11,6 +12,8 @@ use ignore::overrides::{Override, OverrideBuilder};
 use std::fs::{self};
 use std::io;
 use std::path::{Path, PathBuf};
+
+use sum::*;
 
 #[derive(Debug)]
 pub struct Scan {
@@ -21,13 +24,6 @@ pub struct Scan {
 pub struct Dir(PathBuf);
 
 impl Message for Dir {
-    type Result = Result<(), io::Error>;
-}
-
-#[derive(Debug)]
-pub struct File(PathBuf);
-
-impl Message for File {
     type Result = Result<(), io::Error>;
 }
 

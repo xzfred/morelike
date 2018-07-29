@@ -40,6 +40,7 @@ use std::{thread, time};
 // mod sum;
 
 mod scan;
+mod sum;
 
 fn main() {
     pretty_env_logger::init();
