@@ -50,6 +50,19 @@ pub struct Sum {
 }
 
 #[derive(Debug)]
+pub struct Load {
+}
+
+// 文件节点
+#[derive(Debug)]
+pub struct SearchFile {
+    file: PathBuf,
+    size: u64,
+    crc: Option<HashSum>,
+    sum: Option<HashSum>,
+}
+
+#[derive(Debug)]
 pub struct DpFile(PathBuf, bool);
 
 impl DpFile {
@@ -80,11 +93,29 @@ impl Handler<DpFile> for Sum {
     fn handle(&mut self, msg: DpFile, _ctx: &mut Context<Self>) -> Self::Result {
         debug!("File handle: {:?}; {:?}", msg, thread::current().name());
 
-        // match checksum(&msg.0, false) {
-        //     Ok(sum) => Ok(sum),
-        //     Err(e) => Err(e),
-        // }
         checksum(&msg.0, msg.1)
+    }
+}
+
+impl Actor for Load {
+    type Context = Context<Self>;
+
+    fn started(&mut self, _ctx: &mut Context<Self>) {
+        debug!("Load Actor is alive; {:?}", thread::current().name());
+    }
+
+    fn stopped(&mut self, _ctx: &mut Context<Self>) {
+        debug!("Load Actor is stopped; {:?}", thread::current().name());
+    }
+}
+
+impl Handler<DpFile> for Load {
+    type Result = Result<u64, io::Error>;
+
+    fn handle(&mut self, msg: DpFile, _ctx: &mut Context<Self>) -> Self::Result {
+        // debug!("File handle: {:?}; {:?}", msg, thread::current().name());
+        let meta = msg.0.metadata()?;
+        Ok(meta.len())
     }
 }
 
@@ -109,7 +140,7 @@ mod tests {
             let res = addr.send(DpFile(PathBuf::from("./test/u28.png"), false));
             tokio::spawn(
                 res.map(|res| {
-                    debug!("RESULT: {:?}; {:?}", res, thread::current().name());
+                    debug!("Sum1 RESULT: {:?}; {:?}", res, thread::current().name());
 
                     match res {
                         Ok(r) => assert_eq!(r, 2086477930382796716),
@@ -123,10 +154,30 @@ mod tests {
             let res1 = addr.send(DpFile(PathBuf::from("./test/u28.png"), true));
             tokio::spawn(
                 res1.map(|res| {
-                    debug!("RESULT: {:?}; {:?}", res, thread::current().name());
+                    debug!("Sum2 RESULT: {:?}; {:?}", res, thread::current().name());
 
                     match res {
                         Ok(r) => assert_eq!(r, 7733030760293779963),
+                        Err(_err) => {},
+                    }
+                    // stop system and exit
+                    System::current().stop();
+                }).map_err(|_| ()),
+            );
+        });
+    }
+
+    #[test]
+    fn test_load() {
+        System::run(|| {
+            let addr = Load{}.start();
+            let res = addr.send(DpFile(PathBuf::from("./test/u28.png"), false));
+            tokio::spawn(
+                res.map(|res| {
+                    debug!("Load RESULT: {:?}; {:?}", res, thread::current().name());
+
+                    match res {
+                        Ok(r) => assert_eq!(r, 2530),
                         Err(_err) => {},
                     }
                     // stop system and exit
